@@ -1,0 +1,21 @@
+{
+  "name": "material-ui-bonus",
+  "version": "0.0.1",
+  "description": "A few extra React components built on top of Material-UI",
+  "main": "index.js",
+  "repository": "https://github.com/ericvera/material-ui-bonus.git",
+  "author": "Eric Vera <hey@itsmeeric.com>",
+  "license": "MIT",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "keywords": [
+    "material-ui",
+    "react"
+  ]
+}
