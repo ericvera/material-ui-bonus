@@ -1,6 +1,6 @@
 {
   "name": "material-ui-bonus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A few extra React components built on top of Material-UI",
   "main": "index.js",
   "repository": "https://github.com/ericvera/material-ui-bonus.git",
@@ -17,5 +17,14 @@
   "keywords": [
     "material-ui",
     "react"
-  ]
+  ],
+  "peerDependencies": {
+    "@material-ui/core": "^3.6.0",
+    "@material-ui/icons": "^3.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6"
+  }
 }
