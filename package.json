@@ -1,13 +1,16 @@
 {
   "name": "material-ui-bonus",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A few extra React components built on top of Material-UI",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
   "repository": "https://github.com/ericvera/material-ui-bonus.git",
   "author": "Eric Vera <hey@itsmeeric.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -27,5 +30,10 @@
   },
   "dependencies": {
     "classnames": "^2.2.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-react": "^7.0.0"
   }
 }
