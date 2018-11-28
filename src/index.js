@@ -1,5 +1,7 @@
+import BackAppBar from './BackAppBar'
 import BackButton from './BackButton'
 import CenteredContainer from './CenteredContainer'
+import CloseAppBar from './CloseAppBar'
 import CloseButton from './CloseButton'
 import FlexContainer from './FlexContainer'
 import GutteredContainer from './GutteredContainer'
@@ -13,8 +15,10 @@ import ProgressContainer from './ProgressContainer'
 import styled from './styled'
 
 export {
+  BackAppBar,
   BackButton,
   CenteredContainer,
+  CloseAppBar,
   CloseButton,
   FlexContainer,
   GutteredContainer,
