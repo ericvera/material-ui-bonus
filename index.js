@@ -3,9 +3,4 @@ import CloseButton from './src/CloseButton'
 import LeftToolbarIconButton from './src/LeftToolbarIconButton'
 import styled from './src/styled'
 
-export default {
-  BackButton,
-  CloseButton,
-  LeftToolbarIconButton,
-  styled
-}
+export { BackButton, CloseButton, LeftToolbarIconButton, styled }
