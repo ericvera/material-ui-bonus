@@ -1,8 +1,9 @@
 {
   "name": "material-ui-bonus",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A few extra React components built on top of Material-UI",
   "main": "index.js",
+  "module": "index.js",
   "repository": "https://github.com/ericvera/material-ui-bonus.git",
   "author": "Eric Vera <hey@itsmeeric.com>",
   "license": "MIT",
