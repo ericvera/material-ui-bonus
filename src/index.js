@@ -12,7 +12,6 @@ import InstructionsHighlight from './InstructionsHighlight'
 import MarginButton from './MarginButton'
 import ProgressButton from './ProgressButton'
 import ProgressContainer from './ProgressContainer'
-import styled from './styled'
 
 export {
   BackAppBar,
@@ -28,6 +27,5 @@ export {
   InstructionsHighlight,
   MarginButton,
   ProgressButton,
-  ProgressContainer,
-  styled
+  ProgressContainer
 }
