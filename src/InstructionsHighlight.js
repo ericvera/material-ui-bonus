@@ -1,18 +1,18 @@
 // Framework
 import React from 'react'
 // Material-UI
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 
-const styles = theme => {
-  return {
-    instructions: {
-      color: theme.palette.grey[400]
-    }
+const useStyles = makeStyles(theme => ({
+  instructions: {
+    color: theme.palette.grey[400]
   }
+}))
+
+const InstructionsHighlight = ({ children }) => {
+  const classes = useStyles()
+
+  return <span className={classes.instructions}>{children}</span>
 }
 
-const InstructionsHighlight = ({ children, classes }) => (
-  <span className={classes.instructions}>{children}</span>
-)
-
-export default withStyles(styles, { withTheme: true })(InstructionsHighlight)
+export default InstructionsHighlight

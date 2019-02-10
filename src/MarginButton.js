@@ -1,7 +1,6 @@
 // Material-UI
 import Button from '@material-ui/core/Button'
-// Other
-import styled from './styled'
+import { styled } from '@material-ui/styles'
 
 export default styled(Button)(theme => ({
   marginTop: theme.spacing.unit * 3

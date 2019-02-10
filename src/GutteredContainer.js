@@ -1,14 +1,18 @@
 // Framework
 import React from 'react'
 // Material-UI
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 
-const styles = theme => ({
+const useStyles = makeStyles(theme => ({
   gutters: theme.mixins.gutters()
-})
+}))
 
-const GutteredContainer = ({ children, classes, className }) => (
-  <div className={[classes.gutters, className].join(' ')}>{children}</div>
-)
+const GutteredContainer = ({ children, className }) => {
+  const classes = useStyles()
 
-export default withStyles(styles, { withTheme: true })(GutteredContainer)
+  return (
+    <div className={[classes.gutters, className].join(' ')}>{children}</div>
+  )
+}
+
+export default GutteredContainer

@@ -1,18 +1,22 @@
 // Framework
 import React from 'react'
 // Material-UI
-import { withStyles } from '@material-ui/core'
+import { makeStyles } from '@material-ui/styles'
 
-const styles = () => ({
+const useStyles = makeStyles({
   flex: {
     flexGrow: 1
   }
 })
 
-const FlexContainer = ({ children, classes, ...others }) => (
-  <div className={classes.flex} {...others}>
-    {children}
-  </div>
-)
+const FlexContainer = ({ children, ...others }) => {
+  const classes = useStyles()
 
-export default withStyles(styles)(FlexContainer)
+  return (
+    <div className={classes.flex} {...others}>
+      {children}
+    </div>
+  )
+}
+
+export default FlexContainer

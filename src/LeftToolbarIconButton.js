@@ -1,7 +1,6 @@
 // Material-UI
 import IconButton from '@material-ui/core/IconButton'
-// Other
-import styled from './styled'
+import { styled } from '@material-ui/styles'
 
 export default styled(IconButton)({
   marginLeft: -12,

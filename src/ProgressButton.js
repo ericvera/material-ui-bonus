@@ -1,11 +1,11 @@
 // Framework
-import React from 'react'
+import React, { useState } from 'react'
 // Material-UI
 import Button from '@material-ui/core/Button'
 import CircularProgress from '@material-ui/core/CircularProgress'
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/styles'
 
-const styles = () => ({
+const useStyles = makeStyles({
   buttonProgress: {
     position: 'absolute',
     top: '50%',
@@ -15,61 +15,59 @@ const styles = () => ({
   }
 })
 
-class ProgressButton extends React.Component {
-  constructor(props) {
-    super(props)
+const ProgressButton = ({
+  delay,
+  disabled,
+  children,
+  showProgress,
+  ...others
+}) => {
+  const [delayText, setDelayText] = useState('')
 
-    this.state = {
-      delayText: ''
-    }
+  let timeout = null
+  let internalDelay = 0
 
-    this.resetDelay = this.resetDelay.bind(this)
-    this.tickCountDown = this.tickCountDown.bind(this)
-  }
-
-  componentWillMount() {
-    this.resetDelay()
-  }
-
-  componentWillUnmount() {
-    clearTimeout(this.timeout)
-  }
-
-  tickCountDown() {
-    if (this.delay > 0) {
-      this.setState({ delayText: ` (in ${this.delay--} seconds)` }, () => {
-        this.timeout = setTimeout(this.tickCountDown, 1000)
-      })
+  const tickCountDown = () => {
+    if (internalDelay > 0) {
+      setDelayText(` (in ${internalDelay--} seconds)`)
+      timeout = setTimeout(tickCountDown, 1000)
     } else {
-      this.setState({ delayText: '' })
+      setDelayText('')
+      timeout = null
     }
   }
 
-  resetDelay() {
-    this.delay = this.props.delay
-    this.timeout = null
-
-    this.tickCountDown()
+  const resetDelay = () => {
+    internalDelay = delay
+    timeout = null
+    tickCountDown()
   }
 
-  render() {
-    const { disabled, children, classes, showProgress, ...others } = this.props
-    const { delayText } = this.state
+  useEffect(() => {
+    resetDelay()
 
-    return (
-      <Button
-        type="submit"
-        disabled={showProgress || disabled || !!delayText}
-        {...others}
-      >
-        {children}
-        {delayText}
-        {showProgress && (
-          <CircularProgress size={24} className={classes.buttonProgress} />
-        )}
-      </Button>
-    )
-  }
+    return () => {
+      if (timeout) {
+        clearTimeout(timeout)
+      }
+    }
+  }, [])
+
+  const classes = useStyles()
+
+  return (
+    <Button
+      type="submit"
+      disabled={showProgress || disabled || !!delayText}
+      {...others}
+    >
+      {children}
+      {delayText}
+      {showProgress && (
+        <CircularProgress size={24} className={classes.buttonProgress} />
+      )}
+    </Button>
+  )
 }
 
-export default withStyles(styles, { withTheme: true })(ProgressButton)
+export default ProgressButton

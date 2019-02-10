@@ -1,7 +1,6 @@
 // Component
 import CenteredContainer from './CenteredContainer'
-// Other
-import styled from './styled'
+import { styled } from '@material-ui/styles'
 
 export default styled(CenteredContainer)(theme => ({
   textAlign: 'center',
