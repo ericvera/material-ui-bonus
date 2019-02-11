@@ -1,5 +1,10 @@
 // Framework
-import React, { useEffect, useState } from 'react'
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useState
+} from 'react'
 // Material-UI
 import Button from '@material-ui/core/Button'
 import CircularProgress from '@material-ui/core/CircularProgress'
@@ -53,6 +58,10 @@ const ProgressButton = ({
     }
   }, [])
 
+  useImperativeHandle(ref, () => ({
+    resetDelay
+  }))
+
   const classes = useStyles()
 
   return (
@@ -70,4 +79,4 @@ const ProgressButton = ({
   )
 }
 
-export default ProgressButton
+export default forwardRef(ProgressButton)
