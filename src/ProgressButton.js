@@ -20,13 +20,10 @@ const useStyles = makeStyles({
   }
 })
 
-const ProgressButton = ({
-  delay,
-  disabled,
-  children,
-  showProgress,
-  ...others
-}) => {
+const ProgressButton = (
+  { delay, disabled, children, showProgress, ...others },
+  ref
+) => {
   const [delayText, setDelayText] = useState('')
 
   let timeout = null
