@@ -1,8 +1,21 @@
+// Framework
+import React from 'react'
 // Component
 import CenteredContainer from './CenteredContainer'
-import { styled } from '@material-ui/styles'
+// Material-UI
+import { makeStyles } from '@material-ui/styles'
 
-export default styled(CenteredContainer)(theme => ({
-  textAlign: 'center',
-  marginTop: theme.spacing.unit * 4
+const useStyles = makeStyles(theme => ({
+  container: {
+    textAlign: 'center',
+    marginTop: theme.spacing.unit * 4
+  }
 }))
+
+const ProgressContainer = ({ ...other }) => {
+  const classes = useStyles()
+
+  return <CenteredContainer className={classes.container} {...other} />
+}
+
+export default ProgressContainer
