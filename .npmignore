@@ -1,5 +1,7 @@
 *.test.js
 *.config.js
+*.stories.js
+.storybook
 .babelrc
 test/
 coverage/

@@ -1,7 +1,7 @@
 // Framework
 import React from 'react'
 // Components
-import CloseButton from './CloseButton'
+import CloseButton from './internal/CloseButton'
 // Material-UI
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'

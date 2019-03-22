@@ -1,7 +1,7 @@
 // Framework
 import React from 'react'
 // Components
-import BackButton from './BackButton'
+import BackButton from './internal/BackButton'
 // Material-UI
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'

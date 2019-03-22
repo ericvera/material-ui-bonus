@@ -1,6 +1,5 @@
 // Framework
 import React from 'react'
-import PropTypes from 'prop-types'
 // Material-UI
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/styles'
@@ -8,24 +7,22 @@ import { makeStyles } from '@material-ui/styles'
 import getSpacing from './helpers/getSpacing'
 
 const useStyles = makeStyles({
-  h1: {
+  text: {
     marginTop: getSpacing(5)
   },
-  h2: {
+  subText: {
     marginTop: getSpacing(4)
-  },
-  h3: {
-    marginTop: getSpacing(3)
   }
 })
 
-const Heading = ({ level = '1', children, ...others }) => {
+const Text = ({ isSubText = false, children, ...others }) => {
   const classes = useStyles()
 
   return (
     <Typography
-      variant={`h${level}`}
-      className={classes[`h${level}`]}
+      component={React.Children.count(children) > 1 ? 'div' : 'p'}
+      variant={isSubText ? 'body2' : 'body1'}
+      className={classes[isSubText ? 'subText' : 'text']}
       {...others}
     >
       {children}
@@ -33,8 +30,4 @@ const Heading = ({ level = '1', children, ...others }) => {
   )
 }
 
-Heading.propTypes = {
-  level: PropTypes.oneOf(['1', '2', '3'])
-}
-
-export default Heading
+export default Text
