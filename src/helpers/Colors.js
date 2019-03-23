@@ -1,10 +1,11 @@
 export default {
-  primary: '#1F1F1F',
-  primaryLight: '#9A9A9A',
-  muted: '#CECECE',
-  background: '#FFFFFF',
   brand: '#12C789',
-  action: '#12C789',
-  actionBorder: '#CECECE',
+  primary: '#2E2E2E',
+  primaryDisabled: '#B7B7B7',
+  secondary: '#777777',
+  confirmAction: '#FA4747',
+  inputBackground: '#E3FFF5',
+  inputBackgroundDisabled: '#F7F7F7',
+  background: '#FFFFFF',
   transparent: 'transparent'
 }

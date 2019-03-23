@@ -9,7 +9,9 @@ import getSpacing from './helpers/getSpacing'
 
 const useStyles = makeStyles({
   list: {
-    marginTop: getSpacing(1)
+    // NOTE: The desired spacing is spacing[5] from the top of the content element, but the top margin of
+    //  the element already has spacing[4]
+    marginTop: getSpacing(5) - getSpacing(4)
   }
 })
 
@@ -17,7 +19,7 @@ const List = ({ children, ...others }) => {
   const classes = useStyles()
 
   return (
-    <MaterialUIList className={classes.list} {...others}>
+    <MaterialUIList disablePadding={true} className={classes.list} {...others}>
       {children}
     </MaterialUIList>
   )

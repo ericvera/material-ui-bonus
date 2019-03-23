@@ -11,18 +11,26 @@ const useStyles = makeStyles({
     marginTop: getSpacing(5)
   },
   subText: {
-    marginTop: getSpacing(4)
+    marginTop: getSpacing(3)
   }
 })
 
-const Text = ({ isSubText = false, children, ...others }) => {
+const Text = ({ isSubText = false, className, children, ...others }) => {
   const classes = useStyles()
+
+  let localClasses = []
+
+  if (className) {
+    localClasses.push(className)
+  }
+
+  localClasses.push(classes[isSubText ? 'subText' : 'text'])
 
   return (
     <Typography
       component={React.Children.count(children) > 1 ? 'div' : 'p'}
       variant={isSubText ? 'body2' : 'body1'}
-      className={classes[isSubText ? 'subText' : 'text']}
+      className={localClasses.join(' ')}
       {...others}
     >
       {children}

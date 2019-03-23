@@ -6,12 +6,14 @@ import CloseButton from './internal/CloseButton'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 
-const CloseAppBar = ({ onClick }) => (
-  <AppBar>
-    <Toolbar>
-      <CloseButton onClick={onClick} />
-    </Toolbar>
-  </AppBar>
-)
+const CloseAppBar = ({ onClick }) => {
+  return (
+    <AppBar position="sticky">
+      <Toolbar>
+        <CloseButton onClick={onClick} />
+      </Toolbar>
+    </AppBar>
+  )
+}
 
 export default CloseAppBar

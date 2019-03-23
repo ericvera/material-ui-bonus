@@ -7,7 +7,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 
 const BackAppBar = ({ onClick }) => (
-  <AppBar>
+  <AppBar position="sticky">
     <Toolbar>
       <BackButton onClick={onClick} />
     </Toolbar>

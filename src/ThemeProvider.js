@@ -3,23 +3,10 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import MaterialUIThemeProvider from '@material-ui/styles/ThemeProvider'
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme'
 import Colors from './helpers/Colors'
+import FontWeight from './helpers/FontWeight'
+import getFontSize from './helpers/getFontSize'
+import getSpacing from './helpers/getSpacing'
 // TODO: Figure out how to pass Colors, Font, and other configurable things in
-
-// Based on Golden Ratio with base 16
-const Base = 16
-const FontSizes = [0, 0.618, 1, 1.618, 2.617]
-
-const FontWeight = {
-  Regular: 400,
-  Bold: 700
-}
-
-/**
- * @param {1,2,3,4} level
- */
-const getFontSize = level => {
-  return `${Base * FontSizes[level]}px`
-}
 
 const theme = createMuiTheme({
   typography: {
@@ -30,7 +17,7 @@ const theme = createMuiTheme({
   shadows: Array(25).fill('none'),
   props: {
     MuiAppBar: {
-      position: 'static',
+      position: 'fixed',
       elevation: 0
     },
     MuiButton: {
@@ -40,14 +27,18 @@ const theme = createMuiTheme({
       disableTouchRipple: true
     },
     MuiFormControl: {
-      margin: 'normal'
+      //margin: 'normal'
     },
     MuiIconButton: {
       disableRipple: true,
       disableTouchRipple: true
     },
+    MuiInputBase: {
+      fullWidth: true
+    },
     MuiInput: {
-      disableUnderline: true
+      disableUnderline: true,
+      fullWidth: true
     },
     MuiInputLabel: {
       shrink: true,
@@ -77,7 +68,7 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiAppBar: {
-      colorPrimary: { backgroundColor: Colors.transparent }
+      colorPrimary: { backgroundColor: Colors.background }
     },
     MuiIconButton: {
       root: {
@@ -94,6 +85,9 @@ const theme = createMuiTheme({
         fontWeight: FontWeight.Bold,
         '&:hover': {
           backgroundColor: Colors.transparent
+        },
+        '&$disabled': {
+          backgroundColor: Colors.transparent
         }
       },
       contained: {
@@ -104,7 +98,7 @@ const theme = createMuiTheme({
         color: Colors.brand,
         //fontWeight: FontWeight.Regular,
         '&:hover': {
-          //backgroundColor: Colors.muted
+          backgroundColor: Colors.background
         }
       },
       fab: {
@@ -112,7 +106,7 @@ const theme = createMuiTheme({
         // z-index explained here https://material-ui.com/layout/basics/
         // The fact that this is needed is likely a bug in the lib
         zIndex: 1050,
-        color: Colors.action,
+        color: Colors.brand,
         position: 'fixed',
         bottom: 16,
         right: 16
@@ -123,13 +117,23 @@ const theme = createMuiTheme({
     },
     MuiCircularProgress: {
       colorPrimary: {
-        color: Colors.actionBorder
+        color: Colors.brand
+      }
+    },
+    MuiFormControl: {
+      root: {
+        display: 'block'
       }
     },
     MuiInput: {
       root: {
-        fontWeight: 100,
-        color: Colors.primary
+        borderRadius: 4,
+        color: Colors.primary,
+        backgroundColor: Colors.inputBackground,
+        '&$disabled': {
+          color: Colors.primaryDisabled,
+          backgroundColor: Colors.inputBackgroundDisabled
+        }
       },
       multiline: {
         paddingBottom: 32
@@ -137,11 +141,8 @@ const theme = createMuiTheme({
     },
     MuiInputBase: {
       input: {
-        borderStyle: 'solid',
-        borderWidth: 1,
-        borderRadius: 5,
-        borderColor: Colors.muted,
-        padding: 12
+        borderStyle: 'none',
+        padding: getFontSize(2)
       }
     },
     MuiInputLabel: {
@@ -160,28 +161,17 @@ const theme = createMuiTheme({
         overflowWrap: 'break-word'
       }
     },
-    MuiListSubheader: {
+    MuiSnackbar: {
       root: {
-        lineHeight: `24px`,
-        paddingTop: 32,
-        textTransform: 'uppercase',
-        fontWeight: 500,
-        fontSize: '75%',
-        cursor: 'pointer'
+        backgroundColor: Colors.primary
       }
     },
     MuiSnackbarContent: {
       root: {
-        color: Colors.actionBorder,
+        color: Colors.background,
         fontSize: '80%'
       }
     }
-  },
-  palette: {
-    text: { main: 'red' },
-    primary: { main: Colors.brand, contrastText: 'green' },
-    action: { main: Colors.action },
-    background: { default: Colors.background, contrastText: 'pink' }
   },
   typography: {
     useNextVariants: true,
@@ -231,15 +221,8 @@ const theme = createMuiTheme({
       fontSize: getFontSize(1),
       fontWeight: FontWeight.Regular
     },
-    caption: {
-      color: Colors.muted
-    },
-    overline: {
-      color: Colors.primary
-    },
-    fontWeightLight: 200,
     fontWeightRegular: FontWeight.Regular,
-    fontWeightMedium: FontWeight.Regular
+    fontWeightMedium: FontWeight.Bold
   }
 })
 
