@@ -3,39 +3,45 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import BackAppBar from './BackAppBar'
+import AppBar from './AppBar'
 import Button from './Button'
 import Container from './Container'
 import Heading from './Heading'
-import Text from './Text'
 import List from './List'
 import ListItem from './ListItem'
-import BottomAppBar from './BottomAppBar'
-import { TextField } from '@material-ui/core'
+import Text from './Text'
+import TextField from './TextField'
 
 storiesOf('Sample Layouts', module)
+  .addParameters({
+    info: {
+      disable: true
+    }
+  })
   .add('H1 + Text + Button', () => (
     <>
-      <BackAppBar />
+      <AppBar leftIcon="close" onClick={action('close screen')} />
       <Container>
-        <Heading>Heading</Heading>
-        <Text>
+        <Heading marginTopLevel="6">Heading</Heading>
+        <Text marginTopLevel="4">
           <p>This is a paragraph</p>
           <p>
             It comes followed by a second paragraph for illustration purpose.
           </p>
         </Text>
-        <Button>Go somewhere</Button>
+        <Button marginTopLevel="4">Go somewhere</Button>
       </Container>
     </>
   ))
   .add('H2 + SubText + List', () => (
     <>
-      <BackAppBar />
-      <Container fullPage={true} marginTopLevel="4" marginBottomLevel="6">
-        <Heading level="2">Heading</Heading>
-        <Heading level="3">Sub heading</Heading>
+      <AppBar onClick={action('go back')} />
+      <Container fullPage={true} hasBottomBar={true}>
+        <Heading level="2" marginTopLevel="4">
+          Heading
+        </Heading>
         <List>
+          <ListItem primary="by Some Co" />
           <ListItem secondary="This is an item with only secondary text." />
           <ListItem
             secondary={
@@ -58,22 +64,32 @@ storiesOf('Sample Layouts', module)
           />
         </List>
       </Container>
-      <BottomAppBar>
+      <AppBar location="bottom">
         <Button fullWidth={true} type="confirmation">
           Next
         </Button>
-      </BottomAppBar>
+      </AppBar>
     </>
   ))
   .add('H2 + Input + Button', () => (
     <>
-      <BackAppBar />
+      <AppBar onClick={action('go back')} />
       <Container>
-        <Heading level="2">Heading</Heading>
+        <Heading level="2" marginTopLevel="4">
+          Heading
+        </Heading>
         <form>
-          <TextField label="Some label" placeholder="Sample text" />
+          <TextField
+            label="Some label"
+            placeholder="Sample text"
+            marginTopLevel="5"
+          />
         </form>
-        <Button type="primary" onClick={action('button pressed')}>
+        <Button
+          type="primary"
+          marginTopLevel="4"
+          onClick={action('button pressed')}
+        >
           Press me
         </Button>
       </Container>

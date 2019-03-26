@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 // Internal
 import InnerContainer from './internal/InnerContainer'
 import OuterContainer from './internal/OuterContainer'
+import { Toolbar } from '@material-ui/core'
 
 const Container = ({
   fullPage = true,
@@ -11,6 +12,8 @@ const Container = ({
   marginBottomLevel = '0',
   centered = true,
   disableGutters = false,
+  hasAppBar = true,
+  hasBottomBar = false,
   children
 }) => {
   return (
@@ -19,9 +22,11 @@ const Container = ({
       marginTopLevel={marginTopLevel}
       marginBottomLevel={marginBottomLevel}
     >
+      {hasAppBar ? <Toolbar /> : null}
       <InnerContainer centered={centered} disableGutters={disableGutters}>
         {children}
       </InnerContainer>
+      {hasBottomBar ? <Toolbar /> : null}
     </OuterContainer>
   )
 }

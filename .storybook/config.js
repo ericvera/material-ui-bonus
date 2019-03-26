@@ -1,11 +1,12 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
+import { withInfo } from '@storybook/addon-info'
 import { install } from '@material-ui/styles'
 import ThemeProvider from '../src/ThemeProvider'
 
-install()
+import '@storybook/addon-console'
 
-console.log('material-ui installed!')
+install()
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../src', true, /.stories.js$/)
@@ -14,6 +15,12 @@ function loadStories() {
 }
 
 configure(loadStories, module)
+
+addDecorator(
+  withInfo({
+    //inline: true
+  })
+)
 
 const ThemeDecorator = storyFn => <ThemeProvider>{storyFn()}</ThemeProvider>
 addDecorator(ThemeDecorator)

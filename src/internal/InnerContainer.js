@@ -2,28 +2,29 @@
 import React from 'react'
 // Material-UI
 import Grid from '@material-ui/core/Grid'
-// Internal
-import GutteredContainer from './GutteredContainer'
+// Helpers
+import useGutterStyles from '../helpers/useGuttersStyles'
 
 const InnerContainer = ({
   centered = true,
   disableGutters = false,
   children
 }) => {
-  const content = (
-    <GutteredContainer disableGutters={disableGutters}>
-      {children}
-    </GutteredContainer>
-  )
+  const guttersClassName = useGutterStyles(disableGutters)
 
   if (!centered) {
-    return content
+    return <div className={guttersClassName}>{children}</div>
   }
 
   return (
-    <Grid container justify="center" alignContent="center">
+    <Grid
+      container
+      justify="center"
+      alignContent="center"
+      className={guttersClassName}
+    >
       <Grid item xs={12} sm={9} md={6} lg={3}>
-        {content}
+        {children}
       </Grid>
     </Grid>
   )

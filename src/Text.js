@@ -1,41 +1,34 @@
 // Framework
 import React from 'react'
+import PropTypes from 'prop-types'
 // Material-UI
 import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/styles'
 // Helpers
-import getSpacing from './helpers/getSpacing'
+import useMarginStyles from './helpers/useMarginStyles'
 
-const useStyles = makeStyles({
-  text: {
-    marginTop: getSpacing(5)
-  },
-  subText: {
-    marginTop: getSpacing(3)
-  }
-})
-
-const Text = ({ isSubText = false, className, children, ...others }) => {
-  const classes = useStyles()
-
-  let localClasses = []
-
-  if (className) {
-    localClasses.push(className)
-  }
-
-  localClasses.push(classes[isSubText ? 'subText' : 'text'])
+const Text = ({
+  isSubText = false,
+  marginTopLevel = '0',
+  marginBottomLevel = '0',
+  children
+}) => {
+  const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   return (
     <Typography
       component={React.Children.count(children) > 1 ? 'div' : 'p'}
       variant={isSubText ? 'body2' : 'body1'}
-      className={localClasses.join(' ')}
-      {...others}
+      className={marginClassName}
     >
       {children}
     </Typography>
   )
+}
+
+Text.propTypes = {
+  isSubText: PropTypes.bool,
+  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
+  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
 }
 
 export default Text

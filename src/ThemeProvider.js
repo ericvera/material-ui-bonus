@@ -125,6 +125,11 @@ const theme = createMuiTheme({
         display: 'block'
       }
     },
+    MuiFormLabel: {
+      root: {
+        color: Colors.primary
+      }
+    },
     MuiInput: {
       root: {
         borderRadius: 4,

@@ -3,28 +3,32 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // Material-UI
 import MaterialUITextField from '@material-ui/core/TextField'
-import { makeStyles } from '@material-ui/styles'
 // Helpers
-import getSpacing from './helpers/getSpacing'
+import useMarginStyles from './helpers/useMarginStyles'
 
-const useStyles = makeStyles({
-  text: {
-    marginTop: getSpacing(5)
-  },
-  subText: {
-    marginTop: getSpacing(3)
-  }
-})
+const TextField = ({
+  label,
+  placeholder,
+  marginTopLevel = '0',
+  marginBottomLevel = '0'
+}) => {
+  const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-const TextField = ({ ...others }) => {
-  const classes = useStyles()
-
-  return <MaterialUITextField fullWidth={true} {...others} />
+  return (
+    <MaterialUITextField
+      fullWidth={true}
+      label={label}
+      placeholder={placeholder}
+      className={marginClassName}
+    />
+  )
 }
 
 TextField.propTypes = {
   placeholder: PropTypes.string.isRequired,
-  label: PropTypes.string
+  label: PropTypes.string,
+  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
+  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
 }
 
 export default TextField

@@ -3,38 +3,28 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // Material-UI
 import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/styles'
 // Helpers
-import getSpacing from './helpers/getSpacing'
+import useMarginStyles from './helpers/useMarginStyles'
 
-const useStyles = makeStyles({
-  h1: {
-    marginTop: getSpacing(5)
-  },
-  h2: {
-    marginTop: getSpacing(4)
-  },
-  h3: {
-    marginTop: getSpacing(3)
-  }
-})
-
-const Heading = ({ level = '1', children, ...others }) => {
-  const classes = useStyles()
+const Heading = ({
+  level = '1',
+  marginTopLevel = '0',
+  marginBottomLevel = '0',
+  children
+}) => {
+  const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   return (
-    <Typography
-      variant={`h${level}`}
-      className={classes[`h${level}`]}
-      {...others}
-    >
+    <Typography variant={`h${level}`} className={marginClassName}>
       {children}
     </Typography>
   )
 }
 
 Heading.propTypes = {
-  level: PropTypes.oneOf(['1', '2', '3'])
+  level: PropTypes.oneOf(['1', '2', '3']),
+  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
+  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
 }
 
 export default Heading
