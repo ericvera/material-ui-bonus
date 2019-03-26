@@ -34,8 +34,8 @@ const AppBarButton = ({ onClick, icon, side }) => {
 
 AppBarButton.propTypes = {
   onClick: PropTypes.func.isRequired,
-  side: PropTypes.oneOf(['left']).isRequired,
-  icon: PropTypes.oneOf(['close', 'back']).isRequired
+  side: PropTypes.oneOf(['left']),
+  icon: PropTypes.oneOf(['close', 'back'])
 }
 
 export default AppBarButton

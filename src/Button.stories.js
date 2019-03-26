@@ -17,8 +17,22 @@ storiesOf('Button', module)
       Press me
     </Button>
   ))
+  .add('secondary / full width', () => (
+    <Button
+      type="secondary"
+      onClick={action('button pressed')}
+      fullWidth={true}
+    >
+      Press me
+    </Button>
+  ))
   .add('confirmation', () => (
     <Button type="confirmation" onClick={action('button pressed')}>
+      Press me
+    </Button>
+  ))
+  .add('progress / confirmation', () => (
+    <Button delay={5} type="confirmation" onClick={action('button pressed')}>
       Press me
     </Button>
   ))

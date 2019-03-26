@@ -22,13 +22,26 @@ const useStyles = makeStyles({
   }
 })
 
-const AppBar = ({ onClick, location = 'top', leftIcon = 'back', children }) => {
+// TODO: Add support for AppBar with menu
+
+const AppBar = ({
+  location = 'top',
+  leftButtonIcon = 'back',
+  leftButtonOnClick,
+  children
+}) => {
   const classes = useStyles()
 
   let content
 
   if (location === 'top') {
-    content = <AppBarButton icon={leftIcon} side="left" onClick={onClick} />
+    content = (
+      <AppBarButton
+        icon={leftButtonIcon}
+        side="left"
+        onClick={leftButtonOnClick}
+      />
+    )
   } else {
     content = <InnerContainer disableGutters={true}>{children}</InnerContainer>
   }
@@ -45,9 +58,9 @@ const AppBar = ({ onClick, location = 'top', leftIcon = 'back', children }) => {
 }
 
 AppBar.propTypes = {
-  onClick: PropTypes.func,
   location: PropTypes.oneOf(['top', 'bottom']),
-  leftIcon: PropTypes.oneOf(['back', 'close'])
+  leftButtonIcon: PropTypes.oneOf(['back', 'close']),
+  leftButtonOnClick: PropTypes.func
 }
 
 export default AppBar

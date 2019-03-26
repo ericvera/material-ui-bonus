@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/styles'
 // Helpers
 import useMarginStyles from './helpers/useMarginStyles'
 import Colors from './helpers/Colors'
+import ProgressButton from './internal/ProgressButton'
 
 const useStyles = makeStyles({
   primary: {
@@ -35,21 +36,32 @@ const useStyles = makeStyles({
 })
 
 const Button = ({
+  delay,
   centered = true,
+  fullWidth = false,
   marginTopLevel = '0',
   marginBottomLevel = '0',
   type = 'primary',
-  ...other
+  children
 }) => {
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-  const button = (
-    <MaterialUIButton
-      className={[marginClassName, classes[type]].join(' ')}
-      {...other}
-    />
+  const className = [marginClassName, classes[type]].join(' ')
+
+  let button = (
+    <MaterialUIButton className={className} fullWidth={fullWidth}>
+      {children}
+    </MaterialUIButton>
   )
+
+  if (delay) {
+    button = (
+      <ProgressButton delay={delay} className={className} fullWidth={fullWidth}>
+        {children}
+      </ProgressButton>
+    )
+  }
 
   if (!centered) {
     return button
@@ -59,6 +71,9 @@ const Button = ({
 }
 
 Button.propTypes = {
+  /** Delay in seconds before the button can be pressed */
+  delay: PropTypes.number,
+  fullWidth: PropTypes.bool,
   type: PropTypes.oneOf(['primary', 'secondary', 'confirmation']),
   centered: PropTypes.bool,
   marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),

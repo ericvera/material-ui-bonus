@@ -14,13 +14,9 @@ function loadStories() {
   req.keys().forEach(filename => req(filename))
 }
 
-configure(loadStories, module)
+addDecorator(withInfo)
 
-addDecorator(
-  withInfo({
-    //inline: true
-  })
-)
+configure(loadStories, module)
 
 const ThemeDecorator = storyFn => <ThemeProvider>{storyFn()}</ThemeProvider>
 addDecorator(ThemeDecorator)

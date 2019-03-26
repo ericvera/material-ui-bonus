@@ -5,7 +5,6 @@ import createMuiTheme from '@material-ui/core/styles/createMuiTheme'
 import Colors from './helpers/Colors'
 import FontWeight from './helpers/FontWeight'
 import getFontSize from './helpers/getFontSize'
-import getSpacing from './helpers/getSpacing'
 // TODO: Figure out how to pass Colors, Font, and other configurable things in
 
 const theme = createMuiTheme({
@@ -26,9 +25,6 @@ const theme = createMuiTheme({
       disableFocusRipple: true,
       disableTouchRipple: true
     },
-    MuiFormControl: {
-      //margin: 'normal'
-    },
     MuiIconButton: {
       disableRipple: true,
       disableTouchRipple: true
@@ -44,9 +40,6 @@ const theme = createMuiTheme({
       shrink: true,
       disableAnimation: true,
       focused: false
-    },
-    MuiList: {
-      //disablePadding: true
     },
     MuiListItem: {
       disableGutters: true
@@ -180,7 +173,6 @@ const theme = createMuiTheme({
   },
   typography: {
     useNextVariants: true,
-    // Use the system font instead of the default Roboto font.
     fontFamily: [
       'Montserrat',
       'Arial',
@@ -231,9 +223,9 @@ const theme = createMuiTheme({
   }
 })
 
-const ThemeProvider = props => (
+const ThemeProvider = ({ children }) => (
   <CssBaseline>
-    <MaterialUIThemeProvider theme={theme} {...props} />
+    <MaterialUIThemeProvider theme={theme} children={children} />
   </CssBaseline>
 )
 

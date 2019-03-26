@@ -15,15 +15,13 @@ const useStyles = makeStyles({
     position: 'absolute',
     top: '50%',
     left: '50%',
+    // TODO: Figure out these margins
     marginTop: -12,
     marginLeft: -12
   }
 })
 
-const ProgressButton = (
-  { delay, disabled, children, showProgress, ...others },
-  ref
-) => {
+const ProgressButton = ({ delay, className, disabled, children }, ref) => {
   const [delayText, setDelayText] = useState('')
 
   let timeout = null
@@ -64,12 +62,12 @@ const ProgressButton = (
   return (
     <Button
       type="submit"
-      disabled={showProgress || disabled || !!delayText}
-      {...others}
+      disabled={disabled || !!delayText}
+      className={className}
     >
       {children}
       {delayText}
-      {showProgress && (
+      {Boolean(delayText) && (
         <CircularProgress size={24} className={classes.buttonProgress} />
       )}
     </Button>

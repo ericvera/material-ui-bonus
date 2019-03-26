@@ -20,7 +20,10 @@ storiesOf('Sample Layouts', module)
   })
   .add('H1 + Text + Button', () => (
     <>
-      <AppBar leftIcon="close" onClick={action('close screen')} />
+      <AppBar
+        leftButtonIcon="close"
+        leftButtonOnClick={action('close screen')}
+      />
       <Container>
         <Heading marginTopLevel="6">Heading</Heading>
         <Text marginTopLevel="4">
@@ -35,7 +38,7 @@ storiesOf('Sample Layouts', module)
   ))
   .add('H2 + SubText + List', () => (
     <>
-      <AppBar onClick={action('go back')} />
+      <AppBar leftButtonOnClick={action('go back')} />
       <Container fullPage={true} hasBottomBar={true}>
         <Heading level="2" marginTopLevel="4">
           Heading
@@ -73,7 +76,7 @@ storiesOf('Sample Layouts', module)
   ))
   .add('H2 + Input + Button', () => (
     <>
-      <AppBar onClick={action('go back')} />
+      <AppBar leftButtonOnClick={action('go back')} />
       <Container>
         <Heading level="2" marginTopLevel="4">
           Heading
