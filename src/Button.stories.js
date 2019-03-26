@@ -5,7 +5,6 @@ import Button from './Button'
 
 const ResetTestComponent = () => {
   const buttonRef = useRef(null)
-  console.log('buttonRef:', buttonRef)
 
   return (
     <div>

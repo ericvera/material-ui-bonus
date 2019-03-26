@@ -21,7 +21,10 @@ const useStyles = makeStyles({
   }
 })
 
-const ProgressButton = ({ delay, className, disabled, children }, ref) => {
+const ProgressButton = (
+  { delay, className, disabled, children, onClick },
+  ref
+) => {
   const [delayText, setDelayText] = useState('')
 
   let timeout = null
@@ -38,7 +41,6 @@ const ProgressButton = ({ delay, className, disabled, children }, ref) => {
   }
 
   const resetDelay = () => {
-    console.log('internal resetDelay')
     internalDelay = delay
     timeout = null
     tickCountDown()
@@ -65,6 +67,7 @@ const ProgressButton = ({ delay, className, disabled, children }, ref) => {
       type="submit"
       disabled={disabled || !!delayText}
       className={className}
+      onClick={onClick}
     >
       {children}
       {delayText}
