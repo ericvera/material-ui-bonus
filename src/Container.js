@@ -22,10 +22,12 @@ const Container = ({
       marginTopLevel={marginTopLevel}
       marginBottomLevel={marginBottomLevel}
     >
+      {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasAppBar ? <Toolbar /> : null}
       <InnerContainer centered={centered} disableGutters={disableGutters}>
         {children}
       </InnerContainer>
+      {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasBottomBar ? <Toolbar /> : null}
     </OuterContainer>
   )

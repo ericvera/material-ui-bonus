@@ -4,12 +4,17 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/styles'
 // Helpers
+import getSpacing from '../helpers/getSpacing'
 import useMarginStyles from '../helpers/useMarginStyles'
 
 const useStyles = makeStyles({
   mainFullHeight: {
     minHeight: '100vh',
-    flexGrow: 1
+    flexGrow: 1,
+    // Padding so that on a screen longer than viewport the last element does not "stick"
+    //  to the bottom. It is padding so it will not make the full-height container grow
+    //  unnecesarily.
+    paddingBottom: getSpacing(4)
   },
   main: {
     flexGrow: 1
