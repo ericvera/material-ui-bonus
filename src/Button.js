@@ -1,5 +1,5 @@
 // Framework
-import React from 'react'
+import React, { useRef, forwardRef, useImperativeHandle } from 'react'
 import PropTypes from 'prop-types'
 // Material-UI
 import MaterialUIButton from '@material-ui/core/Button'
@@ -35,29 +35,51 @@ const useStyles = makeStyles({
   }
 })
 
-const Button = ({
-  delay,
-  centered = true,
-  fullWidth = false,
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
-  type = 'primary',
-  children
-}) => {
+const Button = (
+  {
+    delay,
+    centered = true,
+    fullWidth = false,
+    marginTopLevel = '0',
+    marginBottomLevel = '0',
+    type = 'primary',
+    onClick,
+    children
+  },
+  ref
+) => {
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
+
+  const progressButtonRef = useRef()
+
+  useImperativeHandle(ref, () => ({
+    resetDelay: () => {
+      progressButtonRef.current.resetDelay()
+    }
+  }))
 
   const className = [marginClassName, classes[type]].join(' ')
 
   let button = (
-    <MaterialUIButton className={className} fullWidth={fullWidth}>
+    <MaterialUIButton
+      className={className}
+      fullWidth={fullWidth}
+      onClick={onClick}
+    >
       {children}
     </MaterialUIButton>
   )
 
   if (delay) {
     button = (
-      <ProgressButton delay={delay} className={className} fullWidth={fullWidth}>
+      <ProgressButton
+        ref={progressButtonRef}
+        delay={delay}
+        className={className}
+        fullWidth={fullWidth}
+        onClick={onClick}
+      >
         {children}
       </ProgressButton>
     )
@@ -71,6 +93,7 @@ const Button = ({
 }
 
 Button.propTypes = {
+  onClick: PropTypes.func,
   /** Delay in seconds before the button can be pressed */
   delay: PropTypes.number,
   fullWidth: PropTypes.bool,
@@ -80,4 +103,4 @@ Button.propTypes = {
   marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
 }
 
-export default Button
+export default forwardRef(Button)

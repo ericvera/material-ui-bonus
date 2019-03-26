@@ -38,6 +38,7 @@ const ProgressButton = ({ delay, className, disabled, children }, ref) => {
   }
 
   const resetDelay = () => {
+    console.log('internal resetDelay')
     internalDelay = delay
     timeout = null
     tickCountDown()
