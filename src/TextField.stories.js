@@ -20,3 +20,21 @@ storiesOf('TextField', module)
       onChange={action('text changed')}
     />
   ))
+  .add('with error', () => (
+    <TextField
+      label="Label here"
+      placeholder="Placeholder text"
+      onChange={action('text changed')}
+      error={true}
+      helperText="There was an error here!"
+    />
+  ))
+  .add('autoCapitalize', () => (
+    <TextField
+      placeholder="Placeholder text"
+      autoCapitalize="words"
+      onChange={action('text changed')}
+      error={false}
+      helperText=""
+    />
+  ))

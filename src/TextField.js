@@ -7,55 +7,58 @@ import MaterialUITextField from '@material-ui/core/TextField'
 import useMarginStyles from './helpers/useMarginStyles'
 
 const TextField = ({
-  label,
-  placeholder,
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
-  disabled,
-  onChange,
-  value,
-  id,
+  autoCapitalize,
   autoFocus,
-  type,
-  onBlur,
+  disabled,
   error,
-  helperText
+  helperText,
+  id,
+  label,
+  marginBottomLevel = '0',
+  marginTopLevel = '0',
+  onBlur,
+  onChange,
+  placeholder,
+  type,
+  value,
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   return (
     <MaterialUITextField
-      fullWidth={true}
-      disabled={disabled}
-      value={value}
-      onChange={onChange}
-      label={label}
-      placeholder={placeholder}
-      className={marginClassName}
-      id={id}
+      autoCapitalize={autoCapitalize}
       autoFocus={autoFocus}
-      type={type}
-      onBlur={onBlur}
+      className={marginClassName}
+      disabled={disabled}
       error={error}
+      fullWidth={true}
       helperText={helperText}
+      id={id}
+      label={label}
+      onBlur={onBlur}
+      onChange={onChange}
+      placeholder={placeholder}
+      type={type}
+      value={value}
     />
   )
 }
 
 TextField.propTypes = {
-  placeholder: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func,
-  value: PropTypes.string,
-  id: PropTypes.string,
+  autoCapitalize: PropTypes.string,
   autoFocus: PropTypes.bool,
-  type: PropTypes.string,
-  onBlur: PropTypes.func,
+  disabled: PropTypes.bool,
   error: PropTypes.bool,
+  id: PropTypes.string,
   helperText: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string.isRequired,
+  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
   marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
+  onBlur: PropTypes.func,
+  onChange: PropTypes.func,
+  type: PropTypes.string,
+  value: PropTypes.string
 }
 
 export default TextField
