@@ -15,8 +15,14 @@ const Text = ({
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-  if (type === 'helper') {
-    return <FormHelperText children={children} className={marginClassName} />
+  if (type === 'error') {
+    return (
+      <FormHelperText
+        children={children}
+        error={true}
+        className={marginClassName}
+      />
+    )
   }
 
   return (
@@ -32,7 +38,7 @@ const Text = ({
 Text.propTypes = {
   marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
   marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  type: PropTypes.oneOf(['body', 'sub-text', 'helper'])
+  type: PropTypes.oneOf(['body', 'sub-text', 'error'])
 }
 
 export default Text

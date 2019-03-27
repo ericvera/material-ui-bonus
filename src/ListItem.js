@@ -2,13 +2,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 // Components
+import Heading from './Heading'
 import Text from './Text'
 // Material-UI
+import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import MaterialUIListItem from '@material-ui/core/ListItem'
 import MaterialUIListItemText from '@material-ui/core/ListItemText'
-import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/styles'
-import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 // Helpers
 import getSpacing from './helpers/getSpacing'
 
@@ -21,31 +21,19 @@ const useStyles = makeStyles({
     paddingTop: getSpacing(4),
     paddingBottom: getSpacing(4),
     cursor: 'pointer'
-  },
-  primary: { margin: 0 },
-  secondary: {
-    margin: 0,
-    marginTop: getSpacing(3)
-  },
-  secondaryOnly: {
-    margin: 0
   }
 })
 
-const ListItem = ({ onClick, primary, secondary, ...others }) => {
+const ListItem = ({ onClick, primary, secondary, divider = true }) => {
   const classes = useStyles()
 
   const primaryText = primary ? (
-    <Typography variant="h3" className={classes.primary}>
-      {primary}
-    </Typography>
+    <Heading level="3">{primary}</Heading>
   ) : (
     undefined
   )
   const secondaryText = secondary ? (
-    <Text className={primary ? classes.secondary : classes.secondaryOnly}>
-      {secondary}
-    </Text>
+    <Text marginTopLevel={primary ? '3' : '0'}>{secondary}</Text>
   ) : (
     undefined
   )
@@ -54,9 +42,8 @@ const ListItem = ({ onClick, primary, secondary, ...others }) => {
   return (
     <MaterialUIListItem
       className={onClick ? classes.listItemWithButton : classes.listItem}
-      divider={true}
+      divider={divider}
       onClick={onClick}
-      {...others}
     >
       <MaterialUIListItemText disableTypography={true}>
         {primaryText}
@@ -65,6 +52,16 @@ const ListItem = ({ onClick, primary, secondary, ...others }) => {
       {button}
     </MaterialUIListItem>
   )
+}
+
+ListItem.propTypes = {
+  divider: PropTypes.bool,
+  primary: PropTypes.string,
+  secondary: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node)
+  ]),
+  onClick: PropTypes.func
 }
 
 export default ListItem

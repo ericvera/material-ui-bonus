@@ -118,6 +118,14 @@ const theme = createMuiTheme({
         display: 'block'
       }
     },
+    MuiFormHelperText: {
+      root: {
+        color: Colors.confirmAction,
+        fontSize: getFontSize(1),
+        lineHeight: 1.3,
+        marginTop: 0
+      }
+    },
     MuiFormLabel: {
       root: {
         color: Colors.primary
