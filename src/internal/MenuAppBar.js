@@ -1,20 +1,18 @@
 // Platform
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-//import { Link } from 'react-router-dom'
 // Components
-//import Logo from './Logo'
-import InnerContainer from './internal/InnerContainer'
+import InnerContainer from './InnerContainer'
 // Material-UI
-import AppBar from './AppBar'
+import BaseAppBar from './BaseAppBar'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import { makeStyles } from '@material-ui/styles'
-import FontWeight from './helpers/FontWeight'
-import getFontSize from './helpers/getFontSize'
-import getSpacing from './helpers/getSpacing'
+import FontWeight from '../helpers/FontWeight'
+import getFontSize from '../helpers/getFontSize'
+import getSpacing from '../helpers/getSpacing'
 
 const useStyles = makeStyles({
   iconButton: {
@@ -42,26 +40,24 @@ const useStyles = makeStyles({
   }
 })
 
-const DrawerMenu = ({
+const MenuAppBar = ({
   menuItems,
   bottomLeftItem,
   bottomRightItem,
-  menuLogo,
-  appBarImage
+  menuImage,
+  middleImage
 }) => {
   const classes = useStyles()
   const [state, setState] = useState(false)
 
   const toggleDrawer = () => setState(!state)
 
-  // TODO: Add logo to AppBar
-
   return (
     <div>
-      <AppBar
-        leftButtonIcon="menu-minimal"
+      <BaseAppBar
+        leftButtonIcon="menu"
         leftButtonOnClick={toggleDrawer}
-        middleImage={appBarImage}
+        middleImage={middleImage}
       />
 
       <SwipeableDrawer
@@ -71,8 +67,8 @@ const DrawerMenu = ({
         classes={{ paper: classes.drawer }}
       >
         <div className={classes.logoContainer}>
-          {menuLogo && (
-            <InnerContainer centered={false}>{menuLogo}</InnerContainer>
+          {menuImage && (
+            <InnerContainer centered={false}>{menuImage}</InnerContainer>
           )}
         </div>
 
@@ -124,12 +120,13 @@ const itemPropType = PropTypes.shape({
   onClick: PropTypes.func
 })
 
-DrawerMenu.propTypes = {
+MenuAppBar.propTypes = {
   menuItems: PropTypes.arrayOf(itemPropType).isRequired,
+  menuImage: PropTypes.element,
   bottomLeftItem: itemPropType,
   bottomRightItem: itemPropType,
-  menuLogo: PropTypes.node,
-  appBarImage: PropTypes.node
+  menuImage: PropTypes.node,
+  middleImage: PropTypes.node
 }
 
-export default DrawerMenu
+export default MenuAppBar

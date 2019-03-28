@@ -6,6 +6,6 @@ export default {
   confirmAction: '#FA4747',
   inputBackground: '#E3FFF5',
   inputBackgroundDisabled: '#F7F7F7',
-  background: '#FFFFFF',
+  background: '#FFFFFFDD',
   transparent: 'transparent'
 }

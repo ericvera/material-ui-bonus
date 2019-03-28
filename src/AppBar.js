@@ -1,75 +1,62 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
-// Material-UI
-import MaterialUIAppBar from '@material-ui/core/AppBar'
-import Toolbar from '@material-ui/core/Toolbar'
-import { makeStyles } from '@material-ui/styles'
-// Helpers
-import AppBarButton from './internal/AppBarButton'
-import Colors from './helpers/Colors'
-import InnerContainer from './internal/InnerContainer'
-
-const useStyles = makeStyles({
-  bottom: {
-    top: 'auto',
-    bottom: 0,
-    backgroundColor: Colors.background,
-    padding: 0,
-    borderTopStyle: 'solid',
-    borderTopColor: Colors.primaryDisabled,
-    borderTopWidth: 1
-  },
-  middleImage: {
-    flex: 1,
-    textAlign: 'center'
-  }
-})
-
-// TODO: Add support for AppBar with menu
+// Components
+import BaseAppBar from './internal/BaseAppBar'
+import MenuAppBar from './internal/MenuAppBar'
 
 const AppBar = ({
   location = 'top',
   leftButtonIcon = 'back',
   leftButtonOnClick,
   middleImage,
+  menuImage,
+  menuItems,
+  bottomLeftItem,
+  bottomRightItem,
   children
 }) => {
-  const classes = useStyles()
-
-  let content
-
-  if (location === 'top') {
-    content = (
-      <>
-        <AppBarButton
-          side="left"
-          icon={leftButtonIcon}
-          onClick={leftButtonOnClick}
-        />
-        <div className={classes.middleImage}>{middleImage}</div>
-        <AppBarButton side="right" icon="empty" />
-      </>
+  if (menuItems || bottomLeftItem || bottomRightItem) {
+    return (
+      <MenuAppBar
+        menuItems={menuItems}
+        bottomLeftItem={bottomLeftItem}
+        bottomRightItem={bottomRightItem}
+        menuImage={menuImage}
+        middleImage={middleImage}
+      />
     )
-  } else {
-    content = <InnerContainer disableGutters={true}>{children}</InnerContainer>
   }
 
   return (
-    <MaterialUIAppBar
-      position="fixed"
-      className={location === 'top' ? '' : classes.bottom}
-      component={location === 'top' ? 'header' : 'footer'}
+    <BaseAppBar
+      location={location}
+      leftButtonIcon={leftButtonIcon}
+      leftButtonOnClick={leftButtonOnClick}
+      middleImage={middleImage}
     >
-      <Toolbar>{content}</Toolbar>
-    </MaterialUIAppBar>
+      {children}
+    </BaseAppBar>
   )
 }
 
+const itemPropType = PropTypes.shape({
+  text: PropTypes.string,
+  onClick: PropTypes.func
+})
+
 AppBar.propTypes = {
   location: PropTypes.oneOf(['top', 'bottom']),
-  leftButtonIcon: PropTypes.oneOf(['back', 'close', 'menu', 'menu-minimal']),
-  leftButtonOnClick: PropTypes.func
+  leftButtonIcon: PropTypes.oneOf(['back', 'close', 'menu']),
+  leftButtonOnClick: PropTypes.func,
+  middleImage: PropTypes.element,
+  /*  */
+  menuItems: PropTypes.arrayOf(itemPropType),
+  menuImage: PropTypes.element,
+  bottomLeftItem: itemPropType,
+  bottomRightItem: itemPropType,
+  menuImage: PropTypes.node,
+  middleImage: PropTypes.node
 }
 
 export default AppBar

@@ -19,6 +19,10 @@ const theme = createMuiTheme({
       position: 'fixed',
       elevation: 0
     },
+    MuiButtonBase: {
+      disableRipple: true,
+      disableTouchRipple: true
+    },
     MuiButton: {
       variant: 'contained',
       size: 'large',
@@ -67,6 +71,16 @@ const theme = createMuiTheme({
       root: {
         color: Colors.primary,
         '&:hover': {
+          backgroundColor: Colors.transparent
+        }
+      }
+    },
+    MuiButtonBase: {
+      root: {
+        '&:hover': {
+          backgroundColor: Colors.transparent
+        },
+        '&$disabled': {
           backgroundColor: Colors.transparent
         }
       }
@@ -156,6 +170,19 @@ const theme = createMuiTheme({
         fontWeight: FontWeight.Bold
       }
     },
+    MuiListItem: {
+      button: {
+        '&:hover': {
+          backgroundColor: Colors.transparent
+        },
+        '&:focus': {
+          backgroundColor: Colors.transparent
+        },
+        '&$disabled': {
+          backgroundColor: Colors.transparent
+        }
+      }
+    },
     MuiListItemText: {
       root: {
         whiteSpace: 'pre-wrap'
@@ -167,15 +194,11 @@ const theme = createMuiTheme({
         overflowWrap: 'break-word'
       }
     },
-    MuiSnackbar: {
-      root: {
-        backgroundColor: Colors.primary
-      }
-    },
     MuiSnackbarContent: {
       root: {
+        backgroundColor: Colors.brand,
         color: Colors.background,
-        fontSize: '80%'
+        fontSize: getFontSize(2)
       }
     },
     MuiSvgIcon: {

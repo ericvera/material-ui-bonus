@@ -8,7 +8,6 @@ import MenuMinimalIcon from './MenuMinimalIcon'
 import BackIcon from '@material-ui/icons/ArrowBack'
 import CloseIcon from '@material-ui/icons/Close'
 import MaterialUIIconButton from '@material-ui/core/IconButton'
-import MenuIcon from '@material-ui/icons/Menu'
 import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
@@ -29,10 +28,6 @@ const AppBarButton = ({ onClick, icon, side }) => {
       iconElement = <BackIcon />
       break
     case 'menu':
-      iconElement = <MenuIcon />
-      break
-
-    case 'menu-minimal':
       iconElement = <MenuMinimalIcon />
       break
     case 'empty':
