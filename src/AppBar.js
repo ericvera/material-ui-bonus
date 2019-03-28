@@ -19,6 +19,10 @@ const useStyles = makeStyles({
     borderTopStyle: 'solid',
     borderTopColor: Colors.primaryDisabled,
     borderTopWidth: 1
+  },
+  middleImage: {
+    flex: 1,
+    textAlign: 'center'
   }
 })
 
@@ -28,6 +32,7 @@ const AppBar = ({
   location = 'top',
   leftButtonIcon = 'back',
   leftButtonOnClick,
+  middleImage,
   children
 }) => {
   const classes = useStyles()
@@ -36,11 +41,15 @@ const AppBar = ({
 
   if (location === 'top') {
     content = (
-      <AppBarButton
-        icon={leftButtonIcon}
-        side="left"
-        onClick={leftButtonOnClick}
-      />
+      <>
+        <AppBarButton
+          side="left"
+          icon={leftButtonIcon}
+          onClick={leftButtonOnClick}
+        />
+        <div className={classes.middleImage}>{middleImage}</div>
+        <AppBarButton side="right" icon="empty" />
+      </>
     )
   } else {
     content = <InnerContainer disableGutters={true}>{children}</InnerContainer>
@@ -59,7 +68,7 @@ const AppBar = ({
 
 AppBar.propTypes = {
   location: PropTypes.oneOf(['top', 'bottom']),
-  leftButtonIcon: PropTypes.oneOf(['back', 'close']),
+  leftButtonIcon: PropTypes.oneOf(['back', 'close', 'menu', 'menu-minimal']),
   leftButtonOnClick: PropTypes.func
 }
 

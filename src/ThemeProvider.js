@@ -177,6 +177,11 @@ const theme = createMuiTheme({
         color: Colors.background,
         fontSize: '80%'
       }
+    },
+    MuiSvgIcon: {
+      root: {
+        color: Colors.primary
+      }
     }
   },
   typography: {
@@ -219,7 +224,7 @@ const theme = createMuiTheme({
     },
     body2: {
       fontSize: getFontSize(1),
-      color: Colors.primaryLight,
+      color: Colors.secondary,
       lineHeight: 1.3
     },
     button: {

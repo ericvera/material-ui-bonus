@@ -1,14 +1,19 @@
 // Platform
 import React from 'react'
 import PropTypes from 'prop-types'
+// Components
+import EmptyIcon from './EmptyIcon'
+import MenuMinimalIcon from './MenuMinimalIcon'
 // Material-UI
 import BackIcon from '@material-ui/icons/ArrowBack'
 import CloseIcon from '@material-ui/icons/Close'
 import MaterialUIIconButton from '@material-ui/core/IconButton'
+import MenuIcon from '@material-ui/icons/Menu'
 import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
-  left: { marginLeft: -12, marginRight: 20 }
+  left: { marginLeft: -12, marginRight: 20 },
+  right: { marginLeft: 20, marginRight: -12 }
 })
 
 const AppBarButton = ({ onClick, icon, side }) => {
@@ -23,6 +28,16 @@ const AppBarButton = ({ onClick, icon, side }) => {
     case 'back':
       iconElement = <BackIcon />
       break
+    case 'menu':
+      iconElement = <MenuIcon />
+      break
+
+    case 'menu-minimal':
+      iconElement = <MenuMinimalIcon />
+      break
+    case 'empty':
+      iconElement = <EmptyIcon />
+      break
   }
 
   return (
@@ -33,9 +48,9 @@ const AppBarButton = ({ onClick, icon, side }) => {
 }
 
 AppBarButton.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  side: PropTypes.oneOf(['left']),
-  icon: PropTypes.oneOf(['close', 'back'])
+  onClick: PropTypes.func,
+  side: PropTypes.oneOf(['left', 'right']),
+  icon: PropTypes.oneOf(['close', 'back', 'menu', 'menu-minimal', 'empty'])
 }
 
 export default AppBarButton
