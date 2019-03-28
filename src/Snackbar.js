@@ -7,7 +7,6 @@ import MaterialUISnackbar from '@material-ui/core/Snackbar'
 const Snackbar = ({ message, onClose, open }) => {
   return (
     <MaterialUISnackbar
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
       open={open}
       autoHideDuration={6000}
       onClose={onClose}
