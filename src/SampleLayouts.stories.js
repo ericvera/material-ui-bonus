@@ -9,6 +9,7 @@ import Container from './Container'
 import Heading from './Heading'
 import List from './List'
 import ListItem from './ListItem'
+import Progress from './Progress'
 import Text from './Text'
 import TextField from './TextField'
 
@@ -18,6 +19,15 @@ storiesOf('Sample Layouts', module)
       disable: true
     }
   })
+  .add('Progress screen', () => (
+    <>
+      <Container>
+        <Heading marginTopLevel="6">A heading for what is taking time</Heading>
+        <Text marginTopLevel="4">This will just take a second...</Text>
+        <Progress marginTopLevel="4" />
+      </Container>
+    </>
+  ))
   .add('H1 + Text + Button', () => (
     <>
       <AppBar

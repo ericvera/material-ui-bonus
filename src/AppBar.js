@@ -5,6 +5,8 @@ import PropTypes from 'prop-types'
 import BaseAppBar from './internal/BaseAppBar'
 import MenuAppBar from './internal/MenuAppBar'
 
+// TODO: Add option for full page menu
+
 const AppBar = ({
   location = 'top',
   leftButtonIcon = 'back',

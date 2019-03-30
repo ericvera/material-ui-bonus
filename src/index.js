@@ -4,6 +4,7 @@ import Container from './Container'
 import Heading from './Heading'
 import List from './List'
 import ListItem from './ListItem'
+import Progress from './Progress'
 import Snackbar from './Snackbar'
 import Text from './Text'
 import TextField from './TextField'
@@ -16,6 +17,7 @@ export {
   Heading,
   List,
   ListItem,
+  Progress,
   Snackbar,
   Text,
   TextField,

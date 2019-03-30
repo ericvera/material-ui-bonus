@@ -1,11 +1,12 @@
 // Framework
-import React, { useRef, forwardRef, useImperativeHandle } from 'react'
+import React, { forwardRef } from 'react'
 import PropTypes from 'prop-types'
 // Material-UI
 import MaterialUIButton from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/styles'
 // Helpers
 import useMarginStyles from './helpers/useMarginStyles'
+import CenteredContent from './internal/CenteredContent'
 import Colors from './helpers/Colors'
 import ProgressButton from './internal/ProgressButton'
 
@@ -29,9 +30,6 @@ const useStyles = makeStyles({
       borderStyle: 'none',
       color: Colors.background
     }
-  },
-  centeredContainer: {
-    textAlign: 'center'
   }
 })
 
@@ -79,7 +77,7 @@ const Button = ({
     return button
   }
 
-  return <div className={classes.centeredContainer}>{button}</div>
+  return <CenteredContent>{button}</CenteredContent>
 }
 
 Button.propTypes = {
