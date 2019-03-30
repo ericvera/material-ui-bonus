@@ -260,9 +260,10 @@ const theme = createMuiTheme({
 })
 
 const ThemeProvider = ({ children }) => (
-  <CssBaseline>
-    <MaterialUIThemeProvider theme={theme} children={children} />
-  </CssBaseline>
+  <MaterialUIThemeProvider theme={theme}>
+    <CssBaseline />
+    {children}
+  </MaterialUIThemeProvider>
 )
 
 export default ThemeProvider
