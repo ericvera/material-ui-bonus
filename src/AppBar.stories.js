@@ -69,8 +69,21 @@ storiesOf('AppBar', module)
   .add('bottom-full-button', () => (
     <AppBar
       variant="bottom-full-button"
-      buttonLabel="Click the button"
+      buttonText="Click the button"
       onClick={action('full-button pressed')}
+    />
+  ))
+  .add('bottom-text-button', () => (
+    <AppBar
+      variant="bottom-full-button"
+      content={
+        <div>
+          <Heading level="3">Some heading</Heading>
+          <Text>Some text</Text>
+        </div>
+      }
+      buttonText="Click the button"
+      onClick={action('text pressed')}
     />
   ))
   .add('top (close) and bottom (bottom-text-bottom)', () => (
@@ -79,6 +92,16 @@ storiesOf('AppBar', module)
       <Container>
         <Heading level="1">Hello!</Heading>
       </Container>
-      <AppBar variant="bottom-text-button" />
+      <AppBar
+        variant="bottom-full-button"
+        content={
+          <div>
+            <Heading level="3">Some heading</Heading>
+            <Text>Some text</Text>
+          </div>
+        }
+        buttonText="Click the button"
+        onClick={action('text pressed')}
+      />
     </div>
   ))

@@ -7,7 +7,8 @@ import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles({
   centeredContent: {
-    textAlign: 'center'
+    textAlign: 'center',
+    width: '100%'
   }
 })
 

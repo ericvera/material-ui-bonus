@@ -5,8 +5,9 @@ import exact from 'prop-types-exact'
 // Components
 import AppBarButton from './internal/AppBarButton'
 import BaseAppBar from './internal/BaseAppBar'
+import BottomAppBar from './internal/BottomAppBar'
 import DialogMenuAppBar from './internal/DialogMenuAppBar'
-import MenuAppBar from './internal/MenuAppBar'
+import DrawerMenuAppBar from './internal/DrawerMenuAppBar'
 
 const AppBar = ({ variant, ...props }) => {
   switch (variant) {
@@ -18,14 +19,12 @@ const AppBar = ({ variant, ...props }) => {
         </BaseAppBar>
       )
     case 'drawer-menu':
-      // TODO: Rename component to <DrawerMenuAppBar />
-      return <MenuAppBar {...props} />
+      return <DrawerMenuAppBar {...props} />
     case 'dialog-menu':
-      // TODO: NEXT: Working on getting this to work
       return <DialogMenuAppBar {...props} />
     case 'bottom-full-button':
     case 'bottom-text-button':
-      return <BaseAppBar location="bottom" {...props} />
+      return <BottomAppBar {...props} />
   }
 
   throw Error(`[AppBar] Unsupported variant: ${variant}`)
@@ -46,7 +45,7 @@ AppBar.propTypes = exact({
     'bottom-text-button'
   ]).isRequired,
 
-  /* back, close */
+  /* back, close, bottom-full-button, bottom-text-button */
   onClick: PropTypes.func,
 
   /* drawer-menu, dialog-menu */
@@ -61,14 +60,14 @@ AppBar.propTypes = exact({
   /* dialog-menu */
   openMenuLogo: PropTypes.element,
   closeMenuLogo: PropTypes.element,
-  logo: PropTypes.element
+  logo: PropTypes.element,
 
   /* bottom-full-button */
-  /* bottom-text-button */
-  //button: PropTypes.element,
+  content: PropTypes.node,
 
-  /* bottom-text-button */
-  //text: PropTypes.string
+  /* bottom-text-button, bottom-full-button */
+  buttonText: PropTypes.string,
+  buttonVariant: PropTypes.string
 })
 
 export default AppBar

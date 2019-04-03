@@ -78,12 +78,12 @@ storiesOf('Sample Layouts', module)
           />
         </List>
       </Container>
-      {/** TODO: Fix once implemented */}
-      {/*<AppBar variant="bottom-full-button">
-        <Button fullWidth={true} variant="confirmation">
-          Next
-        </Button>
-          </AppBar>*/}
+      <AppBar
+        variant="bottom-full-button"
+        buttonText="Next"
+        buttonVariant="confirmation"
+        onClick={action('next button pressed')}
+      />
     </>
   ))
   .add('H2 + Input + Button', () => (

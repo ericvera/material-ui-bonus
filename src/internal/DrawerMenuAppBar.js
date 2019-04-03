@@ -4,17 +4,18 @@ import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
 // Components
 import AppBarButton from './AppBarButton'
-import InnerContainer from './InnerContainer'
-// Material-UI
 import BaseAppBar from './BaseAppBar'
+import InnerContainer from './InnerContainer'
+// Helpers
+import FontWeight from '../helpers/FontWeight'
+import getFontSize from '../helpers/getFontSize'
+import getSpacing from '../helpers/getSpacing'
+// Material-UI
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import { makeStyles } from '@material-ui/styles'
-import FontWeight from '../helpers/FontWeight'
-import getFontSize from '../helpers/getFontSize'
-import getSpacing from '../helpers/getSpacing'
 
 const useStyles = makeStyles({
   logoContainer: {
