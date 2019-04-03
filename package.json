@@ -33,7 +33,8 @@
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
     "@material-ui/styles": "^3.0.0-alpha.10",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "prop-types-exact": "^1.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",

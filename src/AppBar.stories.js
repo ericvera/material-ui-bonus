@@ -9,18 +9,17 @@ import AppBar from './AppBar'
 import Container from './Container'
 import Heading from './Heading'
 import Text from './Text'
+// Image
+import backgroundImage from '../.storybook/test-image.jpg'
 
 storiesOf('AppBar', module)
-  .add('with back button', () => (
-    <AppBar leftButtonOnClick={action('go back')} />
-  ))
-  .add('with close button', () => (
-    <AppBar leftButtonIcon="close" leftButtonOnClick={action('go back')} />
-  ))
-  .add('with menu', () => (
+  .add('back', () => <AppBar variant="back" onClick={action('go back')} />)
+  .add('close', () => <AppBar variant="close" onClick={action('close')} />)
+  .add('drawer-menu', () => (
     <AppBar
-      menuImage={<HomeIcon />}
+      variant="drawer-menu"
       middleImage={<HomeIcon />}
+      menuImage={<HomeIcon />}
       menuItems={[
         {
           text: 'Menu item 1',
@@ -31,29 +30,55 @@ storiesOf('AppBar', module)
           onClick: action('menu item 2 pressed')
         }
       ]}
-      bottomLeftItem={{
+      bottomLeftMenuItem={{
         text: 'Left',
         onClick: action('bottom left item')
       }}
-      bottomRightItem={{
+      bottomRightMenuItem={{
         text: 'Right',
         onClick: action('bottom right item')
       }}
     />
   ))
-  .add('bottom', () => (
-    <AppBar location="bottom">
-      <Text>Hello!</Text>
-    </AppBar>
-  ))
-  .add('top and bottom', () => (
+  .add('dialog-menu', () => (
     <div>
-      <AppBar leftButtonOnClick={action('go back')} />
-      <Container>
-        <Heading>Hello!</Heading>
+      <AppBar
+        variant="dialog-menu"
+        openMenuLogo={<HomeIcon />}
+        closeMenuLogo={<HomeIcon />}
+        logo={<HomeIcon />}
+        menuItems={[
+          {
+            text: 'Menu item 1',
+            onClick: action('menu item 1 pressed')
+          },
+          {
+            text: 'Menu item 2',
+            onClick: action('menu item 2 pressed')
+          }
+        ]}
+      />
+      <Container backgroundImage={backgroundImage}>
+        <Text marginTopLevel="9">Content here</Text>
+        <Text marginTopLevel="9">Content here</Text>
+        <Text marginTopLevel="9">Content here</Text>
       </Container>
-      <AppBar location="bottom">
-        <Text>Hello!</Text>
-      </AppBar>
+      <Container fullPage={false}>Content 2</Container>
+    </div>
+  ))
+  .add('bottom-full-button', () => (
+    <AppBar
+      variant="bottom-full-button"
+      buttonLabel="Click the button"
+      onClick={action('full-button pressed')}
+    />
+  ))
+  .add('top (close) and bottom (bottom-text-bottom)', () => (
+    <div>
+      <AppBar variant="close" onClick={action('close')} />
+      <Container>
+        <Heading level="1">Hello!</Heading>
+      </Container>
+      <AppBar variant="bottom-text-button" />
     </div>
   ))

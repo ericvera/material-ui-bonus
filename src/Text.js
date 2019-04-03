@@ -1,21 +1,22 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import FormHelperText from '@material-ui/core/FormHelperText'
 import Typography from '@material-ui/core/Typography'
 // Helpers
-import useMarginStyles from './helpers/useMarginStyles'
+import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 
 const Text = ({
   marginTopLevel = '0',
   marginBottomLevel = '0',
-  type = 'body',
+  variant = 'body',
   children
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-  if (type === 'error') {
+  if (variant === 'error') {
     return (
       <FormHelperText
         children={children}
@@ -28,17 +29,18 @@ const Text = ({
   return (
     <Typography
       component={React.Children.count(children) > 1 ? 'div' : 'p'}
-      variant={type === 'sub-text' ? 'body2' : 'body1'}
+      variant={variant === 'sub-text' ? 'body2' : 'body1'}
       className={marginClassName}
       children={children}
     />
   )
 }
 
-Text.propTypes = {
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  type: PropTypes.oneOf(['body', 'sub-text', 'error'])
-}
+Text.propTypes = exact({
+  children: PropTypes.node,
+  marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes,
+  variant: PropTypes.oneOf(['body', 'sub-text', 'error'])
+})
 
 export default Text

@@ -3,8 +3,11 @@ import React, {
   forwardRef,
   useEffect,
   useImperativeHandle,
-  useState
+  useState,
+  useReducer
 } from 'react'
+//import PropTypes from 'prop-types'
+//import exact from 'prop-types-exact'
 // Material-UI
 import Button from '@material-ui/core/Button'
 import CircularProgress from '@material-ui/core/CircularProgress'
@@ -21,43 +24,39 @@ const useStyles = makeStyles({
   }
 })
 
+function init(initialDelay) {
+  return { delay: initialDelay }
+}
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'tick':
+      if (state.delay == 0) {
+        return state
+      }
+      return { delay: state.delay - 1 }
+    case 'reset':
+      return init(action.payload)
+    default:
+      throw new Error()
+  }
+}
+
 const ProgressButton = (
-  { delay, className, disabled, children, onClick },
+  { children, className, delay, disabled, fullWidth, onClick },
   ref
 ) => {
-  const [delayText, setDelayText] = useState('')
-
-  let timeout = null
-  let internalDelay = 0
-
-  const tickCountDown = () => {
-    if (internalDelay > 0) {
-      setDelayText(` (in ${internalDelay--} seconds)`)
-      timeout = setTimeout(tickCountDown, 1000)
-    } else {
-      setDelayText('')
-      timeout = null
-    }
-  }
-
-  const resetDelay = () => {
-    internalDelay = delay
-    timeout = null
-    tickCountDown()
-  }
+  const [state, dispatch] = useReducer(reducer, delay, init)
 
   useEffect(() => {
-    resetDelay()
-
-    return () => {
-      if (timeout) {
-        clearTimeout(timeout)
-      }
-    }
-  }, [])
+    const timeoutId = setTimeout(() => {
+      dispatch({ type: 'tick' })
+    }, 1000)
+    return () => clearTimeout(timeoutId)
+  }, [state.delay])
 
   useImperativeHandle(ref, () => ({
-    resetDelay
+    resetDelay: () => dispatch({ type: 'reset', payload: delay })
   }))
 
   const classes = useStyles()
@@ -65,17 +64,35 @@ const ProgressButton = (
   return (
     <Button
       type="submit"
-      disabled={disabled || !!delayText}
-      className={className}
+      disabled={disabled || !!state.delay}
       onClick={onClick}
+      className={className}
+      fullWidth={fullWidth}
     >
       {children}
-      {delayText}
-      {Boolean(delayText) && (
+      {state.delay ? ` (in ${state.delay} seconds)` : ''}
+      {Boolean(state.delay) && (
         <CircularProgress size={24} className={classes.buttonProgress} />
       )}
     </Button>
   )
 }
 
+// ProgressButton.propTypes = exact({
+//   children: PropTypes.node,
+//   className: PropTypes.string,
+//   delay: PropTypes.number,
+//   disabled: PropTypes.bool,
+//   fullWidth: PropTypes.bool,
+//   onClick: PropTypes.func
+// })
+
 export default forwardRef(ProgressButton)
+
+// NOTE: the line above does not support propTypes. The line below throws a different error.
+//  Spent a few hours trying to figure out how to get the propTypes to work, but it didn't
+//  work out. Postponing for later.
+
+// export default forwardRef((props, ref) => (
+//   <ProgressButton {...props} ref={ref} />
+// ))

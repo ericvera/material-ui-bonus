@@ -1,11 +1,12 @@
 // Framework
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useRef, useImperativeHandle } from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import MaterialUIButton from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/styles'
 // Helpers
-import useMarginStyles from './helpers/useMarginStyles'
+import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 import CenteredContent from './internal/CenteredContent'
 import Colors from './helpers/Colors'
 import ProgressButton from './internal/ProgressButton'
@@ -34,20 +35,20 @@ const useStyles = makeStyles({
 })
 
 const Button = ({
-  delay,
   centered = true,
-  fullWidth = false,
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
-  type = 'primary',
-  onClick,
   children,
-  forwardedRef
+  delay,
+  forwardedRef,
+  fullWidth = false,
+  marginBottomLevel = '0',
+  marginTopLevel = '0',
+  onClick,
+  variant = 'primary'
 }) => {
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-  const className = [marginClassName, classes[type]].join(' ')
+  const className = [marginClassName, classes[variant]].join(' ')
 
   let button = (
     <MaterialUIButton
@@ -80,16 +81,18 @@ const Button = ({
   return <CenteredContent>{button}</CenteredContent>
 }
 
-Button.propTypes = {
-  onClick: PropTypes.func,
+Button.propTypes = exact({
+  centered: PropTypes.bool,
+  children: PropTypes.node,
   /** Delay in seconds before the button can be pressed */
   delay: PropTypes.number,
+  forwardedRef: PropTypes.object,
   fullWidth: PropTypes.bool,
-  type: PropTypes.oneOf(['primary', 'secondary', 'confirmation']),
-  centered: PropTypes.bool,
-  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
-}
+  marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes,
+  onClick: PropTypes.func,
+  variant: PropTypes.oneOf(['primary', 'secondary', 'confirmation'])
+})
 
 export default forwardRef((props, ref) => (
   <Button {...props} forwardedRef={ref} />

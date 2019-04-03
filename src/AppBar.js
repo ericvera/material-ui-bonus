@@ -1,45 +1,34 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Components
+import AppBarButton from './internal/AppBarButton'
 import BaseAppBar from './internal/BaseAppBar'
+import DialogMenuAppBar from './internal/DialogMenuAppBar'
 import MenuAppBar from './internal/MenuAppBar'
 
-// TODO: Add option for full page menu
-
-const AppBar = ({
-  location = 'top',
-  leftButtonIcon = 'back',
-  leftButtonOnClick,
-  middleImage,
-  menuImage,
-  menuItems,
-  bottomLeftItem,
-  bottomRightItem,
-  children
-}) => {
-  if (menuItems || bottomLeftItem || bottomRightItem) {
-    return (
-      <MenuAppBar
-        menuItems={menuItems}
-        bottomLeftItem={bottomLeftItem}
-        bottomRightItem={bottomRightItem}
-        menuImage={menuImage}
-        middleImage={middleImage}
-      />
-    )
+const AppBar = ({ variant, ...props }) => {
+  switch (variant) {
+    case 'back':
+    case 'close':
+      return (
+        <BaseAppBar location="top">
+          <AppBarButton side="left" icon={variant} {...props} />
+        </BaseAppBar>
+      )
+    case 'drawer-menu':
+      // TODO: Rename component to <DrawerMenuAppBar />
+      return <MenuAppBar {...props} />
+    case 'dialog-menu':
+      // TODO: NEXT: Working on getting this to work
+      return <DialogMenuAppBar {...props} />
+    case 'bottom-full-button':
+    case 'bottom-text-button':
+      return <BaseAppBar location="bottom" {...props} />
   }
 
-  return (
-    <BaseAppBar
-      location={location}
-      leftButtonIcon={leftButtonIcon}
-      leftButtonOnClick={leftButtonOnClick}
-      middleImage={middleImage}
-    >
-      {children}
-    </BaseAppBar>
-  )
+  throw Error(`[AppBar] Unsupported variant: ${variant}`)
 }
 
 const itemPropType = PropTypes.shape({
@@ -47,18 +36,39 @@ const itemPropType = PropTypes.shape({
   onClick: PropTypes.func
 })
 
-AppBar.propTypes = {
-  location: PropTypes.oneOf(['top', 'bottom']),
-  leftButtonIcon: PropTypes.oneOf(['back', 'close', 'menu']),
-  leftButtonOnClick: PropTypes.func,
-  middleImage: PropTypes.element,
-  /*  */
+AppBar.propTypes = exact({
+  variant: PropTypes.oneOf([
+    'back',
+    'close',
+    'drawer-menu',
+    'dialog-menu',
+    'bottom-full-button',
+    'bottom-text-button'
+  ]).isRequired,
+
+  /* back, close */
+  onClick: PropTypes.func,
+
+  /* drawer-menu, dialog-menu */
   menuItems: PropTypes.arrayOf(itemPropType),
+
+  /* drawer-menu */
   menuImage: PropTypes.element,
-  bottomLeftItem: itemPropType,
-  bottomRightItem: itemPropType,
-  menuImage: PropTypes.node,
-  middleImage: PropTypes.node
-}
+  middleImage: PropTypes.element,
+  bottomLeftMenuItem: itemPropType,
+  bottomRightMenuItem: itemPropType,
+
+  /* dialog-menu */
+  openMenuLogo: PropTypes.element,
+  closeMenuLogo: PropTypes.element,
+  logo: PropTypes.element
+
+  /* bottom-full-button */
+  /* bottom-text-button */
+  //button: PropTypes.element,
+
+  /* bottom-text-button */
+  //text: PropTypes.string
+})
 
 export default AppBar

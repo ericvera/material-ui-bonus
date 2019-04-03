@@ -1,6 +1,7 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Components
 import Heading from './Heading'
 import Text from './Text'
@@ -54,7 +55,7 @@ const ListItem = ({ onClick, primary, secondary, divider = true }) => {
   )
 }
 
-ListItem.propTypes = {
+ListItem.propTypes = exact({
   divider: PropTypes.bool,
   primary: PropTypes.string,
   secondary: PropTypes.oneOfType([
@@ -62,6 +63,6 @@ ListItem.propTypes = {
     PropTypes.arrayOf(PropTypes.node)
   ]),
   onClick: PropTypes.func
-}
+})
 
 export default ListItem

@@ -1,10 +1,11 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import CircularProgress from '@material-ui/core/CircularProgress'
 // Helpers
-import useMarginStyles from './helpers/useMarginStyles'
+import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 import CenteredContent from './internal/CenteredContent'
 
 const Progress = ({ marginTopLevel = '0', marginBottomLevel = '0' }) => {
@@ -17,9 +18,9 @@ const Progress = ({ marginTopLevel = '0', marginBottomLevel = '0' }) => {
   )
 }
 
-Progress.propTypes = {
-  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
-}
+Progress.propTypes = exact({
+  marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes
+})
 
 export default Progress

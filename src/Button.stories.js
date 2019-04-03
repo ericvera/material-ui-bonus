@@ -1,23 +1,23 @@
-import React, { useImperativeHandle, useRef } from 'react'
+import React, { useRef } from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Button from './Button'
 
 const ResetTestComponent = () => {
-  const buttonRef = useRef(null)
+  const buttonRef = useRef()
 
   return (
     <div>
       <Button
         ref={buttonRef}
         delay={5}
-        type="confirmation"
+        variant="confirmation"
         onClick={action('button pressed')}
       >
         Press me
       </Button>
       <Button
-        type="primary"
+        variant="primary"
         onClick={() => {
           console.log('reset delay')
           buttonRef.current.resetDelay()
@@ -39,13 +39,13 @@ storiesOf('Button', module)
     </Button>
   ))
   .add('secondary', () => (
-    <Button type="secondary" onClick={action('button pressed')}>
+    <Button variant="secondary" onClick={action('button pressed')}>
       Press me
     </Button>
   ))
   .add('secondary / full width', () => (
     <Button
-      type="secondary"
+      variant="secondary"
       onClick={action('button pressed')}
       fullWidth={true}
     >
@@ -53,12 +53,12 @@ storiesOf('Button', module)
     </Button>
   ))
   .add('confirmation', () => (
-    <Button type="confirmation" onClick={action('button pressed')}>
+    <Button variant="confirmation" onClick={action('button pressed')}>
       Press me
     </Button>
   ))
   .add('progress / confirmation', () => (
-    <Button delay={5} type="confirmation" onClick={action('button pressed')}>
+    <Button delay={5} variant="confirmation" onClick={action('button pressed')}>
       Press me
     </Button>
   ))

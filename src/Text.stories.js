@@ -6,5 +6,5 @@ import Text from './Text'
 
 storiesOf('Text', module)
   .add('default', () => <Text>Some text</Text>)
-  .add('sub-text', () => <Text type="sub-text">Some sub-text</Text>)
-  .add('error', () => <Text type="error">Some error text</Text>)
+  .add('sub-text', () => <Text variant="sub-text">Some sub-text</Text>)
+  .add('error', () => <Text variant="error">Some error text</Text>)

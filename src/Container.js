@@ -1,26 +1,30 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Internal
 import InnerContainer from './internal/InnerContainer'
 import OuterContainer from './internal/OuterContainer'
 import { Toolbar } from '@material-ui/core'
+import { MarginPropTypes } from './helpers/useMarginStyles'
 
 const Container = ({
-  fullPage = true,
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
+  backgroundImage,
   centered = true,
+  children,
   disableGutters = false,
+  fullPage = true,
   hasAppBar = true,
   hasBottomBar = false,
-  children
+  marginTopLevel = '0',
+  marginBottomLevel = '0'
 }) => {
   return (
     <OuterContainer
       fullPage={fullPage}
       marginTopLevel={marginTopLevel}
       marginBottomLevel={marginBottomLevel}
+      backgroundImage={backgroundImage}
     >
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasAppBar ? <Toolbar /> : null}
@@ -33,12 +37,16 @@ const Container = ({
   )
 }
 
-Container.propTypes = {
-  centered: PropTypes.bool, //Internal
-  disableGutters: PropTypes.bool, //Internal
-  fullPage: PropTypes.bool, //External
-  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']), //External
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']) //External
-}
+Container.propTypes = exact({
+  backgroundImage: PropTypes.string,
+  centered: PropTypes.bool,
+  children: PropTypes.node,
+  disableGutters: PropTypes.bool,
+  fullPage: PropTypes.bool,
+  hasAppBar: PropTypes.bool,
+  hasBottomBar: PropTypes.bool,
+  marginTopLevel: MarginPropTypes,
+  marginBottomLevel: MarginPropTypes
+})
 
 export default Container

@@ -1,6 +1,7 @@
 // Platform
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Components
 import EmptyIcon from './EmptyIcon'
 import MenuMinimalIcon from './MenuMinimalIcon'
@@ -33,6 +34,9 @@ const AppBarButton = ({ onClick, icon, side }) => {
     case 'empty':
       iconElement = <EmptyIcon />
       break
+    default:
+      iconElement = icon
+      break
   }
 
   return (
@@ -42,10 +46,13 @@ const AppBarButton = ({ onClick, icon, side }) => {
   )
 }
 
-AppBarButton.propTypes = {
+AppBarButton.propTypes = exact({
+  icon: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.oneOf(['close', 'back', 'menu', 'empty'])
+  ]),
   onClick: PropTypes.func,
-  side: PropTypes.oneOf(['left', 'right']),
-  icon: PropTypes.oneOf(['close', 'back', 'menu', 'menu-minimal', 'empty'])
-}
+  side: PropTypes.oneOf(['left', 'right'])
+})
 
 export default AppBarButton

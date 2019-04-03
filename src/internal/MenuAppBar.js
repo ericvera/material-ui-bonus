@@ -1,7 +1,9 @@
 // Platform
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Components
+import AppBarButton from './AppBarButton'
 import InnerContainer from './InnerContainer'
 // Material-UI
 import BaseAppBar from './BaseAppBar'
@@ -15,9 +17,6 @@ import getFontSize from '../helpers/getFontSize'
 import getSpacing from '../helpers/getSpacing'
 
 const useStyles = makeStyles({
-  iconButton: {
-    paddingLeft: 0
-  },
   logoContainer: {
     height: getSpacing(8),
     display: 'flex',
@@ -42,26 +41,26 @@ const useStyles = makeStyles({
 
 const MenuAppBar = ({
   menuItems,
-  bottomLeftItem,
-  bottomRightItem,
-  menuImage,
-  middleImage
+  bottomLeftMenuItem,
+  bottomRightMenuItem,
+  middleImage,
+  menuImage
 }) => {
   const classes = useStyles()
-  const [state, setState] = useState(false)
+  const [open, setOpen] = useState(false)
 
-  const toggleDrawer = () => setState(!state)
+  const toggleDrawer = () => setOpen(!open)
 
   return (
     <div>
-      <BaseAppBar
-        leftButtonIcon="menu"
-        leftButtonOnClick={toggleDrawer}
-        middleImage={middleImage}
-      />
+      <BaseAppBar location="top">
+        <AppBarButton side="left" icon="menu" onClick={toggleDrawer} />
+        {middleImage}
+        <AppBarButton side="right" icon="empty" />
+      </BaseAppBar>
 
       <SwipeableDrawer
-        open={state}
+        open={open}
         onClose={toggleDrawer}
         onOpen={toggleDrawer}
         classes={{ paper: classes.drawer }}
@@ -89,24 +88,24 @@ const MenuAppBar = ({
         </List>
 
         <List component="nav" className={classes.bottomMenu}>
-          {bottomLeftItem && (
+          {bottomLeftMenuItem && (
             <ListItem
-              key={bottomLeftItem.text}
-              onClick={bottomLeftItem.onClick}
+              key={bottomLeftMenuItem.text}
+              onClick={bottomLeftMenuItem.onClick}
               button
               disableGutters={false}
             >
-              <ListItemText primary={bottomLeftItem.text} />
+              <ListItemText primary={bottomLeftMenuItem.text} />
             </ListItem>
           )}
-          {bottomRightItem && (
+          {bottomRightMenuItem && (
             <ListItem
-              key={bottomRightItem.text}
-              onClick={bottomRightItem.onClick}
+              key={bottomRightMenuItem.text}
+              onClick={bottomRightMenuItem.onClick}
               button
               className={classes.bottomMenuLastButton}
             >
-              <ListItemText primary={bottomRightItem.text} />
+              <ListItemText primary={bottomRightMenuItem.text} />
             </ListItem>
           )}
         </List>
@@ -120,13 +119,12 @@ const itemPropType = PropTypes.shape({
   onClick: PropTypes.func
 })
 
-MenuAppBar.propTypes = {
-  menuItems: PropTypes.arrayOf(itemPropType).isRequired,
+MenuAppBar.propTypes = exact({
+  middleImage: PropTypes.element,
   menuImage: PropTypes.element,
-  bottomLeftItem: itemPropType,
-  bottomRightItem: itemPropType,
-  menuImage: PropTypes.node,
-  middleImage: PropTypes.node
-}
+  menuItems: PropTypes.arrayOf(itemPropType).isRequired,
+  bottomLeftMenuItem: itemPropType,
+  bottomRightMenuItem: itemPropType
+})
 
 export default MenuAppBar

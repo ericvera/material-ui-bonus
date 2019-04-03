@@ -22,7 +22,9 @@ storiesOf('Sample Layouts', module)
   .add('Progress screen', () => (
     <>
       <Container>
-        <Heading marginTopLevel="6">A heading for what is taking time</Heading>
+        <Heading level="1" marginTopLevel="6">
+          A heading for what is taking time
+        </Heading>
         <Text marginTopLevel="4">This will just take a second...</Text>
         <Progress marginTopLevel="4" />
       </Container>
@@ -30,12 +32,11 @@ storiesOf('Sample Layouts', module)
   ))
   .add('H1 + Text + Button', () => (
     <>
-      <AppBar
-        leftButtonIcon="close"
-        leftButtonOnClick={action('close screen')}
-      />
+      <AppBar variant="close" onClick={action('close screen')} />
       <Container>
-        <Heading marginTopLevel="6">Heading</Heading>
+        <Heading level="1" marginTopLevel="6">
+          Heading
+        </Heading>
         <Text marginTopLevel="4">
           <p>This is a paragraph</p>
           <p>
@@ -48,7 +49,7 @@ storiesOf('Sample Layouts', module)
   ))
   .add('H2 + SubText + List', () => (
     <>
-      <AppBar leftButtonOnClick={action('go back')} />
+      <AppBar variant="back" onClick={action('go back')} />
       <Container fullPage={true} hasBottomBar={true}>
         <Heading level="2" marginTopLevel="4">
           Heading
@@ -77,16 +78,17 @@ storiesOf('Sample Layouts', module)
           />
         </List>
       </Container>
-      <AppBar location="bottom">
-        <Button fullWidth={true} type="confirmation">
+      {/** TODO: Fix once implemented */}
+      {/*<AppBar variant="bottom-full-button">
+        <Button fullWidth={true} variant="confirmation">
           Next
         </Button>
-      </AppBar>
+          </AppBar>*/}
     </>
   ))
   .add('H2 + Input + Button', () => (
     <>
-      <AppBar leftButtonOnClick={action('go back')} />
+      <AppBar variant="back" onClick={action('go back')} />
       <Container>
         <Heading level="2" marginTopLevel="4">
           Heading
@@ -99,7 +101,7 @@ storiesOf('Sample Layouts', module)
           />
         </form>
         <Button
-          type="primary"
+          variant="primary"
           marginTopLevel="4"
           onClick={action('button pressed')}
         >

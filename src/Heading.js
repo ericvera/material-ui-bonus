@@ -1,10 +1,11 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import Typography from '@material-ui/core/Typography'
 // Helpers
-import useMarginStyles from './helpers/useMarginStyles'
+import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 
 const Heading = ({
   level = '1',
@@ -21,10 +22,11 @@ const Heading = ({
   )
 }
 
-Heading.propTypes = {
+Heading.propTypes = exact({
+  children: PropTypes.string,
   level: PropTypes.oneOf(['1', '2', '3']),
-  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7'])
-}
+  marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes
+})
 
 export default Heading

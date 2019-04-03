@@ -1,5 +1,7 @@
 // Framework
 import React from 'react'
+import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import MaterialUIList from '@material-ui/core/List'
 import { makeStyles } from '@material-ui/styles'
@@ -21,5 +23,12 @@ const List = ({ children }) => {
     </MaterialUIList>
   )
 }
+
+List.propTypes = exact({
+  children: PropTypes.oneOfType([
+    PropTypes.element,
+    PropTypes.arrayOf(PropTypes.element)
+  ])
+})
 
 export default List

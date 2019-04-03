@@ -1,12 +1,12 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import MaterialUIAppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import { makeStyles } from '@material-ui/styles'
 // Helpers
-import AppBarButton from './AppBarButton'
 import Colors from '../helpers/Colors'
 import InnerContainer from './InnerContainer'
 
@@ -19,39 +19,13 @@ const useStyles = makeStyles({
     borderTopStyle: 'solid',
     borderTopColor: Colors.primaryDisabled,
     borderTopWidth: 1
-  },
-  middleImage: {
-    flex: 1,
-    textAlign: 'center'
   }
 })
 
-const BaseAppBar = ({
-  location = 'top',
-  leftButtonIcon = 'back',
-  leftButtonOnClick,
-  middleImage,
-  children
-}) => {
+const BaseAppBar = ({ location = 'top', centered = false, children }) => {
   const classes = useStyles()
 
-  let content
-
-  if (location === 'top') {
-    content = (
-      <>
-        <AppBarButton
-          side="left"
-          icon={leftButtonIcon}
-          onClick={leftButtonOnClick}
-        />
-        <div className={classes.middleImage}>{middleImage}</div>
-        <AppBarButton side="right" icon="empty" />
-      </>
-    )
-  } else {
-    content = <InnerContainer disableGutters={true}>{children}</InnerContainer>
-  }
+  // TODO: LEFT HERE! Figure out how to set {justify-content: space-between}
 
   return (
     <MaterialUIAppBar
@@ -59,16 +33,19 @@ const BaseAppBar = ({
       className={location === 'top' ? '' : classes.bottom}
       component={location === 'top' ? 'header' : 'footer'}
     >
-      <Toolbar>{content}</Toolbar>
+      <Toolbar>
+        <InnerContainer centered={centered} disableGutters={true} flex={true}>
+          {children}
+        </InnerContainer>
+      </Toolbar>
     </MaterialUIAppBar>
   )
 }
 
-BaseAppBar.propTypes = {
-  location: PropTypes.oneOf(['top', 'bottom']),
-  leftButtonIcon: PropTypes.oneOf(['back', 'close', 'menu']),
-  leftButtonOnClick: PropTypes.func,
-  middleImage: PropTypes.element
-}
+BaseAppBar.propTypes = exact({
+  centered: PropTypes.bool,
+  children: PropTypes.node,
+  location: PropTypes.oneOf(['top', 'bottom'])
+})
 
 export default BaseAppBar

@@ -12,7 +12,7 @@
 
 ## Buttons
 
-- [x] Button (type=['primary', 'secondary', 'confirmation'])
+- [x] Button (variant=['primary', 'secondary', 'confirmation'])
 
 ## Icons
 

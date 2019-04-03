@@ -1,10 +1,15 @@
+// Framework
 import React from 'react'
+import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
+// Material-UI
+import createMuiTheme from '@material-ui/core/styles/createMuiTheme'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import MaterialUIThemeProvider from '@material-ui/styles/ThemeProvider'
-import createMuiTheme from '@material-ui/core/styles/createMuiTheme'
+// Helpers
+import getFontSize from './helpers/getFontSize'
 import Colors from './helpers/Colors'
 import FontWeight from './helpers/FontWeight'
-import getFontSize from './helpers/getFontSize'
 // TODO: Figure out how to pass Colors, Font, and other configurable things in
 
 const theme = createMuiTheme({
@@ -265,5 +270,9 @@ const ThemeProvider = ({ children }) => (
     {children}
   </MaterialUIThemeProvider>
 )
+
+ThemeProvider.propTypes = exact({
+  children: PropTypes.node
+})
 
 export default ThemeProvider

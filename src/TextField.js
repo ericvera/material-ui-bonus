@@ -1,10 +1,11 @@
 // Framework
 import React from 'react'
 import PropTypes from 'prop-types'
+import exact from 'prop-types-exact'
 // Material-UI
 import MaterialUITextField from '@material-ui/core/TextField'
 // Helpers
-import useMarginStyles from './helpers/useMarginStyles'
+import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 
 const TextField = ({
   autoCapitalize,
@@ -20,7 +21,7 @@ const TextField = ({
   onChange,
   placeholder,
   type,
-  value,
+  value
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
@@ -44,21 +45,21 @@ const TextField = ({
   )
 }
 
-TextField.propTypes = {
+TextField.propTypes = exact({
   autoCapitalize: PropTypes.string,
   autoFocus: PropTypes.bool,
   disabled: PropTypes.bool,
   error: PropTypes.bool,
-  id: PropTypes.string,
   helperText: PropTypes.string,
+  id: PropTypes.string,
   label: PropTypes.string,
-  placeholder: PropTypes.string.isRequired,
-  marginBottomLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
-  marginTopLevel: PropTypes.oneOf(['0', '1', '2', '3', '4', '5', '6', '7']),
+  marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
+  placeholder: PropTypes.string.isRequired,
   type: PropTypes.string,
   value: PropTypes.string
-}
+})
 
 export default TextField

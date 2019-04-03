@@ -1,5 +1,6 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
+import { configureActions } from '@storybook/addon-actions'
 import { withInfo } from '@storybook/addon-info'
 import { install } from '@material-ui/styles'
 import ThemeProvider from '../src/ThemeProvider'
@@ -7,6 +8,10 @@ import ThemeProvider from '../src/ThemeProvider'
 import '@storybook/addon-console'
 
 install()
+
+configureActions({
+  clearOnStoryChange: true
+})
 
 // automatically import all files ending in *.stories.js
 const req = require.context('../src', true, /.stories.js$/)
