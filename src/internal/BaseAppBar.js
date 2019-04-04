@@ -31,7 +31,8 @@ const BaseAppBar = ({
   location = 'top',
   centered = false,
   children,
-  color = 'background'
+  color = 'background',
+  position = 'fixed'
 }) => {
   const classes = useStyles()
 
@@ -43,7 +44,7 @@ const BaseAppBar = ({
 
   return (
     <MaterialUIAppBar
-      position="fixed"
+      position={position}
       className={classNames.join(' ')}
       component={location === 'top' ? 'header' : 'footer'}
     >
@@ -60,7 +61,8 @@ BaseAppBar.propTypes = exact({
   centered: PropTypes.bool,
   children: PropTypes.node,
   color: PropTypes.oneOf(['background', 'transparent']),
-  location: PropTypes.oneOf(['top', 'bottom'])
+  location: PropTypes.oneOf(['top', 'bottom']),
+  position: PropTypes.oneOf(['fixed', 'absolute'])
 })
 
 export default BaseAppBar

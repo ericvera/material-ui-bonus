@@ -38,7 +38,13 @@ const useStyles = makeStyles({
 
 const Transition = props => <Slide direction="down" {...props} />
 
-const DialogMenuBar = ({ menuItems, openMenuLogo, closeMenuLogo, logo }) => {
+const DialogMenuBar = ({
+  menuItems,
+  openMenuLogo,
+  closeMenuLogo,
+  logo,
+  color
+}) => {
   const classes = useStyles()
   const [open, setOpen] = useState(false)
 
@@ -48,7 +54,7 @@ const DialogMenuBar = ({ menuItems, openMenuLogo, closeMenuLogo, logo }) => {
   return (
     <>
       <ShowOnScreenSize size="small">
-        <BaseAppBar location="top">
+        <BaseAppBar location="top" color={color} position="absolute">
           <AppBarButton
             side="left"
             icon={
@@ -67,7 +73,7 @@ const DialogMenuBar = ({ menuItems, openMenuLogo, closeMenuLogo, logo }) => {
           onClose={closeMenu}
           TransitionComponent={Transition}
         >
-          <BaseAppBar location="top">
+          <BaseAppBar location="top" color={color}>
             <AppBarButton
               side="left"
               icon={
@@ -100,7 +106,7 @@ const DialogMenuBar = ({ menuItems, openMenuLogo, closeMenuLogo, logo }) => {
         </Dialog>
       </ShowOnScreenSize>
       <ShowOnScreenSize size="not-small">
-        <BaseAppBar location="top">
+        <BaseAppBar location="top" color={color} position="absolute">
           {logo}
           <nav>
             {menuItems.map(menuItem => (
@@ -126,10 +132,11 @@ const itemPropType = PropTypes.shape({
 })
 
 DialogMenuBar.propTypes = exact({
-  menuItems: PropTypes.arrayOf(itemPropType).isRequired,
-  openMenuLogo: PropTypes.element,
   closeMenuLogo: PropTypes.element,
-  logo: PropTypes.element
+  color: PropTypes.oneOf(['background', 'transparent']),
+  logo: PropTypes.element,
+  menuItems: PropTypes.arrayOf(itemPropType).isRequired,
+  openMenuLogo: PropTypes.element
 })
 
 export default DialogMenuBar

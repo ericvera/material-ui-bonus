@@ -47,6 +47,7 @@ storiesOf('AppBar', module)
         openMenuLogo={<HomeIcon />}
         closeMenuLogo={<HomeIcon />}
         logo={<HomeIcon />}
+        color="transparent"
         menuItems={[
           {
             text: 'Menu item 1',
