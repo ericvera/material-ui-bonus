@@ -9,6 +9,7 @@ import { makeStyles } from '@material-ui/styles'
 import InnerContainer from './internal/InnerContainer'
 // Helpers
 import Colors from './helpers/Colors'
+import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 
 const useStyles = makeStyles({
   footer: {
@@ -24,11 +25,16 @@ const useStyles = makeStyles({
   }
 })
 
-const Footer = ({ children }) => {
+const Footer = ({
+  children,
+  marginBottomLevel = '0',
+  marginTopLevel = '0'
+}) => {
   const classes = useStyles()
+  const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   return (
-    <footer className={classes.footer}>
+    <footer className={[classes.footer, marginClassName].join(' ')}>
       <InnerContainer flex={true} centered={false}>
         <Toolbar className={classes.toolbar} disableGutters={true}>
           {children}
@@ -39,7 +45,9 @@ const Footer = ({ children }) => {
 }
 
 Footer.propTypes = exact({
-  children: PropTypes.node
+  children: PropTypes.node,
+  marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes
 })
 
 export default Footer

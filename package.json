@@ -1,6 +1,6 @@
 {
   "name": "material-ui-bonus",
-  "version": "2.0.0-alpha.17",
+  "version": "2.0.0-alpha.18",
   "description": "A few extra React components built on top of Material-UI",
   "main": "lib/index.js",
   "module": "lib/index.js",
