@@ -24,7 +24,7 @@ storiesOf('Divider', module)
     () => (
       <>
         <Heading level="1">Hi, I am a level 1 header</Heading>
-        <Divider centered={false} marginTopLevel="5" marginBottomLevel="3" />
+        <Divider centered={false} marginTopLevel="5" marginBottomLevel="5" />
         <Heading level="2">Hi, I am a level 2 header</Heading>
       </>
     ),

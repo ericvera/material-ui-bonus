@@ -25,3 +25,17 @@ configure(loadStories, module)
 
 const ThemeDecorator = storyFn => <ThemeProvider>{storyFn()}</ThemeProvider>
 addDecorator(ThemeDecorator)
+
+const FullHeightDecorator = storyFn => (
+  <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh',
+      backgroundColor: '#fff'
+    }}
+  >
+    {storyFn()}
+  </div>
+)
+addDecorator(FullHeightDecorator)

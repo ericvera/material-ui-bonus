@@ -13,8 +13,9 @@ const useStyles = backgroundImage =>
   makeStyles(theme => ({
     mainFullHeight: {
       backgroundColor: Colors.background,
-      minHeight: '100vh',
-      flexGrow: 1,
+      display: 'flex',
+      flex: '1 0 auto',
+      flexDirection: 'column',
       // Padding so that on a screen longer than viewport the last element does not "stick"
       //  to the bottom. It is padding so it will not make the full-height container grow
       //  unnecesarily.
