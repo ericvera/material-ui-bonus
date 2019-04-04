@@ -60,6 +60,7 @@ AppBar.propTypes = exact({
   /* dialog-menu */
   openMenuLogo: PropTypes.element,
   closeMenuLogo: PropTypes.element,
+  color: PropTypes.oneOf(['background', 'transparent']),
   logo: PropTypes.element,
 
   /* bottom-full-button */

@@ -14,23 +14,37 @@ const useStyles = makeStyles({
   bottom: {
     top: 'auto',
     bottom: 0,
-    backgroundColor: Colors.background,
     padding: 0,
     borderTopStyle: 'solid',
     borderTopColor: Colors.primaryDisabled,
     borderTopWidth: 1
+  },
+  background: {
+    backgroundColor: Colors.background
+  },
+  transparent: {
+    backgroundColor: Colors.transparent
   }
 })
 
-const BaseAppBar = ({ location = 'top', centered = false, children }) => {
+const BaseAppBar = ({
+  location = 'top',
+  centered = false,
+  children,
+  color = 'background'
+}) => {
   const classes = useStyles()
 
-  // TODO: LEFT HERE! Figure out how to set {justify-content: space-between}
+  let classNames = [classes[color]]
+
+  if (location === 'bottom') {
+    classNames.push(classes.bottom)
+  }
 
   return (
     <MaterialUIAppBar
       position="fixed"
-      className={location === 'top' ? '' : classes.bottom}
+      className={classNames.join(' ')}
       component={location === 'top' ? 'header' : 'footer'}
     >
       <Toolbar>
@@ -45,6 +59,7 @@ const BaseAppBar = ({ location = 'top', centered = false, children }) => {
 BaseAppBar.propTypes = exact({
   centered: PropTypes.bool,
   children: PropTypes.node,
+  color: PropTypes.oneOf(['background', 'transparent']),
   location: PropTypes.oneOf(['top', 'bottom'])
 })
 
