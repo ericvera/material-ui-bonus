@@ -37,6 +37,10 @@ const useStyles = makeStyles({
   menuItemText: {
     fontSize: getFontSize(3),
     fontWeight: FontWeight.Regular
+  },
+  listItem: {
+    paddingTop: getSpacing(4),
+    paddingBottom: getSpacing(4)
   }
 })
 
@@ -79,6 +83,7 @@ const MenuAppBar = ({
               onClick={menuItem.onClick}
               button
               disableGutters={false}
+              className={classes.listItem}
             >
               <ListItemText
                 primary={menuItem.text}

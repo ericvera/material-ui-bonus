@@ -3,11 +3,11 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
 // Components
+import AppBarButton from './AppBarButton'
+import BaseAppBar from './BaseAppBar'
 import Container from '../Container'
 import ShowOnScreenSize from './ShownOnScreenSize'
 // Material-UI
-import AppBarButton from './AppBarButton'
-import BaseAppBar from './BaseAppBar'
 import Button from '@material-ui/core/Button'
 import Dialog from '@material-ui/core/Dialog'
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown'
@@ -33,6 +33,10 @@ const useStyles = makeStyles({
   menuLink: {
     justifyContent: 'flex-end',
     paddingRight: 0
+  },
+  listItem: {
+    paddingTop: getSpacing(4),
+    paddingBottom: getSpacing(4)
   }
 })
 
@@ -94,6 +98,7 @@ const DialogMenuBar = ({
                   onClick={menuItem.onClick}
                   button
                   disableGutters={false}
+                  className={classes.listItem}
                 >
                   <ListItemText
                     primary={menuItem.text}
