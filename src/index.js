@@ -1,6 +1,8 @@
 import AppBar from './AppBar'
 import Button from './Button'
 import Container from './Container'
+import Divider from './Divider'
+import Footer from './Footer'
 import Heading from './Heading'
 import List from './List'
 import ListItem from './ListItem'
@@ -14,6 +16,8 @@ export {
   AppBar,
   Button,
   Container,
+  Divider,
+  Footer,
   Heading,
   List,
   ListItem,
