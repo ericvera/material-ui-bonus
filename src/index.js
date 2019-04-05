@@ -3,6 +3,7 @@ import Button from './Button'
 import Container from './Container'
 import Divider from './Divider'
 import Footer from './Footer'
+import Grid from './Grid'
 import Heading from './Heading'
 import List from './List'
 import ListItem from './ListItem'
@@ -18,6 +19,7 @@ export {
   Container,
   Divider,
   Footer,
+  Grid,
   Heading,
   List,
   ListItem,
