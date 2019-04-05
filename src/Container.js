@@ -2,15 +2,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
-// Internal
+// Components
+import CenteredContent from './internal/CenteredContent'
 import InnerContainer from './internal/InnerContainer'
 import OuterContainer from './internal/OuterContainer'
-import { Toolbar } from '@material-ui/core'
+// Helpers
 import { MarginPropTypes } from './helpers/useMarginStyles'
+// Material-UI
+import Toolbar from '@material-ui/core/Toolbar'
 
 const Container = ({
   backgroundImage,
   centered = true,
+  centeredContent = false,
   children,
   disableGutters = false,
   fullPage = true,
@@ -19,6 +23,12 @@ const Container = ({
   marginTopLevel = '0',
   marginBottomLevel = '0'
 }) => {
+  let content = children
+
+  if (centeredContent) {
+    content = <CenteredContent>{content}</CenteredContent>
+  }
+
   return (
     <OuterContainer
       fullPage={fullPage}
@@ -29,7 +39,7 @@ const Container = ({
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasAppBar ? <Toolbar /> : null}
       <InnerContainer centered={centered} disableGutters={disableGutters}>
-        {children}
+        {content}
       </InnerContainer>
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasBottomBar ? <Toolbar /> : null}
@@ -40,6 +50,7 @@ const Container = ({
 Container.propTypes = exact({
   backgroundImage: PropTypes.string,
   centered: PropTypes.bool,
+  centeredContent: PropTypes.bool,
   children: PropTypes.node,
   disableGutters: PropTypes.bool,
   fullPage: PropTypes.bool,
