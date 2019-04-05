@@ -7,21 +7,36 @@ import FormHelperText from '@material-ui/core/FormHelperText'
 import Typography from '@material-ui/core/Typography'
 // Helpers
 import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
+import { makeStyles } from '@material-ui/styles'
+
+const useStyles = makeStyles({
+  inline: {
+    display: 'inline'
+  }
+})
 
 const Text = ({
+  children,
+  inline = false,
   marginTopLevel = '0',
   marginBottomLevel = '0',
-  variant = 'body',
-  children
+  variant = 'body'
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
+
+  let classNames = [marginClassName]
+
+  if (inline) {
+    const classes = useStyles()
+    classNames.push(classes.inline)
+  }
 
   if (variant === 'error') {
     return (
       <FormHelperText
         children={children}
         error={true}
-        className={marginClassName}
+        className={classNames.join(' ')}
       />
     )
   }
@@ -30,7 +45,7 @@ const Text = ({
     <Typography
       component={React.Children.count(children) > 1 ? 'div' : 'p'}
       variant={variant === 'sub-text' ? 'body2' : 'body1'}
-      className={marginClassName}
+      className={classNames.join(' ')}
       children={children}
     />
   )
@@ -38,6 +53,7 @@ const Text = ({
 
 Text.propTypes = exact({
   children: PropTypes.node,
+  inline: PropTypes.bool,
   marginBottomLevel: MarginPropTypes,
   marginTopLevel: MarginPropTypes,
   variant: PropTypes.oneOf(['body', 'sub-text', 'error'])
