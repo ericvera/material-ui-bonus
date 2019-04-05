@@ -109,3 +109,21 @@ storiesOf('Button', module)
       Press me
     </Button>
   ))
+  .add('text button / multiple', () => (
+    <div>
+      <Button
+        variant="text"
+        centered={false}
+        onClick={action('button pressed')}
+      >
+        Press me
+      </Button>
+      <Button
+        variant="text"
+        centered={false}
+        onClick={action('button pressed')}
+      >
+        Press me
+      </Button>
+    </div>
+  ))

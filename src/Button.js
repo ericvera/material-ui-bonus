@@ -10,8 +10,13 @@ import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 import CenteredContent from './internal/CenteredContent'
 import Colors from './helpers/Colors'
 import ProgressButton from './internal/ProgressButton'
+import getSpacing from './helpers/getSpacing'
 
 const useStyles = makeStyles({
+  textButton: {
+    paddingLeft: getSpacing(2),
+    paddingRight: getSpacing(2)
+  },
   primary: {
     backgroundColor: Colors.background,
     borderColor: Colors.brand,
@@ -50,7 +55,7 @@ const Button = ({
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-  const className = [marginClassName, classes[color]].join(' ')
+  let classNames = [marginClassName, classes[color]]
 
   let button
 
@@ -58,7 +63,7 @@ const Button = ({
     case 'button':
       button = (
         <MaterialUIButton
-          className={className}
+          className={classNames.join(' ')}
           fullWidth={fullWidth}
           onClick={onClick}
         >
@@ -71,7 +76,7 @@ const Button = ({
         <ProgressButton
           ref={forwardedRef}
           delay={delay}
-          className={className}
+          className={classNames.join(' ')}
           fullWidth={fullWidth}
           onClick={onClick}
           showProgress={showProgress}
@@ -81,9 +86,10 @@ const Button = ({
       )
       break
     case 'text':
+      classNames.push(classes.textButton)
       button = (
         <MaterialUIButton
-          className={className}
+          className={classNames.join(' ')}
           fullWidth={fullWidth}
           onClick={onClick}
           variant="text"
