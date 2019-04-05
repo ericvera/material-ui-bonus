@@ -42,7 +42,7 @@ function reducer(state, action) {
 }
 
 const ProgressButton = (
-  { children, className, delay, disabled, fullWidth, onClick },
+  { children, className, delay, fullWidth, onClick, showProgress },
   ref
 ) => {
   const [state, dispatch] = useReducer(reducer, delay, init)
@@ -63,14 +63,14 @@ const ProgressButton = (
   return (
     <Button
       type="submit"
-      disabled={disabled || !!state.delay}
+      disabled={Boolean(state.delay) || showProgress}
       onClick={onClick}
       className={className}
       fullWidth={fullWidth}
     >
       {children}
       {state.delay ? ` (in ${state.delay} seconds)` : ''}
-      {Boolean(state.delay) && (
+      {(Boolean(state.delay) || showProgress) && (
         <CircularProgress size={24} className={classes.buttonProgress} />
       )}
     </Button>

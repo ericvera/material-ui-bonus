@@ -6,7 +6,7 @@ import exact from 'prop-types-exact'
 import BaseAppBar from './BaseAppBar'
 import Button from '../Button'
 
-const BottomAppBar = ({ content, buttonText, buttonVariant, onClick }) => {
+const BottomAppBar = ({ content, buttonText, buttonColor, onClick }) => {
   return (
     <BaseAppBar location="bottom" centered={true}>
       {content}
@@ -14,7 +14,7 @@ const BottomAppBar = ({ content, buttonText, buttonVariant, onClick }) => {
         onClick={onClick}
         fullWidth={!content}
         centered={false}
-        variant={buttonVariant}
+        color={buttonColor}
       >
         {buttonText}
       </Button>
@@ -24,7 +24,7 @@ const BottomAppBar = ({ content, buttonText, buttonVariant, onClick }) => {
 
 BottomAppBar.propTypes = exact({
   buttonText: PropTypes.string,
-  buttonVariant: PropTypes.string,
+  buttonColor: PropTypes.string,
   content: PropTypes.node,
   onClick: PropTypes.func
 })

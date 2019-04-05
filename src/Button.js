@@ -37,41 +37,63 @@ const useStyles = makeStyles({
 const Button = ({
   centered = true,
   children,
+  color = 'primary',
   delay,
   forwardedRef,
   fullWidth = false,
   marginBottomLevel = '0',
   marginTopLevel = '0',
   onClick,
-  variant = 'primary'
+  showProgress = false,
+  variant = 'button'
 }) => {
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
-  const className = [marginClassName, classes[variant]].join(' ')
+  const className = [marginClassName, classes[color]].join(' ')
 
-  let button = (
-    <MaterialUIButton
-      className={className}
-      fullWidth={fullWidth}
-      onClick={onClick}
-    >
-      {children}
-    </MaterialUIButton>
-  )
+  let button
 
-  if (delay) {
-    button = (
-      <ProgressButton
-        ref={forwardedRef}
-        delay={delay}
-        className={className}
-        fullWidth={fullWidth}
-        onClick={onClick}
-      >
-        {children}
-      </ProgressButton>
-    )
+  switch (variant) {
+    case 'button':
+      button = (
+        <MaterialUIButton
+          className={className}
+          fullWidth={fullWidth}
+          onClick={onClick}
+        >
+          {children}
+        </MaterialUIButton>
+      )
+      break
+    case 'progress':
+      button = (
+        <ProgressButton
+          ref={forwardedRef}
+          delay={delay}
+          className={className}
+          fullWidth={fullWidth}
+          onClick={onClick}
+          showProgress={showProgress}
+        >
+          {children}
+        </ProgressButton>
+      )
+      break
+    case 'text':
+      button = (
+        <MaterialUIButton
+          className={className}
+          fullWidth={fullWidth}
+          onClick={onClick}
+          variant="text"
+        >
+          {children}
+        </MaterialUIButton>
+      )
+      break
+    default:
+      throw Error(`[Button] Unsupported variant: ${variant}`)
   }
 
   if (!centered) {
@@ -85,13 +107,15 @@ Button.propTypes = exact({
   centered: PropTypes.bool,
   children: PropTypes.node,
   /** Delay in seconds before the button can be pressed */
+  color: PropTypes.oneOf(['primary', 'secondary', 'confirmation']),
   delay: PropTypes.number,
   forwardedRef: PropTypes.object,
   fullWidth: PropTypes.bool,
   marginBottomLevel: MarginPropTypes,
   marginTopLevel: MarginPropTypes,
   onClick: PropTypes.func,
-  variant: PropTypes.oneOf(['primary', 'secondary', 'confirmation'])
+  showProgress: PropTypes.bool,
+  variant: PropTypes.oneOf(['button', 'progress', 'text'])
 })
 
 export default forwardRef((props, ref) => (

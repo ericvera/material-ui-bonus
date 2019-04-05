@@ -43,7 +43,9 @@ storiesOf('Sample Layouts', module)
             It comes followed by a second paragraph for illustration purpose.
           </p>
         </Text>
-        <Button marginTopLevel="4">Go somewhere</Button>
+        <Button marginTopLevel="4" onClick={action('go somewhere pressed')}>
+          Go somewhere
+        </Button>
       </Container>
     </>
   ))
@@ -81,7 +83,7 @@ storiesOf('Sample Layouts', module)
       <AppBar
         variant="bottom-full-button"
         buttonText="Next"
-        buttonVariant="confirmation"
+        buttonColor="confirmation"
         onClick={action('next button pressed')}
       />
     </>
@@ -100,11 +102,7 @@ storiesOf('Sample Layouts', module)
             marginTopLevel="5"
           />
         </form>
-        <Button
-          variant="primary"
-          marginTopLevel="4"
-          onClick={action('button pressed')}
-        >
+        <Button marginTopLevel="4" onClick={action('button pressed')}>
           Press me
         </Button>
       </Container>

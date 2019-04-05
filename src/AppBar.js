@@ -67,8 +67,8 @@ AppBar.propTypes = exact({
   content: PropTypes.node,
 
   /* bottom-text-button, bottom-full-button */
-  buttonText: PropTypes.string,
-  buttonVariant: PropTypes.string
+  buttonColor: PropTypes.string,
+  buttonText: PropTypes.string
 })
 
 export default AppBar
