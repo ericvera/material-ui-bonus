@@ -8,6 +8,7 @@ import InnerContainer from './internal/InnerContainer'
 import OuterContainer from './internal/OuterContainer'
 // Helpers
 import { MarginPropTypes } from './helpers/useMarginStyles'
+import { PaddingPropTypes } from './helpers/usePaddingStyles'
 // Material-UI
 import Toolbar from '@material-ui/core/Toolbar'
 import ShowOnScreenSize from './internal/ShownOnScreenSize'
@@ -22,8 +23,10 @@ const Container = ({
   fullPage = true,
   hasAppBar = true,
   hasBottomBar = false,
-  marginTopLevel = '0',
   marginBottomLevel = '0',
+  marginTopLevel = '0',
+  paddingBottomLevel = '0',
+  paddingTopLevel = '0',
   screenSize
 }) => {
   let content = children
@@ -34,11 +37,13 @@ const Container = ({
 
   content = (
     <OuterContainer
+      backgroundImage={backgroundImage}
       className={className}
       fullPage={fullPage}
-      marginTopLevel={marginTopLevel}
       marginBottomLevel={marginBottomLevel}
-      backgroundImage={backgroundImage}
+      marginTopLevel={marginTopLevel}
+      paddingBottomLevel={paddingBottomLevel}
+      paddingTopLevel={paddingTopLevel}
     >
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasAppBar ? <Toolbar /> : null}
@@ -67,8 +72,10 @@ Container.propTypes = exact({
   fullPage: PropTypes.bool,
   hasAppBar: PropTypes.bool,
   hasBottomBar: PropTypes.bool,
-  marginTopLevel: MarginPropTypes,
   marginBottomLevel: MarginPropTypes,
+  marginTopLevel: MarginPropTypes,
+  paddingBottomLevel: PaddingPropTypes,
+  paddingTopLevel: PaddingPropTypes,
   screenSize: PropTypes.oneOf(['small', 'not-small'])
 })
 

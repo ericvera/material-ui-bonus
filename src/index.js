@@ -12,8 +12,11 @@ import Snackbar from './Snackbar'
 import Text from './Text'
 import TextField from './TextField'
 import ThemeProvider from './ThemeProvider'
+// Export directly from Material-UI
+import { makeStyles } from '@material-ui/styles'
 
 export {
+  makeStyles,
   AppBar,
   Button,
   Container,
