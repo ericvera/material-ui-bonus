@@ -62,6 +62,7 @@ Container.propTypes = exact({
   centered: PropTypes.bool,
   centeredContent: PropTypes.bool,
   children: PropTypes.node,
+  className: PropTypes.string,
   disableGutters: PropTypes.bool,
   fullPage: PropTypes.bool,
   hasAppBar: PropTypes.bool,
