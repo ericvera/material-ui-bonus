@@ -22,6 +22,7 @@ const useStyles = backgroundImage =>
       paddingBottom: getSpacing(4)
     },
     main: {
+      backgroundColor: Colors.background,
       flexGrow: 1
     },
     backgroundImageContainer: {
@@ -37,17 +38,22 @@ const useStyles = backgroundImage =>
   }))()
 
 const OuterContainer = ({
-  fullPage = true,
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
+  backgroundImage,
   children,
-  backgroundImage
+  className,
+  fullPage = true,
+  marginBottomLevel = '0',
+  marginTopLevel = '0'
 }) => {
   const classes = useStyles(backgroundImage)
   const marginsClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   const mainClassName = fullPage ? classes.mainFullHeight : classes.main
   let classNames = [marginsClassName, mainClassName]
+
+  if (className) {
+    classNames.unshift(className)
+  }
 
   if (backgroundImage) {
     classNames.push(classes.backgroundImageContainer)
@@ -59,6 +65,7 @@ const OuterContainer = ({
 OuterContainer.propTypes = exact({
   backgroundImage: PropTypes.string,
   children: PropTypes.node,
+  className: PropTypes.string,
   fullPage: PropTypes.bool,
   marginBottomLevel: MarginPropTypes,
   marginTopLevel: MarginPropTypes

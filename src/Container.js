@@ -10,18 +10,21 @@ import OuterContainer from './internal/OuterContainer'
 import { MarginPropTypes } from './helpers/useMarginStyles'
 // Material-UI
 import Toolbar from '@material-ui/core/Toolbar'
+import ShowOnScreenSize from './internal/ShownOnScreenSize'
 
 const Container = ({
   backgroundImage,
   centered = true,
   centeredContent = false,
   children,
+  className,
   disableGutters = false,
   fullPage = true,
   hasAppBar = true,
   hasBottomBar = false,
   marginTopLevel = '0',
-  marginBottomLevel = '0'
+  marginBottomLevel = '0',
+  screenSize
 }) => {
   let content = children
 
@@ -29,8 +32,9 @@ const Container = ({
     content = <CenteredContent>{content}</CenteredContent>
   }
 
-  return (
+  content = (
     <OuterContainer
+      className={className}
       fullPage={fullPage}
       marginTopLevel={marginTopLevel}
       marginBottomLevel={marginBottomLevel}
@@ -45,6 +49,12 @@ const Container = ({
       {hasBottomBar ? <Toolbar /> : null}
     </OuterContainer>
   )
+
+  if (screenSize) {
+    content = <ShowOnScreenSize size={screenSize}>{content}</ShowOnScreenSize>
+  }
+
+  return content
 }
 
 Container.propTypes = exact({
@@ -57,7 +67,8 @@ Container.propTypes = exact({
   hasAppBar: PropTypes.bool,
   hasBottomBar: PropTypes.bool,
   marginTopLevel: MarginPropTypes,
-  marginBottomLevel: MarginPropTypes
+  marginBottomLevel: MarginPropTypes,
+  screenSize: PropTypes.oneOf(['small', 'not-small'])
 })
 
 export default Container
