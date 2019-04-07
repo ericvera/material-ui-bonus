@@ -134,7 +134,7 @@ const theme = createMuiTheme({
     },
     MuiDivider: {
       root: {
-        backgroundColor: getColor(Color.transparent)
+        backgroundColor: getColor(Color.secondary)
       }
     },
     MuiFormControl: {

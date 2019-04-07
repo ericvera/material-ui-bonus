@@ -21,16 +21,16 @@ exports[`Storyshots AppBar back 1`] = `
       }
     >
       <header
-        className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+        className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         >
           <div
             className=" Hook-container-ah2uaj"
           >
             <button
-              className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+              className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -48,11 +48,11 @@ exports[`Storyshots AppBar back 1`] = `
               type="button"
             >
               <span
-                className="MuiIconButton-label-t0tjci"
+                className="MuiIconButton-label-1wqdmxf"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-rzamx6"
+                  className="MuiSvgIcon-root-g8qiax Hook-colorStyles-rzamx6"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -1529,19 +1529,19 @@ exports[`Storyshots AppBar bottom-full-button 1`] = `
       }
     >
       <footer
-        className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
+        className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         >
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym Hook-container-ah2uaj"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw Hook-container-ah2uaj"
             >
               <button
-                className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 MuiButton-fullWidth-150mbzp Hook-margins-h9x30h Hook-primary-udpmyt"
+                className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t MuiButton-fullWidth-1ypeaeq Hook-margins-h9x30h Hook-primary-udpmyt"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -1559,7 +1559,7 @@ exports[`Storyshots AppBar bottom-full-button 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-1jnb033"
+                  className="MuiButton-label-tpcbjl"
                 >
                   Click the button
                 </span>
@@ -3054,31 +3054,31 @@ exports[`Storyshots AppBar bottom-text-button 1`] = `
       }
     >
       <footer
-        className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
+        className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         >
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym Hook-container-ah2uaj"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw Hook-container-ah2uaj"
             >
               <div>
                 <h3
-                  className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                  className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
                 >
                   Some heading
                 </h3>
                 <p
-                  className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+                  className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
                 >
                   Some text
                 </p>
               </div>
               <button
-                className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+                className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -3096,7 +3096,7 @@ exports[`Storyshots AppBar bottom-text-button 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiButton-label-1jnb033"
+                  className="MuiButton-label-tpcbjl"
                 >
                   Click the button
                 </span>
@@ -4629,16 +4629,16 @@ exports[`Storyshots AppBar close 1`] = `
       }
     >
       <header
-        className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+        className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         >
           <div
             className=" Hook-container-ah2uaj"
           >
             <button
-              className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+              className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
               disabled={false}
               onBlur={[Function]}
               onClick={[Function]}
@@ -4656,11 +4656,11 @@ exports[`Storyshots AppBar close 1`] = `
               type="button"
             >
               <span
-                className="MuiIconButton-label-t0tjci"
+                className="MuiIconButton-label-1wqdmxf"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-rzamx6"
+                  className="MuiSvgIcon-root-g8qiax Hook-colorStyles-rzamx6"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -6138,19 +6138,19 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
     >
       <div>
         <div
-          className="Hook-small-pvi7ed"
+          className="Hook-small-5ojnrj"
         >
           <header
-            className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionAbsolute-11p631p MuiAppBar-colorPrimary-lsdt7d Hook-colorStyles-jwwx7p"
+            className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionAbsolute-13iaglm MuiAppBar-colorPrimary-y1itxe Hook-colorStyles-jwwx7p"
           >
             <div
-              className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+              className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
             >
               <div
                 className=" Hook-container-ah2uaj"
               >
                 <button
-                  className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+                  className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -6168,11 +6168,11 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                   type="button"
                 >
                   <span
-                    className="MuiIconButton-label-t0tjci"
+                    className="MuiIconButton-label-1wqdmxf"
                   >
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-15dzzd3"
+                      className="MuiSvgIcon-root-g8qiax"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -6187,7 +6187,7 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                     </svg>
                     <svg
                       aria-hidden="true"
-                      className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-k80srd"
+                      className="MuiSvgIcon-root-g8qiax Hook-colorStyles-k80srd"
                       focusable="false"
                       role="presentation"
                       viewBox="0 0 24 24"
@@ -6207,20 +6207,20 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
           </header>
         </div>
         <div
-          className="Hook-not-small-40w89r"
+          className="Hook-not-small-1ohp8zy"
         >
           <header
-            className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionAbsolute-11p631p MuiAppBar-colorPrimary-lsdt7d Hook-colorStyles-jwwx7p"
+            className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionAbsolute-13iaglm MuiAppBar-colorPrimary-y1itxe Hook-colorStyles-jwwx7p"
           >
             <div
-              className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+              className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
             >
               <div
                 className=" Hook-container-ah2uaj"
               >
                 <svg
                   aria-hidden="true"
-                  className="MuiSvgIcon-root-15dzzd3"
+                  className="MuiSvgIcon-root-g8qiax"
                   focusable="false"
                   role="presentation"
                   viewBox="0 0 24 24"
@@ -6235,7 +6235,7 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                 </svg>
                 <nav>
                   <button
-                    className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-k80srd MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+                    className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-k80srd MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
                     disabled={false}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -6253,13 +6253,13 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                     type="button"
                   >
                     <span
-                      className="MuiButton-label-1jnb033"
+                      className="MuiButton-label-tpcbjl"
                     >
                       Menu item 1
                     </span>
                   </button>
                   <button
-                    className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-k80srd MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+                    className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-k80srd MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
                     disabled={false}
                     onBlur={[Function]}
                     onClick={[Function]}
@@ -6277,7 +6277,7 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                     type="button"
                   >
                     <span
-                      className="MuiButton-label-1jnb033"
+                      className="MuiButton-label-tpcbjl"
                     >
                       Menu item 2
                     </span>
@@ -6288,19 +6288,19 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
           </header>
         </div>
         <div
-          className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+          className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           />
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
             >
               <p
-                className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-1i3dqyv"
+                className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-1i3dqyv"
               >
                 Content here
               </p>
@@ -6308,19 +6308,19 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
           </div>
         </div>
         <div
-          className="Hook-main-tuuugw Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+          className="Hook-main-1s0iow4 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           />
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
             >
               <p
-                className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
               >
                 Content 2
               </p>
@@ -9658,16 +9658,16 @@ exports[`Storyshots AppBar drawer-menu 1`] = `
     >
       <div>
         <header
-          className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+          className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           >
             <div
               className=" Hook-container-ah2uaj"
             >
               <button
-                className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+                className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -9685,11 +9685,11 @@ exports[`Storyshots AppBar drawer-menu 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiIconButton-label-t0tjci"
+                  className="MuiIconButton-label-1wqdmxf"
                 >
                   <svg
                     aria-hidden="true"
-                    className="MuiSvgIcon-root-15dzzd3"
+                    className="MuiSvgIcon-root-g8qiax"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -9706,7 +9706,7 @@ exports[`Storyshots AppBar drawer-menu 1`] = `
               </button>
               <svg
                 aria-hidden="true"
-                className="MuiSvgIcon-root-15dzzd3"
+                className="MuiSvgIcon-root-g8qiax"
                 focusable="false"
                 role="presentation"
                 viewBox="0 0 24 24"
@@ -9720,7 +9720,7 @@ exports[`Storyshots AppBar drawer-menu 1`] = `
                 />
               </svg>
               <button
-                className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-right-1yqi8m6"
+                className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-right-1yqi8m6"
                 disabled={false}
                 onBlur={[Function]}
                 onContextMenu={[Function]}
@@ -9737,11 +9737,11 @@ exports[`Storyshots AppBar drawer-menu 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiIconButton-label-t0tjci"
+                  className="MuiIconButton-label-1wqdmxf"
                 >
                   <svg
                     aria-hidden="true"
-                    className="MuiSvgIcon-root-15dzzd3"
+                    className="MuiSvgIcon-root-g8qiax"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -9757,7 +9757,7 @@ exports[`Storyshots AppBar drawer-menu 1`] = `
           </div>
         </header>
         <div
-          className="MuiPrivateSwipeArea-root-p36rel MuiPrivateSwipeArea-anchorLeft-onh1o6"
+          className="MuiPrivateSwipeArea-root-vyi51a MuiPrivateSwipeArea-anchorLeft-1c02cqv"
           style={
             Object {
               "width": 20,
@@ -11551,16 +11551,16 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
     >
       <div>
         <header
-          className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+          className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           >
             <div
               className=" Hook-container-ah2uaj"
             >
               <button
-                className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+                className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
                 disabled={false}
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -11578,11 +11578,11 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
                 type="button"
               >
                 <span
-                  className="MuiIconButton-label-t0tjci"
+                  className="MuiIconButton-label-1wqdmxf"
                 >
                   <svg
                     aria-hidden="true"
-                    className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-rzamx6"
+                    className="MuiSvgIcon-root-g8qiax Hook-colorStyles-rzamx6"
                     focusable="false"
                     role="presentation"
                     viewBox="0 0 24 24"
@@ -11601,19 +11601,19 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
           </div>
         </header>
         <div
-          className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+          className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           />
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
             >
               <h1
-                className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
               >
                 Hello!
               </h1>
@@ -11621,31 +11621,31 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
           </div>
         </div>
         <footer
-          className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
+          className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           >
             <div
-              className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx"
+              className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls"
             >
               <div
-                className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym Hook-container-ah2uaj"
+                className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw Hook-container-ah2uaj"
               >
                 <div>
                   <h3
-                    className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                    className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
                   >
                     Some heading
                   </h3>
                   <p
-                    className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+                    className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
                   >
                     Some text
                   </p>
                 </div>
                 <button
-                  className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+                  className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
                   disabled={false}
                   onBlur={[Function]}
                   onClick={[Function]}
@@ -11663,7 +11663,7 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
                   type="button"
                 >
                   <span
-                    className="MuiButton-label-1jnb033"
+                    className="MuiButton-label-tpcbjl"
                   >
                     Click the button
                   </span>
@@ -14741,7 +14741,7 @@ exports[`Storyshots Button confirm-action 1`] = `
         className="Hook-centeredContent-1cpxnro"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-confirm-action-11nqacs"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-confirm-action-11nqacs"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -14759,7 +14759,7 @@ exports[`Storyshots Button confirm-action 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
@@ -15931,7 +15931,7 @@ exports[`Storyshots Button primary (default) 1`] = `
         className="Hook-centeredContent-1cpxnro"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -15949,7 +15949,7 @@ exports[`Storyshots Button primary (default) 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
@@ -17064,7 +17064,7 @@ exports[`Storyshots Button primary - not centered 1`] = `
       }
     >
       <button
-        className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+        className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -17082,7 +17082,7 @@ exports[`Storyshots Button primary - not centered 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-1jnb033"
+          className="MuiButton-label-tpcbjl"
         >
           Press me
         </span>
@@ -18251,7 +18251,7 @@ exports[`Storyshots Button progress / confirm-action 1`] = `
         className="Hook-centeredContent-1cpxnro"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiButtonBase-disabled-1rs83r2 MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 MuiButton-disabled-1rs83r2 Hook-margins-h9x30h Hook-confirm-action-11nqacs"
+          className="MuiButtonBase-root-1gvsgj7 MuiButtonBase-disabled-18zbtps MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t MuiButton-disabled-18zbtps Hook-margins-h9x30h Hook-confirm-action-11nqacs"
           disabled={true}
           onBlur={[Function]}
           onClick={[Function]}
@@ -18269,12 +18269,12 @@ exports[`Storyshots Button progress / confirm-action 1`] = `
           type="submit"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
              (in 5 seconds)
             <div
-              className="MuiCircularProgress-root-183cs5g MuiCircularProgress-colorPrimary-1aaw0gk MuiCircularProgress-indeterminate-q31j0t Hook-buttonProgress-1vwxnpb"
+              className="MuiCircularProgress-root-4wop17 MuiCircularProgress-colorPrimary-m7pwv5 MuiCircularProgress-indeterminate-ebqg5q Hook-buttonProgress-1vwxnpb"
               role="progressbar"
               style={
                 Object {
@@ -18284,11 +18284,11 @@ exports[`Storyshots Button progress / confirm-action 1`] = `
               }
             >
               <svg
-                className="MuiCircularProgress-svg-s5wk0r"
+                className="MuiCircularProgress-svg-p5sw5o"
                 viewBox="22 22 44 44"
               >
                 <circle
-                  className="MuiCircularProgress-circle-2art7t MuiCircularProgress-circleIndeterminate-1gjovne"
+                  className="MuiCircularProgress-circle-1seopgw MuiCircularProgress-circleIndeterminate-12q1q9"
                   cx={44}
                   cy={44}
                   fill="none"
@@ -19601,7 +19601,7 @@ exports[`Storyshots Button progress / primary / reset 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButtonBase-disabled-1rs83r2 MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 MuiButton-disabled-1rs83r2 Hook-margins-h9x30h Hook-confirm-action-11nqacs"
+            className="MuiButtonBase-root-1gvsgj7 MuiButtonBase-disabled-18zbtps MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t MuiButton-disabled-18zbtps Hook-margins-h9x30h Hook-confirm-action-11nqacs"
             disabled={true}
             onBlur={[Function]}
             onClick={[Function]}
@@ -19619,12 +19619,12 @@ exports[`Storyshots Button progress / primary / reset 1`] = `
             type="submit"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Delayed button
                (in 5 seconds)
               <div
-                className="MuiCircularProgress-root-183cs5g MuiCircularProgress-colorPrimary-1aaw0gk MuiCircularProgress-indeterminate-q31j0t Hook-buttonProgress-1vwxnpb"
+                className="MuiCircularProgress-root-4wop17 MuiCircularProgress-colorPrimary-m7pwv5 MuiCircularProgress-indeterminate-ebqg5q Hook-buttonProgress-1vwxnpb"
                 role="progressbar"
                 style={
                   Object {
@@ -19634,11 +19634,11 @@ exports[`Storyshots Button progress / primary / reset 1`] = `
                 }
               >
                 <svg
-                  className="MuiCircularProgress-svg-s5wk0r"
+                  className="MuiCircularProgress-svg-p5sw5o"
                   viewBox="22 22 44 44"
                 >
                   <circle
-                    className="MuiCircularProgress-circle-2art7t MuiCircularProgress-circleIndeterminate-1gjovne"
+                    className="MuiCircularProgress-circle-1seopgw MuiCircularProgress-circleIndeterminate-12q1q9"
                     cx={44}
                     cy={44}
                     fill="none"
@@ -19655,7 +19655,7 @@ exports[`Storyshots Button progress / primary / reset 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+            className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -19673,7 +19673,7 @@ exports[`Storyshots Button progress / primary / reset 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Reset delay
             </span>
@@ -19941,7 +19941,7 @@ exports[`Storyshots Button progress / primary 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButtonBase-disabled-1rs83r2 MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 MuiButton-disabled-1rs83r2 Hook-margins-h9x30h Hook-confirm-action-11nqacs"
+            className="MuiButtonBase-root-1gvsgj7 MuiButtonBase-disabled-18zbtps MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t MuiButton-disabled-18zbtps Hook-margins-h9x30h Hook-confirm-action-11nqacs"
             disabled={true}
             onBlur={[Function]}
             onClick={[Function]}
@@ -19959,12 +19959,12 @@ exports[`Storyshots Button progress / primary 1`] = `
             type="submit"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Progress button
               
               <div
-                className="MuiCircularProgress-root-183cs5g MuiCircularProgress-colorPrimary-1aaw0gk MuiCircularProgress-indeterminate-q31j0t Hook-buttonProgress-1vwxnpb"
+                className="MuiCircularProgress-root-4wop17 MuiCircularProgress-colorPrimary-m7pwv5 MuiCircularProgress-indeterminate-ebqg5q Hook-buttonProgress-1vwxnpb"
                 role="progressbar"
                 style={
                   Object {
@@ -19974,11 +19974,11 @@ exports[`Storyshots Button progress / primary 1`] = `
                 }
               >
                 <svg
-                  className="MuiCircularProgress-svg-s5wk0r"
+                  className="MuiCircularProgress-svg-p5sw5o"
                   viewBox="22 22 44 44"
                 >
                   <circle
-                    className="MuiCircularProgress-circle-2art7t MuiCircularProgress-circleIndeterminate-1gjovne"
+                    className="MuiCircularProgress-circle-1seopgw MuiCircularProgress-circleIndeterminate-12q1q9"
                     cx={44}
                     cy={44}
                     fill="none"
@@ -19995,7 +19995,7 @@ exports[`Storyshots Button progress / primary 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+            className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -20013,7 +20013,7 @@ exports[`Storyshots Button progress / primary 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Toggle progress
             </span>
@@ -20280,7 +20280,7 @@ exports[`Storyshots Button secondary / full width 1`] = `
         className="Hook-centeredContent-1cpxnro"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 MuiButton-fullWidth-150mbzp Hook-margins-h9x30h Hook-secondary-1uxhe55"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t MuiButton-fullWidth-1ypeaeq Hook-margins-h9x30h Hook-secondary-1uxhe55"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -20298,7 +20298,7 @@ exports[`Storyshots Button secondary / full width 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
@@ -21498,7 +21498,7 @@ exports[`Storyshots Button secondary 1`] = `
         className="Hook-centeredContent-1cpxnro"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-secondary-1uxhe55"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-secondary-1uxhe55"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -21516,7 +21516,7 @@ exports[`Storyshots Button secondary 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
@@ -22685,7 +22685,7 @@ exports[`Storyshots Button text button / brand 1`] = `
       }
     >
       <button
-        className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-1jnpg5f MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+        className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-1jnpg5f MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -22703,7 +22703,7 @@ exports[`Storyshots Button text button / brand 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-1jnb033"
+          className="MuiButton-label-tpcbjl"
         >
           Press me
         </span>
@@ -24005,7 +24005,7 @@ exports[`Storyshots Button text button / multiple 1`] = `
     >
       <div>
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-rzamx6 MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-rzamx6 MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -24023,13 +24023,13 @@ exports[`Storyshots Button text button / multiple 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
         </button>
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-rzamx6 MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-rzamx6 MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -24047,7 +24047,7 @@ exports[`Storyshots Button text button / multiple 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
@@ -25651,7 +25651,7 @@ exports[`Storyshots Button text button / secondary 1`] = `
       }
     >
       <button
-        className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-ybi7or MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+        className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-ybi7or MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
         disabled={false}
         onBlur={[Function]}
         onClick={[Function]}
@@ -25669,7 +25669,7 @@ exports[`Storyshots Button text button / secondary 1`] = `
         type="button"
       >
         <span
-          className="MuiButton-label-1jnb033"
+          className="MuiButton-label-tpcbjl"
         >
           Press me
         </span>
@@ -26973,7 +26973,7 @@ exports[`Storyshots Button text button 1`] = `
         className="Hook-centeredContent-1cpxnro"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-text-1sh5f5b Hook-colorStyles-rzamx6 MuiButton-flat-1hqj72e MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-textButton-5jaio"
+          className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-text-k8vrr9 Hook-colorStyles-rzamx6 MuiButton-flat-1rj690s MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-textButton-5jaio"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -26991,7 +26991,7 @@ exports[`Storyshots Button text button 1`] = `
           type="button"
         >
           <span
-            className="MuiButton-label-1jnb033"
+            className="MuiButton-label-tpcbjl"
           >
             Press me
           </span>
@@ -28160,19 +28160,19 @@ exports[`Storyshots Container custom background color (brand) 1`] = `
       }
     >
       <div
-        className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-3flz7p"
+        className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-3flz7p"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         />
         <div
-          className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+          className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
         >
           <div
-            className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+            className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
           >
             <h1
-              className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, My background should have the brand color
             </h1>
@@ -29826,19 +29826,19 @@ exports[`Storyshots Container default 1`] = `
       }
     >
       <div
-        className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+        className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         />
         <div
-          className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+          className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
         >
           <div
-            className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+            className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
           >
             <h1
-              className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, I am a level 1 header
             </h1>
@@ -31463,19 +31463,19 @@ exports[`Storyshots Container not-small only 1`] = `
       }
     >
       <div
-        className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-not-small-40w89r Hook-colorStyles-uuzq4u"
+        className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-not-small-1ohp8zy Hook-colorStyles-uuzq4u"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         />
         <div
-          className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+          className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
         >
           <div
-            className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+            className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
           >
             <h1
-              className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, I should only be visible in a not-small screen size
             </h1>
@@ -33130,19 +33130,19 @@ exports[`Storyshots Container small and not-small 1`] = `
     >
       <div>
         <div
-          className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-small-pvi7ed Hook-colorStyles-uuzq4u"
+          className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-small-5ojnrj Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           />
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
             >
               <h1
-                className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
               >
                 Hi, I should only be visible in a small screen size
               </h1>
@@ -33150,19 +33150,19 @@ exports[`Storyshots Container small and not-small 1`] = `
           </div>
         </div>
         <div
-          className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-not-small-40w89r Hook-colorStyles-uuzq4u"
+          className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-not-small-1ohp8zy Hook-colorStyles-uuzq4u"
         >
           <div
-            className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+            className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
           />
           <div
-            className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+            className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
           >
             <div
-              className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+              className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
             >
               <h1
-                className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
               >
                 Hi, I should only be visible in a not-small screen size
               </h1>
@@ -35017,19 +35017,19 @@ exports[`Storyshots Container small only 1`] = `
       }
     >
       <div
-        className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-small-pvi7ed Hook-colorStyles-uuzq4u"
+        className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-small-5ojnrj Hook-colorStyles-uuzq4u"
       >
         <div
-          className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+          className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
         />
         <div
-          className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+          className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
         >
           <div
-            className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+            className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
           >
             <h1
-              className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, I should only be visible in a small screen size
             </h1>
@@ -36674,23 +36674,23 @@ exports[`Storyshots Divider centered with top margin 1`] = `
   }
 >
   <h1
-    className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 1 header
   </h1>
   <div
-    className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx"
+    className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls"
   >
     <div
-      className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+      className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
     >
       <hr
-        className="MuiDivider-root-v3prjj Hook-divider-1qvozs1 Hook-margins-1oq9pbv"
+        className="MuiDivider-root-9p6k2h Hook-divider-1qvozs1 Hook-margins-1oq9pbv"
       />
     </div>
   </div>
   <h2
-    className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 2 header
   </h2>
@@ -36709,7 +36709,7 @@ exports[`Storyshots Divider not centered 1`] = `
   }
 >
   <h1
-    className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 1 header
   </h1>
@@ -36717,11 +36717,11 @@ exports[`Storyshots Divider not centered 1`] = `
     className=" "
   >
     <hr
-      className="MuiDivider-root-v3prjj Hook-divider-1qvozs1 Hook-margins-16vqcm9"
+      className="MuiDivider-root-9p6k2h Hook-divider-1qvozs1 Hook-margins-16vqcm9"
     />
   </div>
   <h2
-    className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 2 header
   </h2>
@@ -36740,29 +36740,29 @@ exports[`Storyshots Footer default 1`] = `
   }
 >
   <div
-    className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+    className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
     <div
-      className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+      className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+        className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
       >
         <h1
-          className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
         >
           Hi, I am a level 1 header
         </h1>
         <h2
-          className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
         >
           Hi, I am a level 2 header
         </h2>
         <h3
-          className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
         >
           Hi, I am a level 3 header
         </h3>
@@ -36773,13 +36773,13 @@ exports[`Storyshots Footer default 1`] = `
     className="Hook-footer-1o99z3f Hook-margins-h9x30h"
   >
     <div
-      className="Hook-gutters-1297bse Hook-container-ah2uaj"
+      className="Hook-gutters-1ldtx30 Hook-container-ah2uaj"
     >
       <div
-        className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz Hook-toolbar-kcbc1k"
+        className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl Hook-toolbar-kcbc1k"
       >
         <p
-          className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
         >
           Some text
         </p>
@@ -36788,7 +36788,7 @@ exports[`Storyshots Footer default 1`] = `
             className="Hook-centeredContent-1cpxnro"
           >
             <button
-              className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+              className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -36805,7 +36805,7 @@ exports[`Storyshots Footer default 1`] = `
               type="button"
             >
               <span
-                className="MuiButton-label-1jnb033"
+                className="MuiButton-label-tpcbjl"
               >
                 Button text
               </span>
@@ -36830,29 +36830,29 @@ exports[`Storyshots Footer w/ margin 1`] = `
   }
 >
   <div
-    className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+    className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
     <div
-      className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+      className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+        className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
       >
         <h1
-          className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
         >
           Hi, I am a level 1 header
         </h1>
         <h2
-          className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
         >
           Hi, I am a level 2 header
         </h2>
         <h3
-          className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
         >
           Hi, I am a level 3 header
         </h3>
@@ -36863,13 +36863,13 @@ exports[`Storyshots Footer w/ margin 1`] = `
     className="Hook-footer-1o99z3f Hook-margins-1ftutzl"
   >
     <div
-      className="Hook-gutters-1297bse Hook-container-ah2uaj"
+      className="Hook-gutters-1ldtx30 Hook-container-ah2uaj"
     >
       <div
-        className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz Hook-toolbar-kcbc1k"
+        className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl Hook-toolbar-kcbc1k"
       >
         <p
-          className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+          className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
         >
           Some text
         </p>
@@ -36878,7 +36878,7 @@ exports[`Storyshots Footer w/ margin 1`] = `
             className="Hook-centeredContent-1cpxnro"
           >
             <button
-              className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-h9x30h Hook-primary-udpmyt"
+              className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-h9x30h Hook-primary-udpmyt"
               disabled={false}
               onBlur={[Function]}
               onContextMenu={[Function]}
@@ -36895,7 +36895,7 @@ exports[`Storyshots Footer w/ margin 1`] = `
               type="button"
             >
               <span
-                className="MuiButton-label-1jnb033"
+                className="MuiButton-label-tpcbjl"
               >
                 Button text
               </span>
@@ -36929,31 +36929,31 @@ exports[`Storyshots Grid default 1`] = `
       }
     >
       <div
-        className="MuiGrid-container-1rz9elk"
+        className="MuiGrid-container-1cnj9de"
       >
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-sm-4-8pmq1k Hook-gridItem-142qxqv Hook-centeredContent-qkjozd"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-sm-4-1tuanwc Hook-gridItem-142qxqv Hook-centeredContent-qkjozd"
         >
           <h1
-            className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+            className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
           >
             Hi, I am a level 1 header
           </h1>
         </div>
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-sm-4-8pmq1k Hook-gridItem-142qxqv Hook-centeredContent-qkjozd"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-sm-4-1tuanwc Hook-gridItem-142qxqv Hook-centeredContent-qkjozd"
         >
           <h1
-            className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+            className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
           >
             Hi, I am a level 2 header
           </h1>
         </div>
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-sm-4-8pmq1k Hook-gridItem-142qxqv Hook-centeredContent-qkjozd"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-sm-4-1tuanwc Hook-gridItem-142qxqv Hook-centeredContent-qkjozd"
         >
           <h1
-            className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+            className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
           >
             Hi, I am a level 3 header
           </h1>
@@ -38091,51 +38091,51 @@ exports[`Storyshots Grid not centered 1`] = `
       }
     >
       <div
-        className="MuiGrid-container-1rz9elk"
+        className="MuiGrid-container-1cnj9de"
       >
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-sm-4-8pmq1k Hook-gridItem-142qxqv"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-sm-4-1tuanwc Hook-gridItem-142qxqv"
         >
           <div>
             <h3
-              className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, I am a level 1 header
             </h3>
             <p
-              className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
             >
               Some text here. Make it a longer text here so that it takes more space.
             </p>
           </div>
         </div>
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-sm-4-8pmq1k Hook-gridItem-142qxqv"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-sm-4-1tuanwc Hook-gridItem-142qxqv"
         >
           <div>
             <h3
-              className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, I am a level 1 header
             </h3>
             <p
-              className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
             >
               Some text here.
             </p>
           </div>
         </div>
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-sm-4-8pmq1k Hook-gridItem-142qxqv"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-sm-4-1tuanwc Hook-gridItem-142qxqv"
         >
           <div>
             <h3
-              className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Hi, I am a level 1 header
             </h3>
             <p
-              className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
             >
               Some text here. Make it a longer text here so that it takes more space.
             </p>
@@ -40123,17 +40123,17 @@ exports[`Storyshots Heading all 1`] = `
   }
 >
   <h1
-    className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 1 header
   </h1>
   <h2
-    className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 2 header
   </h2>
   <h3
-    className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+    className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
   >
     Hi, I am a level 3 header
   </h3>
@@ -40161,7 +40161,7 @@ exports[`Storyshots Heading custom color (brand) 1`] = `
       }
     >
       <h1
-        className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-1jnpg5f Hook-margins-h9x30h"
+        className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-1jnpg5f Hook-margins-h9x30h"
       >
         Hi, I have the color of your brand :)
       </h1>
@@ -40858,7 +40858,7 @@ exports[`Storyshots Heading level 1 (default) 1`] = `
       }
     >
       <h1
-        className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+        className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
       >
         Hi, I am a level 1 header
       </h1>
@@ -41526,7 +41526,7 @@ exports[`Storyshots Heading level 2 1`] = `
       }
     >
       <h2
-        className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+        className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
       >
         Hi, I am a level 2 header
       </h2>
@@ -42223,7 +42223,7 @@ exports[`Storyshots Heading level 3 1`] = `
       }
     >
       <h3
-        className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+        className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
       >
         Hi, I am a level 3 header
       </h3>
@@ -42920,58 +42920,58 @@ exports[`Storyshots List default 1`] = `
       }
     >
       <ul
-        className="MuiList-root-143wgor Hook-list-pcbkky"
+        className="MuiList-root-11joaby Hook-list-pcbkky"
       >
         <li
-          className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq MuiListItem-divider-9wotol Hook-listItem-leso8s"
+          className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 MuiListItem-divider-1c4t4up Hook-listItem-leso8s"
           disabled={false}
         >
           <div
-            className="MuiListItemText-root-14qanwq"
+            className="MuiListItemText-root-1fiqdql"
           >
             <h3
-              className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               Primary text
             </h3>
             <p
-              className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-1oq9pbv"
+              className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-1oq9pbv"
             >
               This is the secondary text which will generally be longer than thte primary.
             </p>
           </div>
         </li>
         <li
-          className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq MuiListItem-divider-9wotol Hook-listItem-leso8s"
+          className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 MuiListItem-divider-1c4t4up Hook-listItem-leso8s"
           disabled={false}
         >
           <div
-            className="MuiListItemText-root-14qanwq"
+            className="MuiListItemText-root-1fiqdql"
           >
             <h3
-              className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
             >
               This is an example of an item with a very long text as the primary.
             </h3>
           </div>
         </li>
         <li
-          className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq Hook-listItemWithButton-1q0wj7m"
+          className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 Hook-listItemWithButton-1q0wj7m"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="MuiListItemText-root-14qanwq"
+            className="MuiListItemText-root-1fiqdql"
           >
             <p
-              className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+              className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
             >
               Secondary with button
             </p>
           </div>
           <svg
             aria-hidden="true"
-            className="MuiSvgIcon-root-15dzzd3"
+            className="MuiSvgIcon-root-g8qiax"
             focusable="false"
             role="presentation"
             viewBox="0 0 24 24"
@@ -43999,16 +43999,16 @@ exports[`Storyshots Sample Layouts H1 + Text + Button 1`] = `
   }
 >
   <header
-    className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+    className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     >
       <div
         className=" Hook-container-ah2uaj"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+          className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -44026,11 +44026,11 @@ exports[`Storyshots Sample Layouts H1 + Text + Button 1`] = `
           type="button"
         >
           <span
-            className="MuiIconButton-label-t0tjci"
+            className="MuiIconButton-label-1wqdmxf"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-rzamx6"
+              className="MuiSvgIcon-root-g8qiax Hook-colorStyles-rzamx6"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -44049,24 +44049,24 @@ exports[`Storyshots Sample Layouts H1 + Text + Button 1`] = `
     </div>
   </header>
   <div
-    className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+    className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
     <div
-      className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+      className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+        className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
       >
         <h1
-          className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-1vy2wcy"
+          className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-1vy2wcy"
         >
           Heading
         </h1>
         <div
-          className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-1fvqw4s"
+          className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-1fvqw4s"
         >
           <p>
             This is a paragraph
@@ -44079,7 +44079,7 @@ exports[`Storyshots Sample Layouts H1 + Text + Button 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-1fvqw4s Hook-primary-udpmyt"
+            className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-1fvqw4s Hook-primary-udpmyt"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -44097,7 +44097,7 @@ exports[`Storyshots Sample Layouts H1 + Text + Button 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Go somewhere
             </span>
@@ -44121,16 +44121,16 @@ exports[`Storyshots Sample Layouts H2 + Input + Button 1`] = `
   }
 >
   <header
-    className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+    className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     >
       <div
         className=" Hook-container-ah2uaj"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+          className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -44148,11 +44148,11 @@ exports[`Storyshots Sample Layouts H2 + Input + Button 1`] = `
           type="button"
         >
           <span
-            className="MuiIconButton-label-t0tjci"
+            className="MuiIconButton-label-1wqdmxf"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-rzamx6"
+              className="MuiSvgIcon-root-g8qiax Hook-colorStyles-rzamx6"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -44171,39 +44171,39 @@ exports[`Storyshots Sample Layouts H2 + Input + Button 1`] = `
     </div>
   </header>
   <div
-    className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+    className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
     <div
-      className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+      className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+        className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
       >
         <h2
-          className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-1fvqw4s"
+          className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-1fvqw4s"
         >
           Heading
         </h2>
         <form>
           <div
-            className="MuiFormControl-root-162x508 MuiFormControl-fullWidth-150mbzp Hook-margins-1ftutzl"
+            className="MuiFormControl-root-1goifj2 MuiFormControl-fullWidth-1ypeaeq Hook-margins-1ftutzl"
           >
             <label
-              className="MuiFormLabel-root-4gb2ae MuiInputLabel-root-w0qeci MuiInputLabel-formControl-67hvcj MuiInputLabel-shrink-1u4btq0"
+              className="MuiFormLabel-root-f9b3wi MuiInputLabel-root-ukkgm3 MuiInputLabel-formControl-1typ8cc MuiInputLabel-shrink-ahvor"
               data-shrink={true}
             >
               Some label
             </label>
             <div
-              className="MuiInputBase-root-jqqi06 MuiInput-root-su9vln MuiInputBase-fullWidth-150mbzp MuiInput-fullWidth-lrm884 MuiInputBase-formControl-i04dwv MuiInput-formControl-12gbxw8"
+              className="MuiInputBase-root-1tgz1is MuiInput-root-o1mbfv MuiInputBase-fullWidth-1ypeaeq MuiInput-fullWidth-z7p82u MuiInputBase-formControl-1cnxgkh MuiInput-formControl-14rqixu"
               onClick={[Function]}
             >
               <input
                 aria-invalid={false}
-                className="MuiInputBase-input-l8cebw MuiInput-input-1x19b79"
+                className="MuiInputBase-input-1an1an1 MuiInput-input-1z0hoyc"
                 disabled={false}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -44219,7 +44219,7 @@ exports[`Storyshots Sample Layouts H2 + Input + Button 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 Hook-margins-1fvqw4s Hook-primary-udpmyt"
+            className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t Hook-margins-1fvqw4s Hook-primary-udpmyt"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -44237,7 +44237,7 @@ exports[`Storyshots Sample Layouts H2 + Input + Button 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Press me
             </span>
@@ -44261,16 +44261,16 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
   }
 >
   <header
-    className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u"
+    className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     >
       <div
         className=" Hook-container-ah2uaj"
       >
         <button
-          className="MuiButtonBase-root-1uib90m MuiIconButton-root-11rbqne Hook-left-yn3xfh"
+          className="MuiButtonBase-root-1gvsgj7 MuiIconButton-root-11osv5u Hook-left-yn3xfh"
           disabled={false}
           onBlur={[Function]}
           onClick={[Function]}
@@ -44288,11 +44288,11 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
           type="button"
         >
           <span
-            className="MuiIconButton-label-t0tjci"
+            className="MuiIconButton-label-1wqdmxf"
           >
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-15dzzd3 Hook-colorStyles-rzamx6"
+              className="MuiSvgIcon-root-g8qiax Hook-colorStyles-rzamx6"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -44311,62 +44311,62 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
     </div>
   </header>
   <div
-    className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+    className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
     <div
-      className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+      className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+        className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
       >
         <h2
-          className="MuiTypography-root-y0vn4p MuiTypography-h2-hqq5n9 Hook-colorStyles-rzamx6 Hook-margins-1fvqw4s"
+          className="MuiTypography-root-6dyq2u MuiTypography-h2-mesn7v Hook-colorStyles-rzamx6 Hook-margins-1fvqw4s"
         >
           Heading
         </h2>
         <ul
-          className="MuiList-root-143wgor Hook-list-pcbkky"
+          className="MuiList-root-11joaby Hook-list-pcbkky"
         >
           <li
-            className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq MuiListItem-divider-9wotol Hook-listItem-leso8s"
+            className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 MuiListItem-divider-1c4t4up Hook-listItem-leso8s"
             disabled={false}
           >
             <div
-              className="MuiListItemText-root-14qanwq"
+              className="MuiListItemText-root-1fiqdql"
             >
               <h3
-                className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
               >
                 by Some Co
               </h3>
             </div>
           </li>
           <li
-            className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq MuiListItem-divider-9wotol Hook-listItem-leso8s"
+            className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 MuiListItem-divider-1c4t4up Hook-listItem-leso8s"
             disabled={false}
           >
             <div
-              className="MuiListItemText-root-14qanwq"
+              className="MuiListItemText-root-1fiqdql"
             >
               <p
-                className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
               >
                 This is an item with only secondary text.
               </p>
             </div>
           </li>
           <li
-            className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq MuiListItem-divider-9wotol Hook-listItem-leso8s"
+            className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 MuiListItem-divider-1c4t4up Hook-listItem-leso8s"
             disabled={false}
           >
             <div
-              className="MuiListItemText-root-14qanwq"
+              className="MuiListItemText-root-1fiqdql"
             >
               <p
-                className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
               >
                 First line.
                 <br />
@@ -44377,22 +44377,22 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
             </div>
           </li>
           <li
-            className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq MuiListItem-divider-9wotol Hook-listItemWithButton-1q0wj7m"
+            className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 MuiListItem-divider-1c4t4up Hook-listItemWithButton-1q0wj7m"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="MuiListItemText-root-14qanwq"
+              className="MuiListItemText-root-1fiqdql"
             >
               <p
-                className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
               >
                 This is an item with secondary text and a button.
               </p>
             </div>
             <svg
               aria-hidden="true"
-              className="MuiSvgIcon-root-15dzzd3"
+              className="MuiSvgIcon-root-g8qiax"
               focusable="false"
               role="presentation"
               viewBox="0 0 24 24"
@@ -44407,14 +44407,14 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
             </svg>
           </li>
           <li
-            className="MuiListItem-root-12odj26 MuiListItem-default-x2vfzq Hook-listItem-leso8s"
+            className="MuiListItem-root-16k5wob MuiListItem-default-1e1e7m7 Hook-listItem-leso8s"
             disabled={false}
           >
             <div
-              className="MuiListItemText-root-14qanwq"
+              className="MuiListItemText-root-1fiqdql"
             >
               <h3
-                className="MuiTypography-root-y0vn4p MuiTypography-h3-2f0tzd Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
+                className="MuiTypography-root-6dyq2u MuiTypography-h3-eazumh Hook-colorStyles-rzamx6 Hook-margins-h9x30h"
               >
                 This is a list item that only contains primary text. It may be a bit longer.
               </h3>
@@ -44424,23 +44424,23 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
       </div>
     </div>
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
   </div>
   <footer
-    className="MuiPaper-root-eja4p0 MuiPaper-elevation0-1adz0ri MuiAppBar-root-741gjw MuiAppBar-positionFixed-2cjayc MuiAppBar-colorPrimary-lsdt7d mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
+    className="MuiPaper-root-x71824 MuiPaper-elevation0-1ry4872 MuiAppBar-root-nppziq MuiAppBar-positionFixed-y7gwnp MuiAppBar-colorPrimary-y1itxe mui-fixed Hook-colorStyles-uuzq4u Hook-bottom-184qcmk"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx"
+        className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls"
       >
         <div
-          className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym Hook-container-ah2uaj"
+          className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw Hook-container-ah2uaj"
         >
           <button
-            className="MuiButtonBase-root-1uib90m MuiButton-root-8pa1tg MuiButton-contained-osyfz4 MuiButton-raised-aproyb MuiButton-sizeLarge-go9629 MuiButton-fullWidth-150mbzp Hook-margins-h9x30h Hook-confirm-action-11nqacs"
+            className="MuiButtonBase-root-1gvsgj7 MuiButton-root-ed5fjv MuiButton-contained-k3kfx3 MuiButton-raised-10w143e MuiButton-sizeLarge-1qpfb7t MuiButton-fullWidth-1ypeaeq Hook-margins-h9x30h Hook-confirm-action-11nqacs"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -44458,7 +44458,7 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
             type="button"
           >
             <span
-              className="MuiButton-label-1jnb033"
+              className="MuiButton-label-tpcbjl"
             >
               Next
             </span>
@@ -44482,24 +44482,24 @@ exports[`Storyshots Sample Layouts Progress screen 1`] = `
   }
 >
   <div
-    className="Hook-mainFullHeight-7pt3rd Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-18kiq5j Hook-colorStyles-uuzq4u"
+    className="Hook-mainFullHeight-1j1lsrc Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-2200d9 Hook-colorStyles-uuzq4u"
   >
     <div
-      className="MuiToolbar-root-1o07zcc MuiToolbar-regular-zjlwxz MuiToolbar-gutters-1297bse"
+      className="MuiToolbar-root-p3duls MuiToolbar-regular-1m1zusl MuiToolbar-gutters-1ldtx30"
     />
     <div
-      className="MuiGrid-container-1rz9elk MuiGrid-align-content-xs-center-ipcl1v MuiGrid-justify-xs-center-1yg7fmx Hook-gutters-1297bse"
+      className="MuiGrid-container-1cnj9de MuiGrid-align-content-xs-center-qsdf11 MuiGrid-justify-xs-center-wy0mls Hook-gutters-1ldtx30"
     >
       <div
-        className="MuiGrid-item-5rnawj MuiGrid-grid-xs-12-1gv1lyh MuiGrid-grid-sm-9-1u3devq MuiGrid-grid-md-6-1bs3rd1 MuiGrid-grid-lg-3-12x7wym"
+        className="MuiGrid-item-wktqqe MuiGrid-grid-xs-12-18xibw0 MuiGrid-grid-sm-9-1cauvpu MuiGrid-grid-md-6-1cfyezb MuiGrid-grid-lg-3-1nhkshw"
       >
         <h1
-          className="MuiTypography-root-y0vn4p MuiTypography-h1-oqalhd Hook-colorStyles-rzamx6 Hook-margins-1vy2wcy"
+          className="MuiTypography-root-6dyq2u MuiTypography-h1-1cic2ry Hook-colorStyles-rzamx6 Hook-margins-1vy2wcy"
         >
           A heading for what is taking time
         </h1>
         <p
-          className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-1fvqw4s"
+          className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-1fvqw4s"
         >
           This will just take a second...
         </p>
@@ -44507,7 +44507,7 @@ exports[`Storyshots Sample Layouts Progress screen 1`] = `
           className="Hook-centeredContent-1cpxnro"
         >
           <div
-            className="MuiCircularProgress-root-183cs5g MuiCircularProgress-colorPrimary-1aaw0gk MuiCircularProgress-indeterminate-q31j0t Hook-margins-1fvqw4s"
+            className="MuiCircularProgress-root-4wop17 MuiCircularProgress-colorPrimary-m7pwv5 MuiCircularProgress-indeterminate-ebqg5q Hook-margins-1fvqw4s"
             role="progressbar"
             style={
               Object {
@@ -44517,11 +44517,11 @@ exports[`Storyshots Sample Layouts Progress screen 1`] = `
             }
           >
             <svg
-              className="MuiCircularProgress-svg-s5wk0r"
+              className="MuiCircularProgress-svg-p5sw5o"
               viewBox="22 22 44 44"
             >
               <circle
-                className="MuiCircularProgress-circle-2art7t MuiCircularProgress-circleIndeterminate-1gjovne"
+                className="MuiCircularProgress-circle-1seopgw MuiCircularProgress-circleIndeterminate-12q1q9"
                 cx={44}
                 cy={44}
                 fill="none"
@@ -44559,7 +44559,7 @@ exports[`Storyshots Text default 1`] = `
       }
     >
       <p
-        className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h"
+        className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h"
       >
         Some text
       </p>
@@ -45227,7 +45227,7 @@ exports[`Storyshots Text error 1`] = `
       }
     >
       <p
-        className="MuiFormHelperText-root-rowsyq MuiFormHelperText-error-17tmc0a Hook-margins-h9x30h"
+        className="MuiFormHelperText-root-1yp87zn MuiFormHelperText-error-1exrfh Hook-margins-h9x30h"
       >
         Some error text
       </p>
@@ -45925,17 +45925,17 @@ exports[`Storyshots Text multiple / inline 1`] = `
     >
       <div>
         <p
-          className="MuiTypography-root-y0vn4p MuiTypography-body1-166auld Hook-margins-h9x30h Hook-inline-42z04s"
+          className="MuiTypography-root-6dyq2u MuiTypography-body1-1vzdbdo Hook-margins-h9x30h Hook-inline-42z04s"
         >
           Some text
         </p>
         <p
-          className="MuiTypography-root-y0vn4p MuiTypography-body2-qyhz0f Hook-margins-h9x30h Hook-inline-42z04s"
+          className="MuiTypography-root-6dyq2u MuiTypography-body2-141zgjq Hook-margins-h9x30h Hook-inline-42z04s"
         >
           Some text
         </p>
         <p
-          className="MuiFormHelperText-root-rowsyq MuiFormHelperText-error-17tmc0a Hook-margins-h9x30h Hook-inline-42z04s"
+          className="MuiFormHelperText-root-1yp87zn MuiFormHelperText-error-1exrfh Hook-margins-h9x30h Hook-inline-42z04s"
         >
           Some text
         </p>
@@ -46878,17 +46878,17 @@ exports[`Storyshots Text multiple 1`] = `
     >
       <div>
         <p
-          className="MuiFormHelperText-root-rowsyq MuiFormHelperText-error-17tmc0a Hook-margins-h9x30h"
+          className="MuiFormHelperText-root-1yp87zn MuiFormHelperText-error-1exrfh Hook-margins-h9x30h"
         >
           Some error text
         </p>
         <p
-          className="MuiFormHelperText-root-rowsyq MuiFormHelperText-error-17tmc0a Hook-margins-h9x30h"
+          className="MuiFormHelperText-root-1yp87zn MuiFormHelperText-error-1exrfh Hook-margins-h9x30h"
         >
           Some error text
         </p>
         <p
-          className="MuiFormHelperText-root-rowsyq MuiFormHelperText-error-17tmc0a Hook-margins-h9x30h"
+          className="MuiFormHelperText-root-1yp87zn MuiFormHelperText-error-1exrfh Hook-margins-h9x30h"
         >
           Some error text
         </p>
@@ -47833,7 +47833,7 @@ exports[`Storyshots Text sub-text 1`] = `
       }
     >
       <p
-        className="MuiTypography-root-y0vn4p MuiTypography-body2-qyhz0f Hook-margins-h9x30h"
+        className="MuiTypography-root-6dyq2u MuiTypography-body2-141zgjq Hook-margins-h9x30h"
       >
         Some sub-text
       </p>
@@ -48531,15 +48531,15 @@ exports[`Storyshots TextField autoCapitalize 1`] = `
     >
       <div
         autoCapitalize="words"
-        className="MuiFormControl-root-162x508 MuiFormControl-fullWidth-150mbzp Hook-margins-h9x30h"
+        className="MuiFormControl-root-1goifj2 MuiFormControl-fullWidth-1ypeaeq Hook-margins-h9x30h"
       >
         <div
-          className="MuiInputBase-root-jqqi06 MuiInput-root-su9vln MuiInputBase-fullWidth-150mbzp MuiInput-fullWidth-lrm884 MuiInputBase-formControl-i04dwv MuiInput-formControl-12gbxw8"
+          className="MuiInputBase-root-1tgz1is MuiInput-root-o1mbfv MuiInputBase-fullWidth-1ypeaeq MuiInput-fullWidth-z7p82u MuiInputBase-formControl-1cnxgkh MuiInput-formControl-14rqixu"
           onClick={[Function]}
         >
           <input
             aria-invalid={false}
-            className="MuiInputBase-input-l8cebw MuiInput-input-1x19b79"
+            className="MuiInputBase-input-1an1an1 MuiInput-input-1z0hoyc"
             disabled={false}
             onBlur={[Function]}
             onChange={[Function]}
@@ -49793,21 +49793,21 @@ exports[`Storyshots TextField default 1`] = `
       }
     >
       <div
-        className="MuiFormControl-root-162x508 MuiFormControl-fullWidth-150mbzp Hook-margins-h9x30h"
+        className="MuiFormControl-root-1goifj2 MuiFormControl-fullWidth-1ypeaeq Hook-margins-h9x30h"
       >
         <label
-          className="MuiFormLabel-root-4gb2ae MuiInputLabel-root-w0qeci MuiInputLabel-formControl-67hvcj MuiInputLabel-shrink-1u4btq0"
+          className="MuiFormLabel-root-f9b3wi MuiInputLabel-root-ukkgm3 MuiInputLabel-formControl-1typ8cc MuiInputLabel-shrink-ahvor"
           data-shrink={true}
         >
           Label here
         </label>
         <div
-          className="MuiInputBase-root-jqqi06 MuiInput-root-su9vln MuiInputBase-fullWidth-150mbzp MuiInput-fullWidth-lrm884 MuiInputBase-formControl-i04dwv MuiInput-formControl-12gbxw8"
+          className="MuiInputBase-root-1tgz1is MuiInput-root-o1mbfv MuiInputBase-fullWidth-1ypeaeq MuiInput-fullWidth-z7p82u MuiInputBase-formControl-1cnxgkh MuiInput-formControl-14rqixu"
           onClick={[Function]}
         >
           <input
             aria-invalid={false}
-            className="MuiInputBase-input-l8cebw MuiInput-input-1x19b79"
+            className="MuiInputBase-input-1an1an1 MuiInput-input-1z0hoyc"
             disabled={false}
             onBlur={[Function]}
             onChange={[Function]}
@@ -50992,21 +50992,21 @@ exports[`Storyshots TextField disabled 1`] = `
       }
     >
       <div
-        className="MuiFormControl-root-162x508 MuiFormControl-fullWidth-150mbzp Hook-margins-h9x30h"
+        className="MuiFormControl-root-1goifj2 MuiFormControl-fullWidth-1ypeaeq Hook-margins-h9x30h"
       >
         <label
-          className="MuiFormLabel-root-4gb2ae MuiFormLabel-disabled-1rs83r2 MuiInputLabel-disabled-1rs83r2 MuiFormLabel-filled-1n70a7h MuiInputLabel-root-w0qeci MuiInputLabel-formControl-67hvcj MuiInputLabel-shrink-1u4btq0"
+          className="MuiFormLabel-root-f9b3wi MuiFormLabel-disabled-18zbtps MuiInputLabel-disabled-18zbtps MuiFormLabel-filled-v4l2o4 MuiInputLabel-root-ukkgm3 MuiInputLabel-formControl-1typ8cc MuiInputLabel-shrink-ahvor"
           data-shrink={true}
         >
           Label here
         </label>
         <div
-          className="MuiInputBase-root-jqqi06 MuiInput-root-su9vln MuiInputBase-disabled-1rs83r2 MuiInput-disabled-1rs83r2 MuiInputBase-fullWidth-150mbzp MuiInput-fullWidth-lrm884 MuiInputBase-formControl-i04dwv MuiInput-formControl-12gbxw8"
+          className="MuiInputBase-root-1tgz1is MuiInput-root-o1mbfv MuiInputBase-disabled-18zbtps MuiInput-disabled-18zbtps MuiInputBase-fullWidth-1ypeaeq MuiInput-fullWidth-z7p82u MuiInputBase-formControl-1cnxgkh MuiInput-formControl-14rqixu"
           onClick={[Function]}
         >
           <input
             aria-invalid={false}
-            className="MuiInputBase-input-l8cebw MuiInput-input-1x19b79 MuiInputBase-disabled-1rs83r2 MuiInput-disabled-1rs83r2"
+            className="MuiInputBase-input-1an1an1 MuiInput-input-1z0hoyc MuiInputBase-disabled-18zbtps MuiInput-disabled-18zbtps"
             disabled={true}
             onBlur={[Function]}
             onChange={[Function]}
@@ -52242,21 +52242,21 @@ exports[`Storyshots TextField with error 1`] = `
       }
     >
       <div
-        className="MuiFormControl-root-162x508 MuiFormControl-fullWidth-150mbzp Hook-margins-h9x30h"
+        className="MuiFormControl-root-1goifj2 MuiFormControl-fullWidth-1ypeaeq Hook-margins-h9x30h"
       >
         <label
-          className="MuiFormLabel-root-4gb2ae MuiFormLabel-error-17tmc0a MuiInputLabel-error-17tmc0a MuiInputLabel-root-w0qeci MuiInputLabel-formControl-67hvcj MuiInputLabel-shrink-1u4btq0"
+          className="MuiFormLabel-root-f9b3wi MuiFormLabel-error-1exrfh MuiInputLabel-error-1exrfh MuiInputLabel-root-ukkgm3 MuiInputLabel-formControl-1typ8cc MuiInputLabel-shrink-ahvor"
           data-shrink={true}
         >
           Label here
         </label>
         <div
-          className="MuiInputBase-root-jqqi06 MuiInput-root-su9vln MuiInputBase-error-17tmc0a MuiInput-error-17tmc0a MuiInputBase-fullWidth-150mbzp MuiInput-fullWidth-lrm884 MuiInputBase-formControl-i04dwv MuiInput-formControl-12gbxw8"
+          className="MuiInputBase-root-1tgz1is MuiInput-root-o1mbfv MuiInputBase-error-1exrfh MuiInput-error-1exrfh MuiInputBase-fullWidth-1ypeaeq MuiInput-fullWidth-z7p82u MuiInputBase-formControl-1cnxgkh MuiInput-formControl-14rqixu"
           onClick={[Function]}
         >
           <input
             aria-invalid={true}
-            className="MuiInputBase-input-l8cebw MuiInput-input-1x19b79"
+            className="MuiInputBase-input-1an1an1 MuiInput-input-1z0hoyc"
             disabled={false}
             onBlur={[Function]}
             onChange={[Function]}
@@ -52267,7 +52267,7 @@ exports[`Storyshots TextField with error 1`] = `
           />
         </div>
         <p
-          className="MuiFormHelperText-root-rowsyq MuiFormHelperText-error-17tmc0a"
+          className="MuiFormHelperText-root-1yp87zn MuiFormHelperText-error-1exrfh"
         >
           There was an error here!
         </p>
