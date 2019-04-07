@@ -2,6 +2,9 @@ import { ScreenSize } from '../helpers/constants'
 import { makeStyles } from '@material-ui/styles'
 
 const useStyles = makeStyles(theme => ({
+  [ScreenSize.all]: {
+    display: 'flex'
+  },
   [ScreenSize.small]: {
     display: 'flex',
 

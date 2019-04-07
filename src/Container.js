@@ -30,14 +30,9 @@ const Container = ({
   paddingTopLevel = SpacingLevel.l0,
   screenSize
 }) => {
-  const screenSizeClasses = useScreenSizeStyles()
   const centeredContentClassName = useCenteredContentClassName()
 
   let classNames = [className]
-
-  if (screenSize) {
-    classNames.push(screenSizeClasses[screenSize])
-  }
 
   if (centeredContent) {
     classNames.push(centeredContentClassName)
@@ -52,6 +47,7 @@ const Container = ({
       marginTopLevel={marginTopLevel}
       paddingBottomLevel={paddingBottomLevel}
       paddingTopLevel={paddingTopLevel}
+      screenSize={screenSize}
     >
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasAppBar ? <Toolbar /> : null}

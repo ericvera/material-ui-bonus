@@ -5,25 +5,23 @@ import exact from 'prop-types-exact'
 // Material-UI
 import { makeStyles } from '@material-ui/styles'
 // Helpers
-import { Color, SpacingLevel } from '../helpers/constants'
-import { SpacingLevelPropTypes } from '../helpers/PropTypes'
+import { Color, ScreenSize, SpacingLevel } from '../helpers/constants'
+import {
+  ScreenSizePropTypes,
+  SpacingLevelPropTypes
+} from '../helpers/PropTypes'
 import getColor from '../helpers/getColor'
-import getSpacing from '../helpers/getSpacing'
 // Hooks
 import useMarginStyles from '../hooks/useMarginStyles'
 import usePaddingStyles from '../hooks/usePaddingStyles'
+import useScreenSizeStyles from '../hooks/useScreenSizeStyles'
 
 const useStyles = backgroundImage =>
   makeStyles(theme => ({
     mainFullHeight: {
       backgroundColor: getColor(Color.background),
-      display: 'flex',
       flex: '1 0 auto',
-      flexDirection: 'column',
-      // Padding so that on a screen longer than viewport the last element does not "stick"
-      //  to the bottom. It is padding so it will not make the full-height container grow
-      //  unnecesarily.
-      paddingBottom: getSpacing(SpacingLevel.l4)
+      flexDirection: 'column'
     },
     main: {
       backgroundColor: getColor(Color.background),
@@ -49,17 +47,24 @@ const OuterContainer = ({
   marginBottomLevel = SpacingLevel.l0,
   marginTopLevel = SpacingLevel.l0,
   paddingBottomLevel = SpacingLevel.l0,
-  paddingTopLevel = SpacingLevel.l0
+  paddingTopLevel = SpacingLevel.l0,
+  screenSize = ScreenSize.all
 }) => {
   const classes = useStyles(backgroundImage)
   const marginsClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
   const paddingClassName = usePaddingStyles(paddingTopLevel, paddingBottomLevel)
+  const screenSizeClasses = useScreenSizeStyles()
 
   const mainClassName = fullPage ? classes.mainFullHeight : classes.main
-  let classNames = [marginsClassName, paddingClassName, mainClassName]
+  let classNames = [
+    marginsClassName,
+    paddingClassName,
+    mainClassName,
+    screenSizeClasses[screenSize]
+  ]
 
   if (className) {
-    classNames.unshift(className)
+    classNames.push(className)
   }
 
   if (backgroundImage) {
@@ -77,7 +82,8 @@ OuterContainer.propTypes = exact({
   marginBottomLevel: SpacingLevelPropTypes,
   marginTopLevel: SpacingLevelPropTypes,
   paddingBottomLevel: SpacingLevelPropTypes,
-  paddingTopLevel: SpacingLevelPropTypes
+  paddingTopLevel: SpacingLevelPropTypes,
+  screenSize: ScreenSizePropTypes
 })
 
 export default OuterContainer

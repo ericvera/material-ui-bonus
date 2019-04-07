@@ -52,6 +52,7 @@ export const HeadingLevel = {
 }
 
 export const ScreenSize = {
+  all: 'all',
   notSmall: 'not-small',
   small: 'small'
 }
