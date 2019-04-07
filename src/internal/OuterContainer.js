@@ -8,10 +8,11 @@ import { makeStyles } from '@material-ui/styles'
 import { Color, ScreenSize, SpacingLevel } from '../helpers/constants'
 import {
   ScreenSizePropTypes,
-  SpacingLevelPropTypes
+  SpacingLevelPropTypes,
+  ColorPropTypes
 } from '../helpers/PropTypes'
-import getColor from '../helpers/getColor'
 // Hooks
+import useColorClassName from '../hooks/useColorClassName'
 import useMarginStyles from '../hooks/useMarginStyles'
 import usePaddingStyles from '../hooks/usePaddingStyles'
 import useScreenSizeStyles from '../hooks/useScreenSizeStyles'
@@ -19,12 +20,10 @@ import useScreenSizeStyles from '../hooks/useScreenSizeStyles'
 const useStyles = backgroundImage =>
   makeStyles(theme => ({
     mainFullHeight: {
-      backgroundColor: getColor(Color.background),
       flex: '1 0 auto',
       flexDirection: 'column'
     },
     main: {
-      backgroundColor: getColor(Color.background),
       flexGrow: 1
     },
     backgroundImageContainer: {
@@ -40,6 +39,7 @@ const useStyles = backgroundImage =>
   }))()
 
 const OuterContainer = ({
+  backgroundColor = Color.background,
   backgroundImage,
   children,
   className,
@@ -54,13 +54,14 @@ const OuterContainer = ({
   const marginsClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
   const paddingClassName = usePaddingStyles(paddingTopLevel, paddingBottomLevel)
   const screenSizeClasses = useScreenSizeStyles()
+  const backgroundColorClassName = useColorClassName(null, backgroundColor)
 
-  const mainClassName = fullPage ? classes.mainFullHeight : classes.main
   let classNames = [
-    marginsClassName,
+    fullPage ? classes.mainFullHeight : classes.main,
     paddingClassName,
-    mainClassName,
-    screenSizeClasses[screenSize]
+    marginsClassName,
+    screenSizeClasses[screenSize],
+    backgroundColorClassName
   ]
 
   if (className) {
@@ -75,6 +76,7 @@ const OuterContainer = ({
 }
 
 OuterContainer.propTypes = exact({
+  backgroundColor: ColorPropTypes,
   backgroundImage: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,

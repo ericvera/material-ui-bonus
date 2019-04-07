@@ -60,8 +60,6 @@ storiesOf('AppBar', module)
       />
       <Container backgroundImage={backgroundImage}>
         <Text marginTopLevel="l9">Content here</Text>
-        <Text marginTopLevel="l9">Content here</Text>
-        <Text marginTopLevel="l9">Content here</Text>
       </Container>
       <Container fullPage={false}>
         <Text>Content 2</Text>

@@ -6288,7 +6288,7 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
           </header>
         </div>
         <div
-          className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+          className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
         >
           <div
             className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -6304,21 +6304,11 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
               >
                 Content here
               </p>
-              <p
-                className="MuiTypography-root-9tl06r MuiTypography-body1-5vtdie Hook-margins-1i3dqyv"
-              >
-                Content here
-              </p>
-              <p
-                className="MuiTypography-root-9tl06r MuiTypography-body1-5vtdie Hook-margins-1i3dqyv"
-              >
-                Content here
-              </p>
             </div>
           </div>
         </div>
         <div
-          className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-main-gonq2z Hook-all-3l5b0w"
+          className="Hook-main-1kwhp3u Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
         >
           <div
             className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -6862,202 +6852,6 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                       >
                         &gt;
                       </span>
-                    </div>
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 48,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &lt;
-                          Text
-                        </span>
-                        <span>
-                          <span>
-                             
-                            <span
-                              style={Object {}}
-                            >
-                              marginTopLevel
-                            </span>
-                            <span>
-                              =
-                              <span
-                                style={Object {}}
-                              >
-                                "
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#22a",
-                                      "wordBreak": "break-word",
-                                    }
-                                  }
-                                >
-                                  l9
-                                </span>
-                                "
-                              </span>
-                            </span>
-                            
-                          </span>
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &gt;
-                        </span>
-                      </div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 63,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          Content here
-                        </span>
-                      </div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 48,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &lt;/
-                          Text
-                          &gt;
-                        </span>
-                      </div>
-                    </div>
-                    <div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 48,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &lt;
-                          Text
-                        </span>
-                        <span>
-                          <span>
-                             
-                            <span
-                              style={Object {}}
-                            >
-                              marginTopLevel
-                            </span>
-                            <span>
-                              =
-                              <span
-                                style={Object {}}
-                              >
-                                "
-                                <span
-                                  style={
-                                    Object {
-                                      "color": "#22a",
-                                      "wordBreak": "break-word",
-                                    }
-                                  }
-                                >
-                                  l9
-                                </span>
-                                "
-                              </span>
-                            </span>
-                            
-                          </span>
-                        </span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &gt;
-                        </span>
-                      </div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 63,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          Content here
-                        </span>
-                      </div>
-                      <div
-                        style={
-                          Object {
-                            "paddingLeft": 48,
-                            "paddingRight": 3,
-                          }
-                        }
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#444",
-                            }
-                          }
-                        >
-                          &lt;/
-                          Text
-                          &gt;
-                        </span>
-                      </div>
                     </div>
                     <div>
                       <div
@@ -8616,6 +8410,58 @@ exports[`Storyshots AppBar dialog-menu 1`] = `
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
                   <tr>
                     <td
                       style={
@@ -11755,7 +11601,7 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
           </div>
         </header>
         <div
-          className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+          className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
         >
           <div
             className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -13645,6 +13491,58 @@ exports[`Storyshots AppBar top (close) and bottom (bottom-text-bottom) 1`] = `
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
                   <tr>
                     <td
                       style={
@@ -28189,6 +28087,1620 @@ exports[`Storyshots Button text button 1`] = `
 </div>
 `;
 
+exports[`Storyshots Container custom background color (brand) 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "display": "flex",
+      "flexDirection": "column",
+      "minHeight": "100vh",
+    }
+  }
+>
+  <div>
+    <div
+      style={
+        Object {
+          "position": "relative",
+          "zIndex": 0,
+        }
+      }
+    >
+      <div
+        className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-3flz7p"
+      >
+        <div
+          className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
+        />
+        <div
+          className="MuiGrid-container-pont4l MuiGrid-align-content-xs-center-1wfb31e MuiGrid-justify-xs-center-16jh393 Hook-gutters-1ds19tl"
+        >
+          <div
+            className="MuiGrid-item-1p1156e MuiGrid-grid-xs-12-1lkna60 MuiGrid-grid-sm-9-9awu9e MuiGrid-grid-md-6-tb0wis MuiGrid-grid-lg-3-7z8lqk"
+          >
+            <h1
+              className="MuiTypography-root-9tl06r MuiTypography-h1-wyjbnx Hook-margins-h9x30h"
+            >
+              Hi, My background should have the brand color
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      className="info__show-button"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#027ac5",
+          "border": "none",
+          "borderRadius": "0 0 0 5px",
+          "color": "#fff",
+          "cursor": "pointer",
+          "display": "block",
+          "fontFamily": "sans-serif",
+          "fontSize": "12px",
+          "padding": "5px 15px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      type="button"
+    >
+      Show Info
+    </button>
+    <div
+      className="info__overlay"
+      style={
+        Object {
+          "background": "white",
+          "bottom": 0,
+          "display": "none",
+          "left": 0,
+          "overflow": "auto",
+          "padding": "0 40px",
+          "position": "fixed",
+          "right": 0,
+          "top": 0,
+          "zIndex": 99999,
+        }
+      }
+    >
+      <button
+        className="info__close-button"
+        onClick={[Function]}
+        style={
+          Object {
+            "background": "#027ac5",
+            "border": "none",
+            "borderRadius": "0 0 0 5px",
+            "color": "#fff",
+            "cursor": "pointer",
+            "display": "block",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "padding": "5px 15px",
+            "position": "fixed",
+            "right": 0,
+            "top": 0,
+          }
+        }
+        type="button"
+      >
+        ×
+      </button>
+      <div>
+        <div
+          style={
+            Object {
+              "backgroundColor": "#fff",
+              "border": "1px solid #eee",
+              "borderRadius": "2px",
+              "color": "black",
+              "fontFamily": "Helvetica Neue, Helvetica, Segoe UI, Arial, freesans, sans-serif",
+              "fontSize": "15px",
+              "fontWeight": 300,
+              "lineHeight": 1.45,
+              "marginBottom": "20px",
+              "marginTop": "20px",
+              "padding": "20px 40px 40px",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "borderBottom": "1px solid #eee",
+                "marginBottom": 10,
+                "paddingTop": 10,
+              }
+            }
+          >
+            <h1
+              style={
+                Object {
+                  "fontSize": "35px",
+                  "margin": 0,
+                  "padding": 0,
+                }
+              }
+            >
+              Container
+            </h1>
+            <h2
+              style={
+                Object {
+                  "fontSize": "22px",
+                  "fontWeight": 400,
+                  "margin": "0 0 10px 0",
+                  "padding": 0,
+                }
+              }
+            >
+              custom background color (brand)
+            </h2>
+          </div>
+          
+          <div>
+            <h1
+              style={
+                Object {
+                  "borderBottom": "1px solid #EEE",
+                  "fontSize": "25px",
+                  "margin": "20px 0 0 0",
+                  "padding": "0 0 5px 0",
+                }
+              }
+            >
+              Story Source
+            </h1>
+            <pre
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#fafafa",
+                  "display": "flex",
+                  "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+                  "fontSize": ".88em",
+                  "justifyContent": "space-between",
+                  "lineHeight": 1.5,
+                  "overflowX": "scroll",
+                  "padding": ".5rem",
+                }
+              }
+            >
+              <div>
+                <div>
+                  <div
+                    style={
+                      Object {
+                        "paddingLeft": 18,
+                        "paddingRight": 3,
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#444",
+                        }
+                      }
+                    >
+                      &lt;
+                      Container
+                    </span>
+                    <span>
+                      <span>
+                         
+                        <span
+                          style={Object {}}
+                        >
+                          backgroundColor
+                        </span>
+                        <span>
+                          =
+                          <span
+                            style={Object {}}
+                          >
+                            "
+                            <span
+                              style={
+                                Object {
+                                  "color": "#22a",
+                                  "wordBreak": "break-word",
+                                }
+                              }
+                            >
+                              brand
+                            </span>
+                            "
+                          </span>
+                        </span>
+                        
+                      </span>
+                    </span>
+                    <span
+                      style={
+                        Object {
+                          "color": "#444",
+                        }
+                      }
+                    >
+                      &gt;
+                    </span>
+                  </div>
+                  <div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 33,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        &lt;
+                        Heading
+                      </span>
+                      <span />
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        &gt;
+                      </span>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 48,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        Hi, My background should have the brand color
+                      </span>
+                    </div>
+                    <div
+                      style={
+                        Object {
+                          "paddingLeft": 33,
+                          "paddingRight": 3,
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#444",
+                          }
+                        }
+                      >
+                        &lt;/
+                        Heading
+                        &gt;
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    style={
+                      Object {
+                        "paddingLeft": 18,
+                        "paddingRight": 3,
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#444",
+                        }
+                      }
+                    >
+                      &lt;/
+                      Container
+                      &gt;
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <button
+                onClick={[Function]}
+                style={
+                  Object {
+                    "alignSelf": "flex-start",
+                    "backgroundColor": "rgb(255, 255, 255)",
+                    "borderColor": "rgb(238, 238, 238)",
+                    "borderImage": "initial",
+                    "borderRadius": "3px",
+                    "borderStyle": "solid",
+                    "borderWidth": "1px",
+                    "cursor": "pointer",
+                    "flexShrink": "0",
+                    "fontSize": "13px",
+                    "overflow": "hidden",
+                    "padding": "3px 10px",
+                  }
+                }
+                type="button"
+              >
+                Copy
+              </button>
+            </pre>
+          </div>
+          <div>
+            <h1
+              style={
+                Object {
+                  "borderBottom": "1px solid #EEE",
+                  "fontSize": "25px",
+                  "margin": "20px 0 0 0",
+                  "padding": "0 0 5px 0",
+                }
+              }
+            >
+              Prop Types
+            </h1>
+            <div>
+              <h3
+                style={
+                  Object {
+                    "margin": "20px 0 0 0",
+                  }
+                }
+              >
+                "
+                Container
+                " Component
+              </h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      property
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      propType
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      required
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      default
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      description
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundImage
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        string
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      centered
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        bool
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      centeredContent
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        bool
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      children
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        node
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      className
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        string
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      disableGutters
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        bool
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      fullPage
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        bool
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      hasAppBar
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        bool
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      hasBottomBar
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        bool
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      marginBottomLevel
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      marginTopLevel
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      paddingBottomLevel
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      paddingTopLevel
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      screenSize
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      prop-types-exact: ​
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      yes
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div>
+              <h3
+                style={
+                  Object {
+                    "margin": "20px 0 0 0",
+                  }
+                }
+              >
+                "
+                Heading
+                " Component
+              </h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      property
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      propType
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      required
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      default
+                    </th>
+                    <th
+                      style={
+                        Object {
+                          "textAlign": "left",
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      description
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      children
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        string
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      level
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      marginBottomLevel
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      marginTopLevel
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      prop-types-exact: ​
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      yes
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Container default 1`] = `
 <div
   style={
@@ -28210,7 +29722,7 @@ exports[`Storyshots Container default 1`] = `
       }
     >
       <div
-        className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+        className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
       >
         <div
           className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -28600,6 +30112,58 @@ exports[`Storyshots Container default 1`] = `
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
                   <tr>
                     <td
                       style={
@@ -29743,7 +31307,7 @@ exports[`Storyshots Container not-small only 1`] = `
       }
     >
       <div
-        className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-not-small-t26wmo"
+        className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-not-small-t26wmo Hook-colorStyles-uuzq4u"
       >
         <div
           className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -30162,6 +31726,58 @@ exports[`Storyshots Container not-small only 1`] = `
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
                   <tr>
                     <td
                       style={
@@ -31306,7 +32922,7 @@ exports[`Storyshots Container small and not-small 1`] = `
     >
       <div>
         <div
-          className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-small-1vvx3qk"
+          className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-small-1vvx3qk Hook-colorStyles-uuzq4u"
         >
           <div
             className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -31326,7 +32942,7 @@ exports[`Storyshots Container small and not-small 1`] = `
           </div>
         </div>
         <div
-          className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-not-small-t26wmo"
+          className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-not-small-t26wmo Hook-colorStyles-uuzq4u"
         >
           <div
             className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -31946,6 +33562,58 @@ exports[`Storyshots Container small and not-small 1`] = `
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
                   <tr>
                     <td
                       style={
@@ -33089,7 +34757,7 @@ exports[`Storyshots Container small only 1`] = `
       }
     >
       <div
-        className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-small-1vvx3qk"
+        className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-small-1vvx3qk Hook-colorStyles-uuzq4u"
       >
         <div
           className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -33508,6 +35176,58 @@ exports[`Storyshots Container small only 1`] = `
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      backgroundColor
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      <span>
+                        other
+                      </span>
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    >
+                      -
+                    </td>
+                    <td
+                      style={
+                        Object {
+                          "paddingRight": 10,
+                          "verticalAlign": "top",
+                        }
+                      }
+                    />
+                  </tr>
                   <tr>
                     <td
                       style={
@@ -34708,7 +36428,7 @@ exports[`Storyshots Footer default 1`] = `
   }
 >
   <div
-    className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+    className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
   >
     <div
       className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -34798,7 +36518,7 @@ exports[`Storyshots Footer w/ margin 1`] = `
   }
 >
   <div
-    className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+    className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
   >
     <div
       className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -41060,7 +42780,7 @@ exports[`Storyshots Sample Layouts H1 + Text + Button 1`] = `
     </div>
   </header>
   <div
-    className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+    className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
   >
     <div
       className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -41182,7 +42902,7 @@ exports[`Storyshots Sample Layouts H2 + Input + Button 1`] = `
     </div>
   </header>
   <div
-    className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+    className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
   >
     <div
       className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -41322,7 +43042,7 @@ exports[`Storyshots Sample Layouts H2 + SubText + List 1`] = `
     </div>
   </header>
   <div
-    className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+    className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
   >
     <div
       className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"
@@ -41493,7 +43213,7 @@ exports[`Storyshots Sample Layouts Progress screen 1`] = `
   }
 >
   <div
-    className="Hook-margins-h9x30h Hook-padding-rrmb7n Hook-mainFullHeight-1gywame Hook-all-3l5b0w"
+    className="Hook-mainFullHeight-1l1gg40 Hook-padding-rrmb7n Hook-margins-h9x30h Hook-all-3l5b0w Hook-colorStyles-uuzq4u"
   >
     <div
       className="MuiToolbar-root-1mu5rjr MuiToolbar-regular-1a11z5q MuiToolbar-gutters-1ds19tl"

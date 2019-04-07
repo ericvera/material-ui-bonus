@@ -31,3 +31,8 @@ storiesOf('Container', module)
       </Container>
     </div>
   ))
+  .add('custom background color (brand)', () => (
+    <Container backgroundColor="brand">
+      <Heading>Hi, My background should have the brand color</Heading>
+    </Container>
+  ))

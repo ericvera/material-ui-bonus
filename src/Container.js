@@ -9,12 +9,16 @@ import InnerContainer from './internal/InnerContainer'
 import OuterContainer from './internal/OuterContainer'
 // Helpers
 import { SpacingLevel } from './helpers/constants'
-import { ScreenSizePropTypes, SpacingLevelPropTypes } from './helpers/PropTypes'
+import {
+  ScreenSizePropTypes,
+  SpacingLevelPropTypes,
+  ColorPropTypes
+} from './helpers/PropTypes'
 // Hooks
 import useCenteredContentClassName from './hooks/useCenteredContentClassName'
-import useScreenSizeStyles from './hooks/useScreenSizeStyles'
 
 const Container = ({
+  backgroundColor,
   backgroundImage,
   centered = true,
   centeredContent = false,
@@ -40,6 +44,7 @@ const Container = ({
 
   return (
     <OuterContainer
+      backgroundColor={backgroundColor}
       backgroundImage={backgroundImage}
       className={classNames.join(' ')}
       fullPage={fullPage}
@@ -61,6 +66,7 @@ const Container = ({
 }
 
 Container.propTypes = exact({
+  backgroundColor: ColorPropTypes,
   backgroundImage: PropTypes.string,
   centered: PropTypes.bool,
   centeredContent: PropTypes.bool,
