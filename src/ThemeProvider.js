@@ -132,6 +132,11 @@ const theme = createMuiTheme({
         color: getColor(Color.brand)
       }
     },
+    MuiDivider: {
+      root: {
+        backgroundColor: getColor(Color.transparent)
+      }
+    },
     MuiFormControl: {
       root: {
         display: 'block'

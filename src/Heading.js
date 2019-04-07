@@ -5,13 +5,15 @@ import exact from 'prop-types-exact'
 // Material-UI
 import Typography from '@material-ui/core/Typography'
 // Helpers
-import { HeadingLevel, SpacingLevel } from './helpers/constants'
+import { HeadingLevel, SpacingLevel, Color } from './helpers/constants'
 import {
   HeadingLevelPropTypes,
-  SpacingLevelPropTypes
+  SpacingLevelPropTypes,
+  ColorPropTypes
 } from './helpers/PropTypes'
 // Hooks
 import useMarginStyles from './hooks/useMarginStyles'
+import useColorClassName from './hooks/useColorClassName'
 
 const headingLevelToVariant = {
   [HeadingLevel.l1]: 'h1',
@@ -20,17 +22,19 @@ const headingLevelToVariant = {
 }
 
 const Heading = ({
+  color = Color.primary,
   level = HeadingLevel.l1,
   marginTopLevel = SpacingLevel.l0,
   marginBottomLevel = SpacingLevel.l0,
   children
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
+  const colorClassName = useColorClassName(color)
 
   return (
     <Typography
       variant={headingLevelToVariant[level]}
-      className={marginClassName}
+      className={[colorClassName, marginClassName].join(' ')}
     >
       {children}
     </Typography>
@@ -39,6 +43,7 @@ const Heading = ({
 
 Heading.propTypes = exact({
   children: PropTypes.string,
+  color: ColorPropTypes,
   level: HeadingLevelPropTypes,
   marginBottomLevel: SpacingLevelPropTypes,
   marginTopLevel: SpacingLevelPropTypes
