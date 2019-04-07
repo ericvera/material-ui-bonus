@@ -5,9 +5,15 @@ import exact from 'prop-types-exact'
 // Material-UI
 import FormHelperText from '@material-ui/core/FormHelperText'
 import Typography from '@material-ui/core/Typography'
-// Helpers
-import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
 import { makeStyles } from '@material-ui/styles'
+// Helpers
+import { SpacingLevel, TextVariant } from './helpers/constants'
+import {
+  SpacingLevelPropTypes,
+  TextVariantPropTypes
+} from './helpers/PropTypes'
+// Hooks
+import useMarginStyles from './hooks/useMarginStyles'
 
 const useStyles = makeStyles({
   inline: {
@@ -18,9 +24,9 @@ const useStyles = makeStyles({
 const Text = ({
   children,
   inline = false,
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
-  variant = 'body'
+  marginTopLevel = SpacingLevel.l0,
+  marginBottomLevel = SpacingLevel.l0,
+  variant = TextVariant.body
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
@@ -31,7 +37,7 @@ const Text = ({
     classNames.push(classes.inline)
   }
 
-  if (variant === 'error') {
+  if (variant === TextVariant.error) {
     return (
       <FormHelperText
         children={children}
@@ -44,7 +50,7 @@ const Text = ({
   return (
     <Typography
       component={React.Children.count(children) > 1 ? 'div' : 'p'}
-      variant={variant === 'sub-text' ? 'body2' : 'body1'}
+      variant={variant === TextVariant.subText ? 'body2' : 'body1'}
       className={classNames.join(' ')}
       children={children}
     />
@@ -54,9 +60,9 @@ const Text = ({
 Text.propTypes = exact({
   children: PropTypes.node,
   inline: PropTypes.bool,
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes,
-  variant: PropTypes.oneOf(['body', 'sub-text', 'error'])
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes,
+  variant: TextVariantPropTypes
 })
 
 export default Text

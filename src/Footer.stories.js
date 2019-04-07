@@ -12,9 +12,9 @@ storiesOf('Footer', module)
     () => (
       <>
         <Container>
-          <Heading level="1">Hi, I am a level 1 header</Heading>
-          <Heading level="2">Hi, I am a level 2 header</Heading>
-          <Heading level="3">Hi, I am a level 3 header</Heading>
+          <Heading>Hi, I am a level 1 header</Heading>
+          <Heading level="l2">Hi, I am a level 2 header</Heading>
+          <Heading level="l3">Hi, I am a level 3 header</Heading>
         </Container>
         <Footer>
           <Text>Some text</Text>
@@ -35,11 +35,11 @@ storiesOf('Footer', module)
     () => (
       <>
         <Container>
-          <Heading level="1">Hi, I am a level 1 header</Heading>
-          <Heading level="2">Hi, I am a level 2 header</Heading>
-          <Heading level="3">Hi, I am a level 3 header</Heading>
+          <Heading>Hi, I am a level 1 header</Heading>
+          <Heading level="l2">Hi, I am a level 2 header</Heading>
+          <Heading level="l3">Hi, I am a level 3 header</Heading>
         </Container>
-        <Footer marginTopLevel="5">
+        <Footer marginTopLevel="l5">
           <Text>Some text</Text>
           <div>
             <Button>Button text</Button>

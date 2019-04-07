@@ -2,6 +2,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
+// Helpers
+import { AppBarVariantPropTypes, ColorPropTypes } from './helpers/PropTypes'
 // Components
 import AppBarButton from './internal/AppBarButton'
 import BaseAppBar from './internal/BaseAppBar'
@@ -36,14 +38,7 @@ const itemPropType = PropTypes.shape({
 })
 
 AppBar.propTypes = exact({
-  variant: PropTypes.oneOf([
-    'back',
-    'close',
-    'drawer-menu',
-    'dialog-menu',
-    'bottom-full-button',
-    'bottom-text-button'
-  ]).isRequired,
+  variant: AppBarVariantPropTypes.isRequired,
 
   /* back, close, bottom-full-button, bottom-text-button */
   onClick: PropTypes.func,
@@ -60,8 +55,16 @@ AppBar.propTypes = exact({
   /* dialog-menu */
   openMenuLogo: PropTypes.element,
   closeMenuLogo: PropTypes.element,
-  color: PropTypes.oneOf(['background', 'transparent']),
   logo: PropTypes.element,
+  // small screen
+  openMenuIconColor: ColorPropTypes,
+  closeMenuIconColor: ColorPropTypes,
+  smallScreenAppBarBackgroundColor: ColorPropTypes,
+  smallScreenMenuBackgroundColor: ColorPropTypes,
+  smallScreenLinkTextColor: ColorPropTypes,
+  // not-small screen
+  notSmallScreenAppBarBackgroundColor: ColorPropTypes,
+  notSmallScreenLinkTextColor: ColorPropTypes,
 
   /* bottom-full-button */
   content: PropTypes.node,

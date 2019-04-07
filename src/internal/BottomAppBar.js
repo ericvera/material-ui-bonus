@@ -2,11 +2,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
-// Components
-import BaseAppBar from './BaseAppBar'
+// Public
 import Button from '../Button'
+// Internal
+import BaseAppBar from './BaseAppBar'
 
-const BottomAppBar = ({ content, buttonText, buttonColor, onClick }) => {
+const BottomAppBar = ({ buttonColor, buttonText, content, onClick }) => {
   return (
     <BaseAppBar location="bottom" centered={true}>
       {content}
@@ -23,8 +24,8 @@ const BottomAppBar = ({ content, buttonText, buttonColor, onClick }) => {
 }
 
 BottomAppBar.propTypes = exact({
-  buttonText: PropTypes.string,
   buttonColor: PropTypes.string,
+  buttonText: PropTypes.string,
   content: PropTypes.node,
   onClick: PropTypes.func
 })

@@ -9,7 +9,7 @@ const ResetTestComponent = () => {
   return (
     <div>
       <Button
-        color="confirmation"
+        color="confirm-action"
         delay={5}
         ref={buttonRef}
         onClick={action('button pressed')}
@@ -37,7 +37,7 @@ const ToggleProgressComponent = () => {
       <Button
         showProgress={showProgress}
         variant="progress"
-        color="confirmation"
+        color="confirm-action"
         onClick={action('button pressed')}
       >
         Progress button
@@ -77,16 +77,16 @@ storiesOf('Button', module)
       Press me
     </Button>
   ))
-  .add('confirmation', () => (
-    <Button color="confirmation" onClick={action('button pressed')}>
+  .add('confirm-action', () => (
+    <Button color="confirm-action" onClick={action('button pressed')}>
       Press me
     </Button>
   ))
-  .add('progress / confirmation', () => (
+  .add('progress / confirm-action', () => (
     <Button
       variant="progress"
       delay={5}
-      color="confirmation"
+      color="confirm-action"
       onClick={action('button pressed')}
     >
       Press me
@@ -103,6 +103,16 @@ storiesOf('Button', module)
     <Button
       variant="text"
       color="secondary"
+      centered={false}
+      onClick={action('button pressed')}
+    >
+      Press me
+    </Button>
+  ))
+  .add('text button / brand', () => (
+    <Button
+      variant="text"
+      color="brand"
       centered={false}
       onClick={action('button pressed')}
     >

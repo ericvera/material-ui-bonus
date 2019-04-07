@@ -2,16 +2,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
-// Components
-import CenteredContent from './internal/CenteredContent'
+// Material-UI
+import Toolbar from '@material-ui/core/Toolbar'
+// Internal
 import InnerContainer from './internal/InnerContainer'
 import OuterContainer from './internal/OuterContainer'
 // Helpers
-import { MarginPropTypes } from './helpers/useMarginStyles'
-import { PaddingPropTypes } from './helpers/usePaddingStyles'
-// Material-UI
-import Toolbar from '@material-ui/core/Toolbar'
-import ShowOnScreenSize from './internal/ShownOnScreenSize'
+import { SpacingLevel } from './helpers/constants'
+import { ScreenSizePropTypes, SpacingLevelPropTypes } from './helpers/PropTypes'
+// Hooks
+import useCenteredContentClassName from './hooks/useCenteredContentClassName'
+import useScreenSizeStyles from './hooks/useScreenSizeStyles'
 
 const Container = ({
   backgroundImage,
@@ -23,22 +24,29 @@ const Container = ({
   fullPage = true,
   hasAppBar = true,
   hasBottomBar = false,
-  marginBottomLevel = '0',
-  marginTopLevel = '0',
-  paddingBottomLevel = '0',
-  paddingTopLevel = '0',
+  marginBottomLevel = SpacingLevel.l0,
+  marginTopLevel = SpacingLevel.l0,
+  paddingBottomLevel = SpacingLevel.l0,
+  paddingTopLevel = SpacingLevel.l0,
   screenSize
 }) => {
-  let content = children
+  const screenSizeClasses = useScreenSizeStyles()
+  const centeredContentClassName = useCenteredContentClassName()
 
-  if (centeredContent) {
-    content = <CenteredContent>{content}</CenteredContent>
+  let classNames = [className]
+
+  if (screenSize) {
+    classNames.push(screenSizeClasses[screenSize])
   }
 
-  content = (
+  if (centeredContent) {
+    classNames.push(centeredContentClassName)
+  }
+
+  return (
     <OuterContainer
       backgroundImage={backgroundImage}
-      className={className}
+      className={classNames.join(' ')}
       fullPage={fullPage}
       marginBottomLevel={marginBottomLevel}
       marginTopLevel={marginTopLevel}
@@ -48,18 +56,12 @@ const Container = ({
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasAppBar ? <Toolbar /> : null}
       <InnerContainer centered={centered} disableGutters={disableGutters}>
-        {content}
+        {children}
       </InnerContainer>
       {/* Hack to occupy the needed space as Toolbar resizes based on screen size */}
       {hasBottomBar ? <Toolbar /> : null}
     </OuterContainer>
   )
-
-  if (screenSize) {
-    content = <ShowOnScreenSize size={screenSize}>{content}</ShowOnScreenSize>
-  }
-
-  return content
 }
 
 Container.propTypes = exact({
@@ -72,11 +74,11 @@ Container.propTypes = exact({
   fullPage: PropTypes.bool,
   hasAppBar: PropTypes.bool,
   hasBottomBar: PropTypes.bool,
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes,
-  paddingBottomLevel: PaddingPropTypes,
-  paddingTopLevel: PaddingPropTypes,
-  screenSize: PropTypes.oneOf(['small', 'not-small'])
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes,
+  paddingBottomLevel: SpacingLevelPropTypes,
+  paddingTopLevel: SpacingLevelPropTypes,
+  screenSize: ScreenSizePropTypes
 })
 
 export default Container

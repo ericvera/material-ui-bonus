@@ -8,9 +8,9 @@ storiesOf('Divider', module)
     'centered with top margin',
     () => (
       <>
-        <Heading level="1">Hi, I am a level 1 header</Heading>
-        <Divider marginTopLevel="3" />
-        <Heading level="2">Hi, I am a level 2 header</Heading>
+        <Heading>Hi, I am a level 1 header</Heading>
+        <Divider marginTopLevel="l3" />
+        <Heading level="l2">Hi, I am a level 2 header</Heading>
       </>
     ),
     {
@@ -23,9 +23,9 @@ storiesOf('Divider', module)
     'not centered',
     () => (
       <>
-        <Heading level="1">Hi, I am a level 1 header</Heading>
-        <Divider centered={false} marginTopLevel="5" marginBottomLevel="5" />
-        <Heading level="2">Hi, I am a level 2 header</Heading>
+        <Heading>Hi, I am a level 1 header</Heading>
+        <Divider centered={false} marginTopLevel="l5" marginBottomLevel="l5" />
+        <Heading level="l2">Hi, I am a level 2 header</Heading>
       </>
     ),
     {

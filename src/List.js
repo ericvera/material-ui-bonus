@@ -6,11 +6,12 @@ import exact from 'prop-types-exact'
 import MaterialUIList from '@material-ui/core/List'
 import { makeStyles } from '@material-ui/styles'
 // Helpers
+import { SpacingLevel } from './helpers/constants'
 import getSpacing from './helpers/getSpacing'
 
 const useStyles = makeStyles({
   list: {
-    marginTop: getSpacing(3)
+    marginTop: getSpacing(SpacingLevel.l3)
   }
 })
 

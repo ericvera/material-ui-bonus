@@ -47,7 +47,6 @@ storiesOf('AppBar', module)
         openMenuLogo={<HomeIcon />}
         closeMenuLogo={<HomeIcon />}
         logo={<HomeIcon />}
-        color="transparent"
         menuItems={[
           {
             text: 'Menu item 1',
@@ -60,11 +59,13 @@ storiesOf('AppBar', module)
         ]}
       />
       <Container backgroundImage={backgroundImage}>
-        <Text marginTopLevel="9">Content here</Text>
-        <Text marginTopLevel="9">Content here</Text>
-        <Text marginTopLevel="9">Content here</Text>
+        <Text marginTopLevel="l9">Content here</Text>
+        <Text marginTopLevel="l9">Content here</Text>
+        <Text marginTopLevel="l9">Content here</Text>
       </Container>
-      <Container fullPage={false}>Content 2</Container>
+      <Container fullPage={false}>
+        <Text>Content 2</Text>
+      </Container>
     </div>
   ))
   .add('bottom-full-button', () => (
@@ -79,7 +80,7 @@ storiesOf('AppBar', module)
       variant="bottom-full-button"
       content={
         <div>
-          <Heading level="3">Some heading</Heading>
+          <Heading level="l3">Some heading</Heading>
           <Text>Some text</Text>
         </div>
       }
@@ -91,13 +92,13 @@ storiesOf('AppBar', module)
     <div>
       <AppBar variant="close" onClick={action('close')} />
       <Container>
-        <Heading level="1">Hello!</Heading>
+        <Heading>Hello!</Heading>
       </Container>
       <AppBar
         variant="bottom-full-button"
         content={
           <div>
-            <Heading level="3">Some heading</Heading>
+            <Heading level="l3">Some heading</Heading>
             <Text>Some text</Text>
           </div>
         }

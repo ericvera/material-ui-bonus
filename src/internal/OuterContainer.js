@@ -5,25 +5,28 @@ import exact from 'prop-types-exact'
 // Material-UI
 import { makeStyles } from '@material-ui/styles'
 // Helpers
+import { Color, SpacingLevel } from '../helpers/constants'
+import { SpacingLevelPropTypes } from '../helpers/PropTypes'
+import getColor from '../helpers/getColor'
 import getSpacing from '../helpers/getSpacing'
-import useMarginStyles, { MarginPropTypes } from '../helpers/useMarginStyles'
-import usePaddingStyles, { PaddingPropTypes } from '../helpers/usePaddingStyles'
-import Colors from '../helpers/Colors'
+// Hooks
+import useMarginStyles from '../hooks/useMarginStyles'
+import usePaddingStyles from '../hooks/usePaddingStyles'
 
 const useStyles = backgroundImage =>
   makeStyles(theme => ({
     mainFullHeight: {
-      backgroundColor: Colors.background,
+      backgroundColor: getColor(Color.background),
       display: 'flex',
       flex: '1 0 auto',
       flexDirection: 'column',
       // Padding so that on a screen longer than viewport the last element does not "stick"
       //  to the bottom. It is padding so it will not make the full-height container grow
       //  unnecesarily.
-      paddingBottom: getSpacing(4)
+      paddingBottom: getSpacing(SpacingLevel.l4)
     },
     main: {
-      backgroundColor: Colors.background,
+      backgroundColor: getColor(Color.background),
       flexGrow: 1
     },
     backgroundImageContainer: {
@@ -43,10 +46,10 @@ const OuterContainer = ({
   children,
   className,
   fullPage = true,
-  marginBottomLevel = '0',
-  marginTopLevel = '0',
-  paddingBottomLevel = '0',
-  paddingTopLevel = '0'
+  marginBottomLevel = SpacingLevel.l0,
+  marginTopLevel = SpacingLevel.l0,
+  paddingBottomLevel = SpacingLevel.l0,
+  paddingTopLevel = SpacingLevel.l0
 }) => {
   const classes = useStyles(backgroundImage)
   const marginsClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
@@ -71,10 +74,10 @@ OuterContainer.propTypes = exact({
   children: PropTypes.node,
   className: PropTypes.string,
   fullPage: PropTypes.bool,
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes,
-  paddingBottomLevel: PaddingPropTypes,
-  paddingTopLevel: PaddingPropTypes
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes,
+  paddingBottomLevel: SpacingLevelPropTypes,
+  paddingTopLevel: SpacingLevelPropTypes
 })
 
 export default OuterContainer

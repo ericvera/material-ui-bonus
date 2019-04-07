@@ -22,11 +22,9 @@ storiesOf('Sample Layouts', module)
   .add('Progress screen', () => (
     <>
       <Container>
-        <Heading level="1" marginTopLevel="6">
-          A heading for what is taking time
-        </Heading>
-        <Text marginTopLevel="4">This will just take a second...</Text>
-        <Progress marginTopLevel="4" />
+        <Heading marginTopLevel="l6">A heading for what is taking time</Heading>
+        <Text marginTopLevel="l4">This will just take a second...</Text>
+        <Progress marginTopLevel="l4" />
       </Container>
     </>
   ))
@@ -34,16 +32,14 @@ storiesOf('Sample Layouts', module)
     <>
       <AppBar variant="close" onClick={action('close screen')} />
       <Container>
-        <Heading level="1" marginTopLevel="6">
-          Heading
-        </Heading>
-        <Text marginTopLevel="4">
+        <Heading marginTopLevel="l6">Heading</Heading>
+        <Text marginTopLevel="l4">
           <p>This is a paragraph</p>
           <p>
             It comes followed by a second paragraph for illustration purpose.
           </p>
         </Text>
-        <Button marginTopLevel="4" onClick={action('go somewhere pressed')}>
+        <Button marginTopLevel="l4" onClick={action('go somewhere pressed')}>
           Go somewhere
         </Button>
       </Container>
@@ -53,7 +49,7 @@ storiesOf('Sample Layouts', module)
     <>
       <AppBar variant="back" onClick={action('go back')} />
       <Container fullPage={true} hasBottomBar={true}>
-        <Heading level="2" marginTopLevel="4">
+        <Heading level="l2" marginTopLevel="l4">
           Heading
         </Heading>
         <List>
@@ -83,7 +79,7 @@ storiesOf('Sample Layouts', module)
       <AppBar
         variant="bottom-full-button"
         buttonText="Next"
-        buttonColor="confirmation"
+        buttonColor="confirm-action"
         onClick={action('next button pressed')}
       />
     </>
@@ -92,17 +88,17 @@ storiesOf('Sample Layouts', module)
     <>
       <AppBar variant="back" onClick={action('go back')} />
       <Container>
-        <Heading level="2" marginTopLevel="4">
+        <Heading level="l2" marginTopLevel="l4">
           Heading
         </Heading>
         <form>
           <TextField
             label="Some label"
             placeholder="Sample text"
-            marginTopLevel="5"
+            marginTopLevel="l5"
           />
         </form>
-        <Button marginTopLevel="4" onClick={action('button pressed')}>
+        <Button marginTopLevel="l4" onClick={action('button pressed')}>
           Press me
         </Button>
       </Container>

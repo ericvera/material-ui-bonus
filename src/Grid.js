@@ -2,16 +2,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
-// Helpers
-import getSpacing from './helpers/getSpacing'
 // Material-UI
 import MaterialUIGrid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/styles'
+// Helpers
+import { SpacingLevel } from './helpers/constants'
+import getSpacing from './helpers/getSpacing'
 
 const useStyles = makeStyles({
   gridItem: {
-    paddingLeft: getSpacing(2),
-    paddingRight: getSpacing(2),
+    paddingLeft: getSpacing(SpacingLevel.l2),
+    paddingRight: getSpacing(SpacingLevel.l2),
     width: '100%'
   },
   centeredContent: {

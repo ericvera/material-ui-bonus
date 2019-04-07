@@ -6,9 +6,14 @@ import exact from 'prop-types-exact'
 import MaterialUIAppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import { makeStyles } from '@material-ui/styles'
-// Helpers
-import Colors from '../helpers/Colors'
+// Internal
 import InnerContainer from './InnerContainer'
+// Helpers
+import getColor from '../helpers/getColor'
+import { Color } from '../helpers/constants'
+import { ColorPropTypes } from '../helpers/PropTypes'
+// Hooks
+import useColorClassName from '../hooks/useColorClassName'
 
 const useStyles = makeStyles({
   bottom: {
@@ -16,14 +21,8 @@ const useStyles = makeStyles({
     bottom: 0,
     padding: 0,
     borderTopStyle: 'solid',
-    borderTopColor: Colors.primaryDisabled,
+    borderTopColor: getColor(Color.primaryDisabled),
     borderTopWidth: 1
-  },
-  background: {
-    backgroundColor: Colors.background
-  },
-  transparent: {
-    backgroundColor: Colors.transparent
   }
 })
 
@@ -31,12 +30,13 @@ const BaseAppBar = ({
   location = 'top',
   centered = false,
   children,
-  color = 'background',
+  backgroundColor = Color.background,
   position = 'fixed'
 }) => {
   const classes = useStyles()
+  const colorClassName = useColorClassName(null, backgroundColor)
 
-  let classNames = [classes[color]]
+  let classNames = [colorClassName]
 
   if (location === 'bottom') {
     classNames.push(classes.bottom)
@@ -58,9 +58,9 @@ const BaseAppBar = ({
 }
 
 BaseAppBar.propTypes = exact({
+  backgroundColor: ColorPropTypes,
   centered: PropTypes.bool,
   children: PropTypes.node,
-  color: PropTypes.oneOf(['background', 'transparent']),
   location: PropTypes.oneOf(['top', 'bottom']),
   position: PropTypes.oneOf(['fixed', 'absolute'])
 })

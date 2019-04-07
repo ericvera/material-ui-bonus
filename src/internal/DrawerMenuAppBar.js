@@ -2,24 +2,30 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
-// Components
-import AppBarButton from './AppBarButton'
-import BaseAppBar from './BaseAppBar'
-import InnerContainer from './InnerContainer'
-// Helpers
-import FontWeight from '../helpers/FontWeight'
-import getFontSize from '../helpers/getFontSize'
-import getSpacing from '../helpers/getSpacing'
 // Material-UI
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
 import { makeStyles } from '@material-ui/styles'
+// Internal
+import AppBarButton from './AppBarButton'
+import BaseAppBar from './BaseAppBar'
+import InnerContainer from './InnerContainer'
+// Helpers
+import {
+  FontSizeLevel,
+  SpacingLevel,
+  FontWeight,
+  AppBarButtonIcon
+} from '../helpers/constants'
+import getFontSize from '../helpers/getFontSize'
+import getFontWeight from '../helpers/getFontWeight'
+import getSpacing from '../helpers/getSpacing'
 
 const useStyles = makeStyles({
   logoContainer: {
-    height: getSpacing(8),
+    height: getSpacing(SpacingLevel.l8),
     display: 'flex',
     alignItems: 'center'
   },
@@ -35,12 +41,12 @@ const useStyles = makeStyles({
     textAlign: 'right'
   },
   menuItemText: {
-    fontSize: getFontSize(3),
-    fontWeight: FontWeight.Regular
+    fontSize: getFontSize(FontSizeLevel.l3),
+    fontWeight: getFontWeight(FontWeight.regular)
   },
   listItem: {
-    paddingTop: getSpacing(4),
-    paddingBottom: getSpacing(4)
+    paddingTop: getSpacing(SpacingLevel.l4),
+    paddingBottom: getSpacing(SpacingLevel.l4)
   }
 })
 
@@ -59,9 +65,13 @@ const MenuAppBar = ({
   return (
     <div>
       <BaseAppBar location="top">
-        <AppBarButton side="left" icon="menu" onClick={toggleDrawer} />
+        <AppBarButton
+          side="left"
+          icon={AppBarButtonIcon.menu}
+          onClick={toggleDrawer}
+        />
         {middleImage}
-        <AppBarButton side="right" icon="empty" />
+        <AppBarButton side="right" icon={AppBarButtonIcon.empty} />
       </BaseAppBar>
 
       <SwipeableDrawer

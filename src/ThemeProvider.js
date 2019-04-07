@@ -8,9 +8,9 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import MaterialUIThemeProvider from '@material-ui/styles/ThemeProvider'
 // Helpers
 import getFontSize from './helpers/getFontSize'
-import Colors from './helpers/Colors'
-import FontWeight from './helpers/FontWeight'
-// TODO: Figure out how to pass Colors, Font, and other configurable things in
+import getFontWeight from './helpers/getFontWeight'
+import getColor from './helpers/getColor'
+import { Color, FontSizeLevel, FontWeight } from './helpers/constants'
 
 const theme = createMuiTheme({
   typography: {
@@ -70,47 +70,47 @@ const theme = createMuiTheme({
   },
   overrides: {
     MuiAppBar: {
-      colorPrimary: { backgroundColor: Colors.background }
+      colorPrimary: { backgroundColor: getColor(Color.background) }
     },
     MuiIconButton: {
       root: {
-        color: Colors.primary,
+        color: getColor(Color.primary),
         '&:hover': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         }
       }
     },
     MuiButtonBase: {
       root: {
         '&:hover': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         },
         '&$disabled': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         }
       }
     },
     MuiButton: {
       text: {
         borderWidth: 0,
-        color: Colors.primary,
-        fontWeight: FontWeight.Bold,
+        color: getColor(Color.primary),
+        fontWeight: getFontWeight(FontWeight.bold),
         '&:hover': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         },
         '&$disabled': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         }
       },
       contained: {
-        backgroundColor: Colors.background,
+        backgroundColor: getColor(Color.background),
         borderWidth: 1,
         borderStyle: 'solid',
-        borderColor: Colors.brand,
-        color: Colors.brand,
-        //fontWeight: FontWeight.Regular,
+        borderColor: getColor(Color.brand),
+        color: getColor(Color.brand),
+        //fontWeight: getFontWeight(FontWeight.regular),
         '&:hover': {
-          backgroundColor: Colors.background
+          backgroundColor: getColor(Color.background)
         }
       },
       fab: {
@@ -118,7 +118,7 @@ const theme = createMuiTheme({
         // z-index explained here https://material-ui.com/layout/basics/
         // The fact that this is needed is likely a bug in the lib
         zIndex: 1050,
-        color: Colors.brand,
+        color: getColor(Color.brand),
         position: 'fixed',
         bottom: 16,
         right: 16
@@ -129,7 +129,7 @@ const theme = createMuiTheme({
     },
     MuiCircularProgress: {
       colorPrimary: {
-        color: Colors.brand
+        color: getColor(Color.brand)
       }
     },
     MuiFormControl: {
@@ -139,25 +139,25 @@ const theme = createMuiTheme({
     },
     MuiFormHelperText: {
       root: {
-        color: Colors.confirmAction,
-        fontSize: getFontSize(1),
+        color: getColor(Color.confirmAction),
+        fontSize: getFontSize(FontSizeLevel.l1),
         lineHeight: 1.3,
         marginTop: 0
       }
     },
     MuiFormLabel: {
       root: {
-        color: Colors.primary
+        color: getColor(Color.primary)
       }
     },
     MuiInput: {
       root: {
         borderRadius: 4,
-        color: Colors.primary,
-        backgroundColor: Colors.inputBackground,
+        color: getColor(Color.primary),
+        backgroundColor: getColor(Color.inputBackground),
         '&$disabled': {
-          color: Colors.primaryDisabled,
-          backgroundColor: Colors.inputBackgroundDisabled
+          color: getColor(Color.primaryDisabled),
+          backgroundColor: getColor(Color.inputBackgroundDisabled)
         }
       },
       multiline: {
@@ -167,24 +167,24 @@ const theme = createMuiTheme({
     MuiInputBase: {
       input: {
         borderStyle: 'none',
-        padding: getFontSize(2)
+        padding: getFontSize(FontSizeLevel.l2)
       }
     },
     MuiInputLabel: {
       root: {
-        fontWeight: FontWeight.Bold
+        fontWeight: getFontWeight(FontWeight.bold)
       }
     },
     MuiListItem: {
       button: {
         '&:hover': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         },
         '&:focus': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         },
         '&$disabled': {
-          backgroundColor: Colors.transparent
+          backgroundColor: getColor(Color.transparent)
         }
       }
     },
@@ -201,14 +201,14 @@ const theme = createMuiTheme({
     },
     MuiSnackbarContent: {
       root: {
-        backgroundColor: Colors.brand,
-        color: Colors.background,
-        fontSize: getFontSize(2)
+        backgroundColor: getColor(Color.brand),
+        color: getColor(Color.background),
+        fontSize: getFontSize(FontSizeLevel.l2)
       }
     },
     MuiSvgIcon: {
       root: {
-        color: Colors.primary
+        color: getColor(Color.primary)
       }
     }
   },
@@ -228,39 +228,39 @@ const theme = createMuiTheme({
       '"Segoe UI Symbol"'
     ].join(','),
     h1: {
-      fontSize: getFontSize(4),
-      color: Colors.primary,
-      fontWeight: FontWeight.Bold,
+      fontSize: getFontSize(FontSizeLevel.l4),
+      color: getColor(Color.primary),
+      fontWeight: getFontWeight(FontWeight.bold),
       lineHeight: 1.1429
     },
     h2: {
-      fontSize: getFontSize(3),
-      color: Colors.primary,
-      fontWeight: FontWeight.Bold,
+      fontSize: getFontSize(FontSizeLevel.l3),
+      color: getColor(Color.primary),
+      fontWeight: getFontWeight(FontWeight.bold),
       lineHeight: 1.23
     },
     h3: {
-      fontSize: getFontSize(2),
-      color: Colors.primary,
-      fontWeight: FontWeight.Bold,
+      fontSize: getFontSize(FontSizeLevel.l2),
+      color: getColor(Color.primary),
+      fontWeight: getFontWeight(FontWeight.bold),
       lineHeight: 1.1875
     },
     body1: {
-      fontSize: getFontSize(2),
-      color: Colors.primary,
+      fontSize: getFontSize(FontSizeLevel.l2),
+      color: getColor(Color.primary),
       lineHeight: 1.1875
     },
     body2: {
-      fontSize: getFontSize(1),
-      color: Colors.secondary,
+      fontSize: getFontSize(FontSizeLevel.l1),
+      color: getColor(Color.secondary),
       lineHeight: 1.3
     },
     button: {
-      fontSize: getFontSize(1),
-      fontWeight: FontWeight.Regular
+      fontSize: getFontSize(FontSizeLevel.l1),
+      fontWeight: getFontWeight(FontWeight.regular)
     },
-    fontWeightRegular: FontWeight.Regular,
-    fontWeightMedium: FontWeight.Bold
+    fontWeightRegular: getFontWeight(FontWeight.regular),
+    fontWeightMedium: getFontWeight(FontWeight.bold)
   }
 })
 

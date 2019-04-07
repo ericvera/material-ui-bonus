@@ -5,10 +5,8 @@ import React, {
   useImperativeHandle,
   useReducer
 } from 'react'
-//import PropTypes from 'prop-types'
-//import exact from 'prop-types-exact'
 // Material-UI
-import Button from '@material-ui/core/Button'
+import MaterialUIButton from '@material-ui/core/Button'
 import CircularProgress from '@material-ui/core/CircularProgress'
 import { makeStyles } from '@material-ui/styles'
 
@@ -61,7 +59,7 @@ const ProgressButton = (
   const classes = useStyles()
 
   return (
-    <Button
+    <MaterialUIButton
       type="submit"
       disabled={Boolean(state.delay) || showProgress}
       onClick={onClick}
@@ -73,7 +71,7 @@ const ProgressButton = (
       {(Boolean(state.delay) || showProgress) && (
         <CircularProgress size={24} className={classes.buttonProgress} />
       )}
-    </Button>
+    </MaterialUIButton>
   )
 }
 

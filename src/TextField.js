@@ -5,7 +5,10 @@ import exact from 'prop-types-exact'
 // Material-UI
 import MaterialUITextField from '@material-ui/core/TextField'
 // Helpers
-import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
+import { SpacingLevel } from './helpers/constants'
+import { SpacingLevelPropTypes } from './helpers/PropTypes'
+// Hooks
+import useMarginStyles from './hooks/useMarginStyles'
 
 const TextField = ({
   autoCapitalize,
@@ -15,8 +18,8 @@ const TextField = ({
   helperText,
   id,
   label,
-  marginBottomLevel = '0',
-  marginTopLevel = '0',
+  marginBottomLevel = SpacingLevel.l0,
+  marginTopLevel = SpacingLevel.l0,
   onBlur,
   onChange,
   placeholder,
@@ -53,8 +56,8 @@ TextField.propTypes = exact({
   helperText: PropTypes.string,
   id: PropTypes.string,
   label: PropTypes.string,
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes,
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes,
   onBlur: PropTypes.func,
   onChange: PropTypes.func,
   placeholder: PropTypes.string.isRequired,

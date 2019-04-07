@@ -5,18 +5,33 @@ import exact from 'prop-types-exact'
 // Material-UI
 import Typography from '@material-ui/core/Typography'
 // Helpers
-import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
+import { HeadingLevel, SpacingLevel } from './helpers/constants'
+import {
+  HeadingLevelPropTypes,
+  SpacingLevelPropTypes
+} from './helpers/PropTypes'
+// Hooks
+import useMarginStyles from './hooks/useMarginStyles'
+
+const headingLevelToVariant = {
+  [HeadingLevel.l1]: 'h1',
+  [HeadingLevel.l2]: 'h2',
+  [HeadingLevel.l3]: 'h3'
+}
 
 const Heading = ({
-  level = '1',
-  marginTopLevel = '0',
-  marginBottomLevel = '0',
+  level = HeadingLevel.l1,
+  marginTopLevel = SpacingLevel.l0,
+  marginBottomLevel = SpacingLevel.l0,
   children
 }) => {
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   return (
-    <Typography variant={`h${level}`} className={marginClassName}>
+    <Typography
+      variant={headingLevelToVariant[level]}
+      className={marginClassName}
+    >
       {children}
     </Typography>
   )
@@ -24,9 +39,9 @@ const Heading = ({
 
 Heading.propTypes = exact({
   children: PropTypes.string,
-  level: PropTypes.oneOf(['1', '2', '3']),
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes
+  level: HeadingLevelPropTypes,
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes
 })
 
 export default Heading

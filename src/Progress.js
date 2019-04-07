@@ -1,26 +1,31 @@
 // Framework
 import React from 'react'
-import PropTypes from 'prop-types'
 import exact from 'prop-types-exact'
 // Material-UI
 import CircularProgress from '@material-ui/core/CircularProgress'
 // Helpers
-import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
-import CenteredContent from './internal/CenteredContent'
+import { SpacingLevelPropTypes } from './helpers/PropTypes'
+// Hooks
+import useCenteredContentClassName from './hooks/useCenteredContentClassName'
+import useMarginStyles from './hooks/useMarginStyles'
 
-const Progress = ({ marginTopLevel = '0', marginBottomLevel = '0' }) => {
+const Progress = ({
+  marginTopLevel = SpacingLevel.l0,
+  marginBottomLevel = SpacingLevel.l0
+}) => {
+  const centeredContentClassName = useCenteredContentClassName()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
 
   return (
-    <CenteredContent>
+    <div className={centeredContentClassName}>
       <CircularProgress className={marginClassName} />
-    </CenteredContent>
+    </div>
   )
 }
 
 Progress.propTypes = exact({
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes
 })
 
 export default Progress

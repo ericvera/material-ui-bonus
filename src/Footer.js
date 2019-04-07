@@ -8,12 +8,15 @@ import { makeStyles } from '@material-ui/styles'
 // Internal
 import InnerContainer from './internal/InnerContainer'
 // Helpers
-import Colors from './helpers/Colors'
-import useMarginStyles, { MarginPropTypes } from './helpers/useMarginStyles'
+import { Color, SpacingLevel } from './helpers/constants'
+import getColor from './helpers/getColor'
+// Hooks
+import useMarginStyles from './hooks/useMarginStyles'
+import { SpacingLevelPropTypes } from './helpers/PropTypes'
 
 const useStyles = makeStyles({
   footer: {
-    backgroundColor: Colors.background,
+    backgroundColor: getColor(Color.background),
     flexShrink: 0
   },
   toolbar: {
@@ -21,14 +24,14 @@ const useStyles = makeStyles({
     justifyContent: 'space-between',
     borderTopStyle: 'solid',
     borderTopWidth: 1,
-    borderTopColor: Colors.primaryDisabled
+    borderTopColor: getColor(Color.secondary)
   }
 })
 
 const Footer = ({
   children,
-  marginBottomLevel = '0',
-  marginTopLevel = '0'
+  marginBottomLevel = SpacingLevel.l0,
+  marginTopLevel = SpacingLevel.l0
 }) => {
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
@@ -46,8 +49,8 @@ const Footer = ({
 
 Footer.propTypes = exact({
   children: PropTypes.node,
-  marginBottomLevel: MarginPropTypes,
-  marginTopLevel: MarginPropTypes
+  marginBottomLevel: SpacingLevelPropTypes,
+  marginTopLevel: SpacingLevelPropTypes
 })
 
 export default Footer

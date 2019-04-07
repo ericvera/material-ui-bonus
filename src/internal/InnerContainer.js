@@ -6,7 +6,7 @@ import exact from 'prop-types-exact'
 import Grid from '@material-ui/core/Grid'
 import { makeStyles } from '@material-ui/styles'
 // Helpers
-import useGutterStyles from '../helpers/useGuttersStyles'
+import useGutterStyles from '../hooks/useGuttersStyles'
 
 const useStyles = makeStyles({
   container: {
