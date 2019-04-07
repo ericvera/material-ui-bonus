@@ -8,12 +8,7 @@ import { makeStyles } from '@material-ui/styles'
 // Internal
 import ProgressButton from './internal/ProgressButton'
 // Helpers
-import {
-  ButtonColor,
-  ButtonVariant,
-  Color,
-  SpacingLevel
-} from './helpers/constants'
+import { ButtonVariant, Color, SpacingLevel } from './helpers/constants'
 import {
   ButtonVariantPropTypes,
   ColorPropTypes,
@@ -31,17 +26,17 @@ const useStyles = makeStyles({
     paddingLeft: getSpacing(SpacingLevel.l2),
     paddingRight: getSpacing(SpacingLevel.l2)
   },
-  [ButtonColor.primary]: {
+  [Color.primary]: {
     backgroundColor: getColor(Color.background),
     borderColor: getColor(Color.brand),
     color: getColor(Color.brand)
   },
-  [ButtonColor.secondary]: {
+  [Color.secondary]: {
     backgroundColor: getColor(Color.background),
     borderColor: getColor(Color.secondary),
     color: getColor(Color.secondary)
   },
-  [ButtonColor.confirmation]: {
+  [Color.confirmAction]: {
     backgroundColor: getColor(Color.confirmAction),
     borderStyle: 'none',
     color: getColor(Color.background),
@@ -54,13 +49,7 @@ const useStyles = makeStyles({
 })
 
 const getButtonColorClassName = color => {
-  if (
-    ![
-      ButtonColor.primary,
-      ButtonColor.secondary,
-      ButtonColor.confirmAction
-    ].includes(color)
-  ) {
+  if (![Color.primary, Color.secondary, Color.confirmAction].includes(color)) {
     throw Error(`[Button] Unsupported color: ${color}`)
   }
 
@@ -70,7 +59,7 @@ const getButtonColorClassName = color => {
 const Button = ({
   centered = true,
   children,
-  color = ButtonColor.primary,
+  color = Color.primary,
   delay,
   forwardedRef,
   fullWidth = false,
@@ -83,7 +72,6 @@ const Button = ({
   const classes = useStyles()
   const marginClassName = useMarginStyles(marginTopLevel, marginBottomLevel)
   const centeredContentClassName = useCenteredContentClassName()
-  console.log(`color: ${color}`)
   const colorClassName = useColorClassName(color)
 
   let classNames = [marginClassName]
@@ -120,8 +108,6 @@ const Button = ({
       break
     case ButtonVariant.text:
       classNames.push(classes.textButton)
-
-      console.log(`colorClassName: ${colorClassName}`)
 
       button = (
         <MaterialUIButton
