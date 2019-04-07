@@ -33,12 +33,6 @@ export const Color = {
   transparent: 'transparent'
 }
 
-export const ButtonColor = {
-  primary: Color.primary,
-  secondary: Color.secondary,
-  confirmation: Color.confirmAction
-}
-
 export const FontSizeLevel = {
   l1: 'l1',
   l2: 'l2',

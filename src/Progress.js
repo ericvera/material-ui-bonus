@@ -4,6 +4,7 @@ import exact from 'prop-types-exact'
 // Material-UI
 import CircularProgress from '@material-ui/core/CircularProgress'
 // Helpers
+import { SpacingLevel } from './helpers/constants'
 import { SpacingLevelPropTypes } from './helpers/PropTypes'
 // Hooks
 import useCenteredContentClassName from './hooks/useCenteredContentClassName'

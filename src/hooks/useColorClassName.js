@@ -12,8 +12,6 @@ const useStyles = (color, backgroundColor) => {
     colorStyles.backgroundColor = getColor(backgroundColor)
   }
 
-  console.log(`colorStyles ${colorStyles}`)
-
   return makeStyles({
     colorStyles
   })()

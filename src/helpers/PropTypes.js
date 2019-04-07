@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import {
   AppBarButtonIcon,
   AppBarVariant,
-  ButtonColor,
   ButtonVariant,
   Color,
   HeadingLevel,
@@ -18,8 +17,6 @@ export const AppBarButtonIconPropTypes = PropTypes.oneOf(
 export const AppBarVariantPropTypes = PropTypes.oneOf(
   Object.values(AppBarVariant)
 )
-
-export const ButtonColorPropTypes = PropTypes.oneOf(Object.values(ButtonColor))
 
 export const ButtonVariantPropTypes = PropTypes.oneOf(
   Object.values(ButtonVariant)

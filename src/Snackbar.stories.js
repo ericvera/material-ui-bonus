@@ -14,7 +14,6 @@ const SnackbarSample1 = () => {
         message="Message goes here"
         open={open}
         onClose={() => {
-          console.log('close')
           setOpen(false)
         }}
       />
@@ -22,4 +21,6 @@ const SnackbarSample1 = () => {
   )
 }
 
-storiesOf('Snackbar', module).add('default', () => <SnackbarSample1 />)
+storiesOf('Snackbar [NoStoryshot]', module).add('default', () => (
+  <SnackbarSample1 />
+))

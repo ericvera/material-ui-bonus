@@ -3,6 +3,7 @@
 *.stories.js
 .storybook
 .babelrc
+.jest
 test/
 coverage/
 src/
