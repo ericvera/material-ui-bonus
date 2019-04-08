@@ -9,6 +9,7 @@ import List from './List'
 import ListItem from './ListItem'
 import Progress from './Progress'
 import Snackbar from './Snackbar'
+import SvgIcon from './SvgIcon'
 import Text from './Text'
 import TextField from './TextField'
 import ThemeProvider from './ThemeProvider'
@@ -28,6 +29,7 @@ export {
   ListItem,
   Progress,
   Snackbar,
+  SvgIcon,
   Text,
   TextField,
   ThemeProvider

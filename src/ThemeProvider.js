@@ -210,11 +210,6 @@ const theme = createMuiTheme({
         color: getColor(Color.background),
         fontSize: getFontSize(FontSizeLevel.l2)
       }
-    },
-    MuiSvgIcon: {
-      root: {
-        color: getColor(Color.primary)
-      }
     }
   },
   typography: {
