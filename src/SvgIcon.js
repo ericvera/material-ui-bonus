@@ -15,6 +15,7 @@ import useMarginStyles from './hooks/useMarginStyles'
 const useStyles = makeStyles({
   svgIconSize: {
     height: 'unset',
+    verticalAlign: 'middle',
     width: 'unset'
   }
 })
